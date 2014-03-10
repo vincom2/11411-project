@@ -1,0 +1,1676 @@
+Scala (programming language) - Wikipedia, the free encyclopedia 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+ 
+ 
+		 
+		 
+		 
+			 
+			 
+						 
+						 Scala (programming language) 
+			 
+								 From Wikipedia, the free encyclopedia 
+								 
+												 
+					Jump to:					 navigation , 					 search 
+				 
+				 
+ Scala 
+ 
+  
+ 
+ 
+ Paradigm(s) 
+ Multi-paradigm : functional , object-oriented , imperative , concurrent 
+ 
+ 
+ Appeared in 
+ 2003 
+ 
+ 
+ Designed by 
+ Martin Odersky 
+ 
+ 
+ Developer 
+ Programming Methods Laboratory of École Polytechnique Fédérale de Lausanne 
+ 
+ 
+ Stable release 
+ 2.10.3 (October&#160;1,&#160;2013 &#160;( 2013-10-01 )  ) 
+ 
+ 
+ Preview release 
+ 2.11.0-M8 (January&#160;20,&#160;2014 &#160;( 2014-01-20 )  ) 
+ 
+ 
+ Typing discipline 
+ static , strong , inferred , structural 
+ 
+ 
+ Influenced by 
+ Eiffel , Erlang , Haskell ,   Standard ML , OCaml , Scheme , Smalltalk , Oz 
+ 
+ 
+ Influenced 
+ Fantom , Ceylon , Lasso , Kotlin 
+ 
+ 
+ Implementation language 
+ Java 
+ 
+ 
+ Platform 
+ JVM , LLVM 
+ 
+ 
+ License 
+ Scala License (similar to BSD license) 
+ 
+ 
+ Usual filename extensions 
+ .scala 
+ 
+ 
+ Website 
+ www.scala-lang.org 
+ 
+ 
+ 
+ 
+ Scala at Wikibooks 
+ 
+ 
+ 
+ 
+ Scala ( /  ˈ  s  k  ɑː  l  ə  /   SKAH -lə ) is an object-functional programming and scripting language for general software applications , statically typed , designed to concisely express solutions in an elegant,  
+ It is intended to be compiled to Java bytecode , so the resulting executable runs on the JVM , and Java libraries can be used directly in Scala code and vice-versa. Like Java, Scala is statically typed and object-oriented , and uses a curly-brace syntax reminiscent of C . Unlike Java, Scala has many features of functional programming languages like Scheme , Standard ML and Haskell , including anonymous functions , type inference , list comprehensions (known in Scala as "for-comprehensions"), lazy initialization , extensive language and library support for avoiding side-effects , for pattern matching , case classes, delimited continuations , higher-order types , and much better support for covariance and contravariance . Scala has a unified type system (as in C# , but unlike in Java), where all types, including primitive types like integer and boolean , are subclasses of the type Any . Scala likewise has other features present in C# but not Java, including anonymous types , operator overloading , optional parameters, named parameters , raw strings (that may be multi-line in Scala), and no checked exceptions . 
+ The name Scala is a portmanteau of "scalable" and "language", signifying that it is designed to grow with the demands of its users. James Strachan , the creator of Groovy , described Scala as a possible successor to Java .  
+ 
+ 
+ 
+ Contents 
+ 
+ 
+ 1 History 
+ 2 Platforms and license 
+ 3 Examples 
+ 
+ 3.1 "Hello World" example 
+ 3.2 A basic example 
+ 3.3 An example with classes 
+ 
+ 
+ 4 Features (with reference to Java) 
+ 
+ 4.1 Syntactic flexibility 
+ 4.2 Unified type system 
+ 4.3 For-expressions 
+ 4.4 Functional tendencies 
+ 
+ 4.4.1 Everything is an expression 
+ 4.4.2 Type inference 
+ 4.4.3 Anonymous functions 
+ 4.4.4 Immutability 
+ 4.4.5 Lazy (non-strict) evaluation 
+ 4.4.6 Tail recursion 
+ 4.4.7 Case classes and pattern matching 
+ 4.4.8 Partial functions 
+ 
+ 
+ 4.5 Object-oriented extensions 
+ 4.6 Expressive type system 
+ 4.7 Type enrichment 
+ 
+ 
+ 5 Concurrency 
+ 6 Cluster Computing 
+ 7 Testing 
+ 8 Versions 
+ 9 Comparison with other JVM languages 
+ 10 Adoption 
+ 
+ 10.1 Language rankings 
+ 10.2 Companies 
+ 10.3 Criticism 
+ 
+ 
+ 11 See also 
+ 12 References 
+ 13 Further reading 
+ 14 External links 
+ 
+ 
+ 
+ History  
+ The design of Scala started in 2001 at the École Polytechnique Fédérale de Lausanne (EPFL) by Martin Odersky , following on from work on Funnel, a programming language combining ideas from functional programming and Petri nets .  
+ Scala was released late 2003/early 2004 on the Java platform, and on the .NET platform in June 2004.  
+ On 17 January 2011 the Scala team won a five-year research grant of over €2.3 million from the European Research Council .  
+ Platforms and license  
+ Scala runs on the Java platform ( Java Virtual Machine ) and is compatible with existing Java programs. It also runs on Android smartphones.  but it was dropped. 
+ The Scala software distribution, including compiler and libraries, is released under a BSD license .  
+ Examples  
+ "Hello World" example  
+ Here is the classic Hello World program written in Scala: 
+ 
+ 
+ 
+ object HelloWorld extends App { 
+ println ( "Hello, World!" ) 
+ } 
+ 
+ 
+ Unlike the stand-alone Hello World application for Java , there is no class declaration and nothing is declared to be static; a singleton object created when the object keyword is used instead. 
+ With the program saved in a file named HelloWorld.scala , it can be compiled from the command line: 
+ $ scalac HelloWorld.scala 
+ To run it: 
+ $ scala HelloWorld (You may need to use the "-cp" key to set the classpath like in Java). 
+ This is analogous to the process for compiling and running Java code. Indeed, Scala's compilation and execution model is identical to that of Java, making it compatible with Java build tools such as Ant . 
+ A shorter version of the "Hello World" Scala program is: 
+ 
+ 
+ 
+println ( "Hello, World!" ) 
+ 
+ 
+ Saved in a file named HelloWorld2.scala , this can be run as a script without prior compilation using: 
+ $ scala HelloWorld2.scala 
+ Commands can also be fed directly into the Scala interpreter, using the option -e : 
+ $ scala -e 'println("Hello, World!")' 
+ A basic example  
+ The following example shows the differences between Java and Scala syntax: 
+ 
+ 
+ 
+ 
+ 
+ 
+ // Java: 
+ int mathFunction ( int num ) { 
+  int numSquare = num * num ; 
+  return ( int ) ( Math . cbrt ( numSquare ) + 
+  Math . log ( numSquare ) ) ; 
+ } 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ // Scala: Direct conversion from Java 
+ 
+ // no import needed; scala.math 
+ // already imported as `math` 
+ def mathFunction ( num : Int ) : Int = { 
+ var numSquare : Int = num * num
+ return ( math. cbrt ( numSquare ) + math. log ( numSquare ) ) .
+  asInstanceOf  
+ } 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ // Scala: More idiomatic 
+ // Uses type inference, omits `return` statement, 
+ // uses `toInt` method 
+ 
+ import math. _ 
+ def intRoot23 ( num : Int ) = { 
+ val numSquare = num * num
+ ( cbrt ( numSquare ) + log ( numSquare ) ) . toInt 
+ } 
+ 
+ 
+ 
+ 
+ 
+ Note in particular the syntactic differences shown by this code: 
+ 
+ Scala does not require semicolons. 
+ Value types are capitalized: Int, Double, Boolean instead of int, double, boolean . 
+ Parameter and return types follow, as in Pascal , rather than precede as in C . 
+ Functions must be preceded by def . 
+ Local or class variables must be preceded by val (indicates an unmodifiable variable) or var (indicates a modifiable variable). 
+ The return operator is unnecessary in a function (although allowed); the value of the last executed statement or expression is normally the function's value. 
+ Instead of the Java cast operator (Type) foo , Scala uses foo.asInstanceOf , or a specialized function such as toDouble or toInt . 
+ Instead of Java's import foo.*; , Scala uses import foo._ . 
+ Function or method foo() can also be called as just foo ; method thread.send(signo) can also be called as just thread send signo ; and method foo.toString() can also be called as just foo toString . 
+ 
+ (These syntactic relaxations are designed to allow support for domain-specific languages .) 
+ Some other basic syntactic differences: 
+ 
+ Array references are written like function calls, e.g. array(i) rather than array . (Internally in Scala, both arrays and functions are conceptualized as kinds of mathematical mappings from one object to another.) 
+ Generic types are written as e.g. List rather than Java's List&lt;String&gt; . 
+ Instead of the pseudo-type void , Scala has the actual singleton class Unit (see below). 
+ 
+ An example with classes  
+ The following example contrasts Java and Scala ways of defining classes. 
+ 
+ 
+ 
+ 
+ 
+ 
+ // Java: 
+ public class Point { 
+ private final double x, y ; 
+ 
+ public Point ( final double X, final double Y ) { 
+ x = X ; 
+ y = Y ; 
+ } 
+ 
+ public double getX ( ) { 
+  return x ; 
+ } 
+ 
+ public double getY ( ) { 
+  return y ; 
+ } 
+ 
+ public Point ( 
+  final double X, final double Y,
+  final boolean ADD2GRID
+ ) { 
+  this ( X, Y ) ; 
+ 
+  if ( ADD2GRID ) 
+  grid. add ( this ) ; 
+ } 
+ 
+ public Point ( ) { 
+  this ( 0.0 , 0.0 ) ; 
+ } 
+ 
+ double distanceToPoint ( final Point OTHER ) { 
+  return distanceBetweenPoints ( x, y,
+  OTHER. x , OTHER. y ) ; 
+ } 
+ 
+ private static Grid grid = new Grid ( ) ; 
+ 
+ static double distanceBetweenPoints ( 
+  final double X1, final double Y1,
+  final double X2, final double Y2
+ ) { 
+  double xDist = X1 - X2 ; 
+  double yDist = Y1 - Y2 ; 
+  return Math . sqrt ( xDist * xDist + yDist * yDist ) ; 
+ } 
+ } 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ // Scala 
+ class Point ( 
+  val x : Double, val y : Double,
+ addToGrid : Boolean = false 
+ ) { 
+ import Point. _ 
+ 
+ if ( addToGrid ) 
+ grid. add ( this ) 
+ 
+ def this ( ) { 
+  this ( 0.0 , 0.0 ) 
+ } 
+ 
+ def distanceToPoint ( other : Point ) = 
+ distanceBetweenPoints ( x, y, other. x , other. y ) 
+ } 
+ 
+ object Point { 
+ private val grid = new Grid ( ) 
+ 
+ def distanceBetweenPoints ( x1 : Double, y1 : Double,
+  x2 : Double, y2 : Double ) = { 
+  val xDist = x1 - x2
+  val yDist = y1 - y2
+ math. sqrt ( xDist * xDist + yDist * yDist ) 
+ } 
+ } 
+ 
+ 
+ 
+ 
+ 
+ The above code shows some of the conceptual differences between Java and Scala's handling of classes: 
+ 
+ Scala has no static variables or methods. Instead, it has singleton objects , which are essentially classes with only one object in the class. Singleton objects are declared using object instead of class . It is common to place static variables and methods in a singleton object with the same name as the class name, which is then known as a companion object . (The underlying class for the singleton object has a $ appended. Hence, for class Foo with companion object object Foo , under the hood there's a class Foo$ containing the companion object's code, and a single object of this class is created, using the singleton pattern .) 
+ In place of constructor parameters, Scala has class parameters , which are placed on the class itself, similar to parameters to a function. When declared with a val or var modifier, fields are also defined with the same name, and automatically initialized from the class parameters. (Under the hood, external access to public fields always goes through accessor (getter) and mutator (setter) methods, which are automatically created. The accessor function has the same name as the field, which is why it's unnecessary in the above example to explicitly declare accessor methods.) Note that alternative constructors can also be declared, as in Java. Code that would go into the default constructor (other than initializing the member variables) goes directly at class level. 
+ Default visibility in Scala is public . 
+ 
+ Features (with reference to Java)  
+ Scala has the same compilation model as Java and C# (separate compilation, dynamic class loading ), so Scala code can call Java libraries (or .NET libraries in the .NET implementation). 
+ Scala's operational characteristics are the same as Java's . The Scala compiler generates byte code that is nearly identical to that generated by the Java compiler. In fact, Scala code can be decompiled to readable Java code, with the exception of certain constructor operations. To the JVM, Scala code and Java code are indistinguishable. The only difference is a single extra runtime library, scala-library.jar .  
+ Scala adds a large number of features compared with Java, and has some fundamental differences in its underlying model of expressions and types, which make the language theoretically cleaner and eliminate a number of " corner cases " in Java. From the Scala perspective, this is practically important because a number of additional features in Scala are also available in C#. Examples include: 
+ Syntactic flexibility  
+ As mentioned above, Scala has a good deal of syntactic flexibility, compared with Java. The following are some examples: 
+ 
+ Semicolons are unnecessary; lines are automatically joined if they begin or end with a token that cannot normally come in this position, or if there are unclosed parentheses or brackets. 
+ Any method can be used as an infix operator, e.g. "%d apples".format(num) and "%d apples" format num are equivalent. In fact, arithmetic operators like + and &lt;&lt; are treated just like any other methods, since function names are allowed to consist of sequences of arbitrary symbols (with a few exceptions made for things like parens, brackets and braces that must be handled specially); the only special treatment that such symbol-named methods undergo concerns the handling of precedence. 
+ Methods apply and update have syntactic short forms. foo() —where foo is a value (singleton object or class instance)—is short for foo.apply() , and foo() = 42 is short for foo.update(42) . Similarly, foo(42) is short for foo.apply(42) , and foo(4) = 2 is short for foo.update(4, 2) . This is used for collection classes and extends to many other cases, such as STM cells. 
+ Scala distinguishes between no-parens ( def foo = 42 ) and empty-parens ( def foo() = 42 ) methods. When calling an empty-parens method, the parentheses may be omitted, which is useful when calling into Java libraries which do not know this distinction, e.g., using foo.toString instead of foo.toString() . By convention a method should be defined with empty-parens when it performs side effects . 
+ Method names ending in colon ( : ) expect the argument on the left-hand-side and the receiver on the right-hand-side. For example, the 4&#160;:: 2&#160;:: Nil is the same as Nil.::(2).::(4) , the first form corresponding visually to the result (a list with first element 4 and second element 2). 
+ Class body variables can be transparently implemented as separate getter and setter methods. For trait FooLike { var bar: Int } , an implementation may be object Foo extends FooLike { private var x = 0; def bar = x; def bar_=(value: Int) { x = value }} . The call site will still be able to use a concise foo.bar = 42 . 
+ The use of curly braces instead of parentheses is allowed in method calls. This allows pure library implementations of new control structures.  For example, breakable { ... if (...) break() ... } looks as if breakable was a language defined keyword, but really is just a method taking a thunk argument. Methods that take thunks or functions often place these in a second parameter list, allowing to mix parentheses and curly braces syntax: Vector.fill(4) { math.random } is the same as Vector.fill(4)(math.random) . The curly braces variant allows the expression to span multiple lines. 
+ For-expressions (explained further down) can accommodate any type that defines monadic methods such as map , flatMap and filter . 
+ 
+ By themselves, these may seem like questionable choices, but collectively they serve the purpose of allowing domain-specific languages to be defined in Scala without needing to extend the compiler. For example, Erlang 's special syntax for sending a message to an actor, i.e. actor&#160;! message can be (and is) implemented in a Scala library without needing language extensions. 
+ Unified type system  
+ Java makes a sharp distinction between primitive types (e.g. int and boolean ) and reference types (any class ). Only reference types are part of the inheritance scheme, deriving from java.lang.Object . In Scala, however, all types inherit from a top-level class Any , whose immediate children are AnyVal (value types, such as Int and Boolean ) and AnyRef (reference types, as in Java). This means that the Java distinction between primitive types and boxed types (e.g. int vs. Integer ) is not present in Scala; boxing and unboxing is completely transparent to the user. Scala 2.10 allows for new value types to be defined by the user. 
+ For-expressions  
+ Instead of the Java "foreach" loops for looping through an iterator, Scala has a much more powerful concept of for -expressions. These are similar to list comprehensions in a languages such as Haskell, or a combination of list comprehensions and generator expressions in Python . For-expressions using the yield keyword allow a new collection to be generated by iterating over an existing one, returning a new collection of the same type. They are translated by the compiler into a series of map , flatMap and filter calls. Where yield is not used, the code approximates to an imperative-style loop, by translating to foreach . 
+ A simple example is: 
+ 
+ 
+ 
+ val s = for ( x &lt; - 1 to 25 if x * x &gt; 50 ) yield 2 * x
+ 
+ 
+ The result of running it is the following vector: 
+ 
+ Vector(16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50) 
+ 
+ (Note that the expression 1 to 25 is not special syntax. The method to is rather defined in the standard Scala library as an extension method on integers, using a technique known as implicit conversions  that allows new methods to be added to existing types.) 
+ A more complex example of iterating over a map is: 
+ 
+ 
+ 
+ // Given a map specifying Twitter users mentioned in a set of tweets, 
+ // and number of times each user was mentioned, look up the users 
+ // in a map of known politicians, and return a new map giving only the 
+ // Democratic politicians (as objects, rather than strings). 
+ val dem _ mentions = for { 
+  ( mention, times ) &lt; - mentions
+ account   &lt; - accounts. get ( mention ) 
+  if account. party == "Democratic" 
+ } yield ( account, times ) 
+ 
+ 
+ Note that the expression (mention, times) &lt;- mentions is actually an example of pattern matching (see below). Iterating over a map returns a set of key-value tuples , and pattern-matching allows the tuples to easily be destructured into separate variables for the key and value. Similarly, the result of the comprehension also returns key-value tuples, which are automatically built back up into a map because the source object (from the variable mentions ) is a map. Note that if mentions instead held a list, set, array or other collection of tuples, exactly the same code above would yield a new collection of the same type. 
+ Functional tendencies  
+ While supporting all of the object-oriented features available in Java (and in fact, augmenting them in various ways), Scala also provides a large number of capabilities that are normally found only in functional programming languages. Together, these features allow Scala programs to be written in an almost completely functional style, and also allow functional and object-oriented styles to be mixed. 
+ Examples are: 
+ 
+ No distinction between statements and expressions 
+ Type inference 
+ Anonymous functions with capturing semantics (i.e. closures ) 
+ Immutable variables and objects 
+ Lazy evaluation 
+ Delimited continuations (since 2.8) 
+ Higher-order functions 
+ Nested functions 
+ Currying 
+ Pattern matching 
+ Algebraic data types (through "case classes") 
+ Tuples 
+ 
+ Everything is an expression  
+ 
+ 
+ 
+  
+ 
+ This section does not cite any references or sources . Please help improve this section by adding citations to reliable sources . Unsourced material may be challenged and removed . (June 2013) 
+ 
+ 
+ Unlike C or Java, but similar to languages such as Lisp , Scala makes no distinction between statements and expressions. All statements are in fact expressions that evaluate to some value. Functions that would be declared as returning void in C or Java, and statements like while that logically do not return a value, are in Scala considered to return the type Unit , which is a singleton type , with only one object of that type. Functions and operators that never return at all (e.g. the throw operator or a function that always exits non-locally using an exception) logically have return type Nothing , a special type containing no objects that is a bottom type , i.e. a subclass of every possible type. (This in turn makes type Nothing compatible with every type, allowing type inference to function correctly.) 
+ Similarly, an if-then-else "statement" is actually an expression, which produces a value, i.e. the result of evaluating one of the two branches. This means that such a block of code can be inserted wherever an expression is desired, obviating the need for a ternary operator in Scala: 
+ 
+ 
+ 
+ 
+ 
+ 
+ // Java: 
+ int hexDigit = x &gt;= 10 ? x + 'A' - 10 : x + '0' ; 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ // Scala: 
+ val hexDigit = if ( x &gt;= 10 ) x + 'A' - 10 else x + '0' 
+ 
+ 
+ 
+ 
+ 
+ For similar reasons, return statements are unnecessary in Scala, and in fact are discouraged. As in Lisp, the last expression in a block of code is the value of that block of code, and if the block of code is the body of a function, it will be returned by the function. 
+ Note that a special syntax exists for functions returning Unit , which emphasizes the similarity between such functions and Java void -returning functions: 
+ 
+ 
+ 
+ def printValue ( x : String ) { 
+ println ( "I ate a %s" . format ( x ) ) 
+ } 
+ 
+ 
+ However, the function could equally well be written with explicit return type: 
+ 
+ 
+ 
+ def printValue ( x : String ) : Unit = { 
+ println ( "I ate a %s" . format ( x ) ) 
+ } 
+ 
+ 
+ or equivalently (with type inference, and omitting the unnecessary braces): 
+ 
+ 
+ 
+ def printValue ( x : String ) = println ( "I ate a %s" format x ) 
+ 
+ 
+ Type inference  
+ Due to type inference , the type of variables, function return values, and many other expressions can typically be omitted, as the compiler can deduce it. Examples are val x = "foo" (for an immutable, constant variable or immutable object ) or var x = 1.5 (for a variable whose value can later be changed). Type inference in Scala is essentially local, in contrast to the more global Hindley-Milner algorithm used in Haskell , ML and other more purely functional languages. This is done to facilitate object-oriented programming. The result is that certain types still need to be declared (most notably, function parameters, and the return types of recursive functions ), e.g. 
+ 
+ 
+ 
+ def formatApples ( x : Int ) = "I ate %d apples" . format ( x ) 
+ 
+ 
+ or (with a return type declared for a recursive function) 
+ 
+ 
+ 
+ def factorial ( x : Int ) : Int = 
+ if ( x == 0 ) 
+  1 
+ else 
+ x * factorial ( x - 1 ) 
+ 
+ 
+ Anonymous functions  
+ In Scala, functions are objects, and a convenient syntax exists for specifying anonymous functions . An example is the expression x =&gt; x &lt; 2 , which specifies a function with a single parameter, that compares its argument to see if it is less than 2. It is equivalent to the Lisp form (lambda (x) (&lt; x 2)) . Note that neither the type of x nor the return type need be explicitly specified, and can generally be inferred by type inference ; but they can be explicitly specified, e.g. as (x: Int) =&gt; x &lt; 2 or even (x: Int) =&gt; (x &lt; 2): Boolean . 
+ Anonymous functions behave as true closures in that they automatically capture any variables that are lexically available in the environment of the enclosing function. Those variables will be available even after the enclosing function returns, and unlike in the case of Java's "anonymous inner classes" do not need to be declared as final. (It is even possible to modify such variables if they are mutable, and the modified value will be available the next time the anonymous function is called.) 
+ An even shorter form of anonymous function uses placeholder variables: For example, the following: 
+ 
+ list map { x =&gt; sqrt(x) } 
+ 
+ can be written more concisely as 
+ 
+ list map { sqrt(_) } 
+ 
+ Immutability  
+ Scala enforces a distinction between immutable (unmodifiable, read-only) variables, whose value cannot be changed once assigned, and mutable variables, which can be changed. A similar distinction is made between immutable and mutable objects. The distinction must be made when a variable is declared: Immutable variables are declared with val while mutable variables use var . Similarly, all of the collection objects (container types) in Scala, e.g. linked lists , arrays , sets and hash tables , are available in mutable and immutable variants, with the immutable variant considered the more basic and default implementation. The immutable variants are "persistent" data types in that they create a new object that encloses the old object and adds the new member(s); this is similar to how linked lists are built up in Lisp, where elements are prepended by creating a new "cons" cell with a pointer to the new element (the "head") and the old list (the "tail"). Persistent structures of this sort essentially remember the entire history of operations and allow for very easy concurrency — no locks are needed as no shared objects are ever modified. 
+ Lazy (non-strict) evaluation  
+ Evaluation is strict ("eager") by default. In other words, Scala evaluates expressions as soon as they are available, rather than as needed. However, you can declare a variable non-strict ("lazy") with the lazy keyword, meaning that the code to produce the variable's value will not be evaluated until the first time the variable is referenced. Non-strict collections of various types also exist (such as the type Stream , a non-strict linked list), and any collection can be made non-strict with the view method. Non-strict collections provide a good semantic fit to things like server-produced data, where the evaluation of the code to generate later elements of a list (that in turn triggers a request to a server, possibly located somewhere else on the web) only happens when the elements are actually needed. 
+ Tail recursion  
+ Functional programming languages commonly provide tail call optimization to allow for extensive use of recursion without stack overflow problems. Limitations in Java bytecode complicate tail call optimization on the JVM. In general, a function that calls itself with a tail call can be optimized, but mutually recursive functions cannot. Trampolines have been suggested as a workaround.  
+ Case classes and pattern matching  
+ Scala has built-in support for pattern matching , which can be thought of as a more sophisticated, extensible version of a switch statement , where arbitrary data types can be matched (rather than just simple types like integers, booleans and strings), including arbitrary nesting. A special type of class known as a case class is provided, which includes automatic support for pattern matching and can be used to model the algebraic data types used in many functional programming languages. (From the perspective of Scala, a case class is simply a normal class for which the compiler automatically adds certain behaviors that could also be provided manually—e.g. definitions of methods providing for deep comparisons and hashing, and destructuring a case class on its constructor parameters during pattern matching.) 
+ An example of a definition of the quicksort algorithm using pattern matching is as follows: 
+ 
+ 
+ 
+ def qsort ( list : List  = list match { 
+ case Nil =&gt; Nil
+ case pivot :: tail =&gt; 
+  val ( smaller, rest ) = tail. partition ( _ &lt; pivot ) 
+ qsort ( smaller ) ::: pivot :: qsort ( rest ) 
+ } 
+ 
+ 
+ The idea here is that we partition a list into the elements less than a pivot and the elements not less, recursively sort each part, and paste the results together with the pivot in between. This uses the same divide-and-conquer strategy of mergesort and other fast sorting algorithms. 
+ The match operator is used to do pattern matching on the object stored in list . Each case expression is tried in turn to see if it will match, and the first match determines the result. In this case, Nil only matches the literal object Nil , but pivot&#160;:: tail matches a non-empty list, and simultaneously destructures the list according to the pattern given. In this case, the associated code will have access to a local variable named pivot holding the head of the list, and another variable tail holding the tail of the list. Note that these variables are read-only, and are semantically very similar to variable bindings established using the let operator in Lisp and Scheme. 
+ Pattern matching also happens in local variable declarations. In this case, the return value of the call to tail.partition is a tuple — in this case, two lists. (Tuples differ from other types of containers, e.g. lists, in that they are always of fixed size and the elements can be of differing types — although here they are both the same.) Pattern matching is the easiest way of fetching the two parts of the tuple. 
+ The form _ &lt; pivot is a declaration of an anonymous function with a placeholder variable; see the section above on anonymous functions. 
+ The list operators :: (which adds an element onto the beginning of a list, similar to cons in Lisp and Scheme) and ::: (which appends two lists together, similar to append in Lisp and Scheme) both appear. Despite appearances, there is nothing "built-in" about either of these operators. As specified above, any string of symbols can serve as function name, and a method applied to an object can be written " infix "-style without the period or parentheses. The line above as written: 
+ 
+ 
+ 
+ qsort(smaller)&#160;::: pivot&#160;:: qsort(rest) 
+ 
+ 
+ 
+ could also be written as follows: 
+ 
+ 
+ 
+ qsort(rest).::(pivot).:::(qsort(smaller)) 
+ 
+ 
+ 
+ in more standard method-call notation. (Methods that end with a colon are right-associative and bind to the object to the right.) 
+ Partial functions  
+ In the pattern-matching example above, the body of the match operator is a partial function , which consists of a series of case expressions, with the first matching expression prevailing, similar to the body of a switch statement . Partial functions are also used in the exception-handling portion of a try statement: 
+ 
+ 
+ 
+ try { 
+ ...
+ } catch { 
+ case nfe : NumberFormatException =&gt; { println ( nfe ) ; List ( 0 ) } 
+ case _ =&gt; Nil
+ } 
+ 
+ 
+ Finally, a partial function can be used by itself, and the result of calling it is equivalent to doing a match over it. For example, the previous code for quicksort can be written as follows: 
+ 
+ 
+ 
+ val qsort : List  = { 
+ case Nil =&gt; Nil
+ case pivot :: tail =&gt; 
+  val ( smaller, rest ) = tail. partition ( _ &lt; pivot ) 
+ qsort ( smaller ) ::: pivot :: qsort ( rest ) 
+ } 
+ 
+ 
+ Here we declare a read-only variable whose type is a function from lists of integers to lists of integers, and bind it to a partial function. (Note that the single parameter of the partial function is never explicitly declared or named.) However, we can still call this variable exactly as if it were a normal function: 
+ 
+scala&gt; qsort(List(6,2,5,9))
+res32: List = List(2, 5, 6, 9)
+ 
+ Object-oriented extensions  
+ Scala is a pure object-oriented language in the sense that every value is an object . Data types and behaviors of objects are described by classes and traits . Class abstractions are extended by subclassing and by a flexible mixin -based composition mechanism to avoid the problems of multiple inheritance . 
+ Traits are Scala's replacement for Java's interfaces . Interfaces in Java are highly restricted, able only to contain abstract function declarations. This has led to criticism that providing convenience methods in interfaces is awkward (the same methods must be reimplemented in every implementation), and extending a published interface in a backwards-compatible way is impossible. Traits are similar to mixin classes in that they have nearly all the power of a regular abstract class, lacking only class parameters (Scala's equivalent to Java's constructor parameters), since traits are always mixed in with a class. The super operator behaves specially in traits, allowing traits to be chained using composition in addition to inheritance. For example, consider a simple window system designed as follows: 
+ 
+ 
+ 
+ abstract class Window { 
+ // abstract 
+ def draw ( ) 
+ } 
+ 
+ class SimpleWindow extends Window { 
+ def draw ( ) { 
+ println ( "in SimpleWindow" ) 
+  // draw a basic window 
+ } 
+ } 
+ 
+ trait WindowDecoration extends Window { } 
+ 
+ trait HorizontalScrollbarDecoration extends WindowDecoration { 
+ // "abstract override" is needed here in order for "super()" to work because the parent 
+ // function is abstract. If it were concrete, regular "override" would be enough. 
+ abstract override def draw ( ) { 
+ println ( "in HorizontalScrollbarDecoration" ) 
+  super . draw ( ) 
+  // now draw a horizontal scrollbar 
+ } 
+ } 
+ 
+ trait VerticalScrollbarDecoration extends WindowDecoration { 
+ abstract override def draw ( ) { 
+ println ( "in VerticalScrollbarDecoration" ) 
+  super . draw ( ) 
+  // now draw a vertical scrollbar 
+ } 
+ } 
+ 
+ trait TitleDecoration extends WindowDecoration { 
+ abstract override def draw ( ) { 
+ println ( "in TitleDecoration" ) 
+  super . draw ( ) 
+  // now draw the title bar 
+ } 
+ } 
+ 
+ 
+ You can then declare a variable as follows: 
+ 
+ 
+ 
+ val mywin = new SimpleWindow with VerticalScrollbarDecoration with HorizontalScrollbarDecoration with TitleDecoration
+ 
+ 
+ Then, the result of calling mywin.draw() will be 
+ 
+in TitleDecoration
+in HorizontalScrollbarDecoration
+in VerticalScrollbarDecoration
+in SimpleWindow
+ 
+ In other words, the call to draw first executed the code in TitleDecoration (the last trait mixed in), then (through the super() calls) threaded back through the other mixed-in traits and eventually to the code in Window itself, even though none of the traits inherited from one another . This is similar to the decorator pattern , but is more concise and less error-prone, as it doesn't require explicitly encapsulating the parent window, explicitly forwarding functions whose implementation isn't changed, or relying on run-time initialization of entity relationships. In other languages, a similar effect could be achieved at compile-time with a long linear chain of implementation inheritance , but with the disadvantage compared to Scala that one linear inheritance chain would have to be declared for each possible combination of the mix-ins. 
+ Expressive type system  
+ Scala is equipped with an expressive static type system that enforces the safe and coherent use of abstractions. In particular, the type system supports: 
+ 
+ Classes and abstract types as object members 
+ Structural types 
+ Path-dependent types 
+ Compound types 
+ Explicitly typed self references 
+ Generic classes 
+ Polymorphic methods 
+ Upper and lower type bounds 
+ Variance 
+ Annotation 
+ Views 
+ 
+ Scala is able to infer types by usage. This makes most static type declarations optional. Static types need not be explicitly declared unless a compiler error indicates the need. In practice, some static type declarations are included for the sake of code clarity. 
+ Type enrichment  
+ A common technique in Scala, known as "enrich my library" (formerly "pimp my library",  now discouraged due to its connotation), allows new methods to be used as if they were added to existing types. This is similar to the C# concept of extension methods but more powerful, because the technique is not limited to adding methods and can for instance also be used to implement new interfaces. In Scala, this technique involves declaring an implicit conversion from the type "receiving" the method to a new type (typically, a class) that wraps the original type and provides the additional method. If a method cannot be found for a given type, the compiler automatically searches for any applicable implicit conversions to types that provide the method in question. 
+ This technique allows new methods to be added to an existing class using an add-on library such that only code that imports the add-on library gets the new functionality, and all other code is unaffected. 
+ The following example shows the enrichment of type Int with methods isEven and isOdd : 
+ 
+ 
+ 
+ object MyExtensions { 
+ implicit class IntPredicates ( i : Int ) { 
+  def isEven = i % 2 == 0 
+  def isOdd = ! isEven
+ } 
+ } 
+ 
+ import MyExtensions. _ // bring implicit enrichment into scope 
+ 4 . isEven // -&gt; true 
+ 
+ 
+ Importing the members of MyExtensions brings the implicit conversion to extension class IntPredicates into scope.  
+ Concurrency  
+ Scala standard library includes support for the actor model , in addition to the standard Java concurrency APIs. The company called Typesafe provides a stack  or simply via JCSP . 
+ An Actor is like a thread instance with a mailbox. It can be created by system.actorOf, overriding the receive method to receive messages and using the exclamation point operator (!) to send a message.  The following example shows an EchoServer which can receive messages and then print them. 
+ 
+ 
+ 
+ val echoServer = actor ( new Act { 
+ become { 
+  case msg =&gt; println ( "echo " + msg ) 
+ } 
+ } ) 
+echoServer ! "hi" 
+ 
+ 
+ Scala also comes with built-in support for data-parallel programming in the form of Parallel Collections  integrated into its Standard Library since version 2.9.0. 
+ The following example shows how to use Parallel Collections to improve performance.  
+ 
+ 
+ 
+ val urls = List ( "http://scala-lang.org" , "https://github.com/scala/scala" ) 
+ 
+ def fromURL ( url : String ) = scala. io . Source . fromURL ( url ) 
+ . getLines ( ) . mkString ( " \n " ) 
+ 
+ val t = System. currentTimeMillis ( ) 
+urls. par . map ( fromURL ( _ ) ) 
+println ( "time: " + ( System. currentTimeMillis - t ) + "ms" ) 
+ 
+ 
+ Cluster Computing  
+ Two significant cluster computing solutions are based on Scala: the open source Apache Spark and the commercial GridGain . Additionally, Apache Kafka , the publish-subscribe message queue popular with Spark and other stream processing technologies, is written in Scala. 
+ Testing  
+ There are several ways to test code in Scala: 
+ 
+ ScalaTest supports multiple testing styles and can integrate with Java-based testing frameworks 
+ ScalaCheck , a library similar to Haskell's QuickCheck 
+ specs2 , a library for writing executable software specifications 
+ ScalaMock provides support for testing high-order and curried functions 
+ JUnit or TestNG , two popular testing frameworks written in Java 
+ 
+ Versions  
+ 
+ 
+ Version 
+ Released 
+ Features 
+ Status 
+ Notes 
+ 
+ 
+ 2.0 
+ 12-Mar-2006 
+ _ 
+ _ 
+ _ 
+ 
+ 
+ 2.1.8 
+ 23-Aug-2006 
+ _ 
+ _ 
+ _ 
+ 
+ 
+ 2.3.0 
+ 23-Nov-2006 
+ _ 
+ _ 
+ _ 
+ 
+ 
+ 2.4.0 
+ 09-Mar-2007 
+ _ 
+ _ 
+ _ 
+ 
+ 
+ 2.5.0 
+ 02-May-2007 
+ _ 
+ _ 
+ _ 
+ 
+ 
+ 2.6.0 
+ 27-Jul-2007 
+ _ 
+ _ 
+ _ 
+ 
+ 
+ 2.7.0 
+ 07-Feb-2008 
+ _ 
+ _ 
+ _ 
+ 
+ 
+ 2.8.0 
+ 14-Jul-2010 
+ Revision the common, uniform, and all-encompassing framework for collection types. 
+ _ 
+ _ 
+ 
+ 
+ 2.9.0 
+ 12-May-2011 
+ _ 
+ _ 
+ _ 
+ 
+ 
+ 2.10 
+ 04-Jan-2013 
+ 
+ 
+ Value Classes 
+ Implicit Classes 
+ String Interpolation 
+ Futures and Promises 
+ Dynamic and applyDynamic 
+ Dependent method types: * def identity(x: AnyRef): x.type = x // the return type says we return exactly what we got 
+ New ByteCode emitter based on ASM: Can target JDK 1.5, 1.6 and 1.7 / Emits 1.6 bytecode by default / Old 1.5 backend is deprecated 
+ A new Pattern Matcher: rewritten from scratch to generate more robust code (no more exponential blow-up!) / code generation and analyses are now independent (the latter can be turned off with -Xno-patmat-analysis) 
+ Scaladoc Improvements 
+ Implicits (-implicits flag) 
+ Diagrams (-diagrams flag, requires graphviz) 
+ Groups (-groups) 
+ Modularized Language features 
+ Parallel Collections are now configurable with custom thread pools 
+ Akka Actors now part of the distribution\\scala.actors have been deprecated and the akka implementation is now included in the distribution. 
+ Performance Improvements: Faster inliner / Range#sum is now O(1) 
+ Update of ForkJoin library 
+ Fixes in immutable TreeSet/TreeMap 
+ Improvements to PartialFunctions 
+ Addition of&#160;??? and NotImplementedError 
+ Addition of IsTraversableOnce + IsTraversableLike type classes for extension methods 
+ Deprecations and cleanup 
+ Floating point and octal literal syntax deprecation 
+ Removed scala.dbc 
+ 
+ Experimental features 
+ 
+ Scala Reflection 
+ Macros 
+ 
+ 
+ _ 
+ _ 
+ 
+ 
+ 2.10.2 
+ 06-Jun-2013 
+ _ 
+ _ 
+ _ 
+ 
+ 
+ 2.10.3 
+ 01-Oct-2013 
+ _ 
+ Current 
+ _ 
+ 
+ 
+ 2.11.0-M4 
+ 11-Jul-2013 
+ _ 
+ _ 
+ Milestone 4 pre-release 
+ 
+ 
+ Comparison with other JVM languages  
+ Scala is often compared with Groovy and Clojure , two other programming languages also built on top of the JVM. Among the main differences are: 
+ 
+ Scala is statically typed , while both Groovy and Clojure are dynamically typed . This adds complexity in the type system but allows many errors to be caught at compile time that would otherwise only manifest at runtime, and tends to result in significantly faster execution. (Note, however, that current versions of both Groovy and Clojure allow for optional type annotations, and Java 7 adds an "invoke dynamic" byte code that should aid in the execution of dynamic languages on the JVM. Both features should decrease the running time of Groovy and Clojure.) 
+ Compared with Groovy, Scala diverges more from Java in its fundamental design. The primary purpose of Groovy was to make Java programming easier and less verbose, while Scala (in addition to having the same goal) was designed from the ground up to allow for a functional programming style in addition to object-oriented programming , and introduces a number of more "cutting-edge" features from functional programming languages like Haskell that are not often seen in mainstream languages. 
+ Compared with Clojure, Scala is less of an extreme transition for a Java programmer. Clojure inherits from Lisp , with the result that it has a radically different syntax from Java and has a strong emphasis on functional programming while de-emphasizing object-oriented programming. Scala, on the other hand, maintains most of Java's syntax and attempts to be agnostic between object-oriented and functional programming styles, allowing either or both according to the programmer's taste. 
+ 
+ Adoption  
+ Language rankings  
+ As of 2013, all JVM -based derivatives (Scala/Groovy/Clojure) are significantly less popular than the original Java language itself which is usually ranked first or second,  and which is also simultaneously evolving over time. 
+ 
+ 
+ 
+  
+TIOBE Scala since 2006…2013‑06 
+ 
+ 
+ As of December 2013, the TIOBE index  of programming language popularity shows Scala in 31st place with 0.342% of programmer mindshare (as measured by internet search engine rankings and similar publication-counting), while it was below the top 50 threshold the year before. Scala is now ahead of functional languages Haskell (50th) and Erlang (&gt;50), as well as JVM competitors Groovy (47th) and Clojure (&gt;50). 
+ Another measure, the RedMonk Programming Language Rankings, as of June 2013 placed Scala 12th, based on 15th position in terms of number of GitHub projects and 16th in terms of number of questions tagged on Stack Overflow .  Here, Scala is shown clearly behind a first-tier group of 11 languages (including Java , C , Python , PHP , Ruby , etc.), but leading a second-tier group. 
+ The ThoughtWorks Technology Radar, which is an opinion based half-yearly report of a group of senior technologists,  
+ According to Indeed.com Job Trends, Scala demand has been rapidly increasing since 2010, trending ahead of Clojure but behind Groovy. 
+ 
+ Companies  
+ 
+ 
+ Website online 
+ Back office 
+ 
+ 
+  Atlassian  
+ … 
+ … 
+ … 
+ … 
+ … 
+ … 
+ … 
+ 
+ 
+  eBay Inc.  
+ … 
+ … 
+ … 
+  CSC  
+  
+ EDF Trading  
+  
+ S&amp;P Capital IQ  
+ … 
+ 
+ 
+  Foursquare  
+ … 
+ … 
+ … 
+ … 
+ 
+  HSBC 
+ 
+ 
+  Heluna  
+  HolidayCheck  
+ … 
+ Klout  
+  IBM  
+  Intel  
+ Juniper Networks 
+  Marktplaats.nl 
+ 
+ 
+ LinkedIn  
+ LivingSocial 
+ … 
+  Metafor Software 
+  Mind Candy  
+ Micronautics Research 
+  ITV 
+ 
+ 
+ 
+  Meetup.com  
+  Novell  
+ 
+  OPower 
+  Nasa  
+  Nature  
+  New York&#160;Times 
+ newBrandAnalytics 
+ 
+ 
+  Plot  
+  precog.com 
+  Process Street 
+  Reaktor 
+ 
+ Office Depot 
+ Peerius.com 
+  Quora  
+ 
+ 
+ Remember The Milk  
+  SAP AG 
+ Secondmarket.com 
+  Siemens AG  
+ Reverb Technologies, Inc. 
+  Rhinofly  
+ Sears 
+  Sony 
+ 
+ 
+  Thatcham Motor 
+  The Guardian  
+  TicketFly 
+ Twitter  
+  StackMob  
+  Stanford PPL 
+  TomTom 
+  UBS  
+ 
+ 
+ Wattzon.com  
+ Wordnik.com 
+ Workday.com 
+  Yahoo! 
+  Walmart 
+  Xebia 
+  Xerox  
+  Zeebox  
+ 
+ 
+ In April 2009, Twitter announced that it had switched large portions of its backend from Ruby to Scala and intended to convert the rest.  
+ Gilt uses Scala and Play Framework .  
+ Foursquare uses Scala and Lift .  
+ In April 2011, The Guardian newspaper's website guardian.co.uk announced that it was switching from Java to Scala,  
+ Swiss bank UBS approved Scala for general production usage.  
+ LinkedIn uses the Scalatra microframework to power its Signal API.  
+ Meetup uses Unfiltered toolkit for real-time APIs.  
+ Remember the Milk uses Unfiltered toolkit, Scala and Akka for public API and real time updates.  
+ Criticism  
+ In November, 2011, Yammer moved away from Scala for reasons that included the learning curve for new team members and incompatibility from one version of the Scala compiler to the next.  
+ See also  
+ 
+ 
+ 
+  
+ Free software portal 
+ 
+ 
+ 
+ 
+ sbt , a widely used build tool for Scala projects. 
+ Akka , a concurrency framework written in Scala. 
+ Play! , an open source Web application framework that supports Scala 
+ Circumflex , Web application and other frameworks for Scala 
+ Lift , an open source Web application framework that aims to deliver benefits similar to Ruby on Rails . The use of Scala means that any existing Java library and Web container can be used in running Lift applications. 
+ Scalatra , a very minimal Web application framework built using Scala 
+ 
+ References  
+ 
+ 
+ ^  "Scala 2.10.3 is now available!" . 2013-10-01 . Retrieved 2013-10-31 . &#160; 
+ ^  "Scala 2.11.0-M5 is now available!" . 2013-08-28 . Retrieved 2013-10-31 . &#160; 
+ ^  Fogus, Michael (6 August 2010). "MartinOdersky take(5) toList" . Send More Paramedics . Retrieved 2012-02-09 . &#160; 
+ ^  "Scala Macros" . &#160; 
+ ^  a   b   c   d  Martin Odersky et al., An Overview of the Scala Programming Language, 2nd Edition 
+ ^  Dijkstra, Edsger Wybe (1996-05-05). "Elegance and effective reasoning (Fall 1996) (EWD1237)" . E.W. Dijkstra Archive . Retrieved 2013-04-05 . " Here, the noun "elegance" should be understood in the sense of the second meaning of "elegant", as given in the Concise Oxford Dictionary (6th Edition, 1976): "ingeniously simple and effective". " &#160; 
+ ^  Synodinos, Dio (2009-07-09). "Scala as the long term replacement for Java" . InfoQ . Retrieved 2013-11-07 . &#160; 
+ ^  Strachan, James (2009-07-06). "Scala as the long term replacement for java/javac?" . James Strachan's Blog . Retrieved 2013-11-07 . &#160; 
+ ^  a   b   c  Martin Odersky, "A Brief History of Scala" , Artima.com weblogs, June 9, 2006 
+ ^  Martin Odersky, "The Scala Language Specification Version 2.7" 
+ ^  Expunged the .net backend. by paulp · Pull Request #1718 · scala/scala · GitHub . Github.com (2012-12-05). Retrieved on 2013-11-02. 
+ ^  Scala Team Wins ERC Grant 
+ ^  "Commercial Support for Scala" . 2011-05-12 . Retrieved 2011-08-18 . &#160; 
+ ^  "Why We Invested in Typesafe: Modern Applications Demand Modern Tools" . 2011-05-12 . Retrieved 2011-08-18 . &#160; 
+ ^  "Open-source Scala gains commercial backing" . 2011-05-12 . Retrieved 2011-10-09 . &#160; 
+ ^  "Cloud computing pioneer Martin Odersky takes wraps off his new company Typesafe" . 2011-05-12 . Retrieved 2011-08-24 . &#160; 
+ ^  Scala IDE for Eclipse: Developing for Android 
+ ^  "Scala on .NET" . Programming Methods Laboratory of EPFL . 2008-01-07. Archived from the original on 2007-10-09 . Retrieved 2008-01-15 . " Scala is primarily developed for the JVM and embodies some of its features. Nevertheless, its .NET support is designed to make it as portable across the two platforms as possible. " &#160; 
+ ^  "Scala comes to .NET" . 2011-07-18 . Retrieved 2011-07-30 . &#160; 
+ ^  "Scala License | The Scala Programming Language" . Scala-lang.org . Retrieved 2013-06-25 . &#160; 
+ ^  "Home" . Blog.lostlake.org . Retrieved 2013-06-25 . &#160; 
+ ^  Scala's built-in control structures such as if or while cannot be re-implemented. There is a research project, Scala-Virtualized, that aimed at removing these restrictions: Adriaan Moors, Tiark Rompf, Philipp Haller and Martin Odersky. Scala-Virtualized . Proceedings of the ACM SIGPLAN 2012 workshop on Partial evaluation and program manipulation , 117–120. July 2012. 
+ ^  a   b   "Pimp my Library" . Artima.com. 2006-10-09 . Retrieved 2013-06-25 . &#160; 
+ ^  Tail calls, @tailrec and trampolines 
+ ^  "TailCalls - Scala Standard Library API (Scaladoc) 2.10.2 - scala.util.control.TailCalls" . Scala-lang.org . Retrieved 2013-06-25 . &#160; 
+ ^  Implicit classes were introduced in Scala 2.10 to make method extensions more concise. This is equivalent to adding a method implicit def IntPredicate(i: Int) = new IntPredicate(i) . The class can also be defined as implicit class IntPredicates(val i: Int) extends AnyVal { ... } , producing a so-called value class , also introduced in Scala 2.10. The compiler will then eliminate actual instantiations and generate static methods instead, allowing extension methods to have virtually no performance overhead. 
+ ^  Typesafe Inc. "Reactive – Typesafe Platform" . Typesafe . Retrieved 2013-06-25 . &#160; 
+ ^  What is Akka? , Akka online documentation 
+ ^  Communicating Scala Objects , Bernard Sufrin, Communicating Process Architectures 2008 
+ ^  http://www.scala-tour.com/#/using-actor 
+ ^  "Parallelcollections - Overview - Scala Documentation" . Docs.scala-lang.org . Retrieved 2013-06-25 . &#160; 
+ ^  http://www.scala-tour.com/#/parallel-collection 
+ ^  a   b   c   "The RedMonk Programming Language Rankings: June 2013" . &#160; 
+ ^  a   b   "TIOBE Index for December 2013" . &#160; 
+ ^  "The Transparent Language Popularity Index, July 2013" . &#160; 
+ ^  "ThoughtWorks Technology Radar FAQ" . &#160; 
+ ^  "ThoughtWorks Technology Radar MAY 2013" . &#160; 
+ ^  Kodumal, John (2012-05-24). "Scala Typeclassopedia with John Kodumal" . Retrieved 2013-03-06 . &#160; 
+ ^  "eBay Classifieds Group" . Retrieved 2013-03-29 . &#160; 
+ ^  Sanders, Rik (2011-12-05). "CSC en Capgemini bouwen grenscontrolesysteem" . Computable (in Dutch) . Retrieved 2013-03-19 . &#160; 
+ ^  "Scala in the Enterprise" . &#160; 
+ ^  Chiusano, Paul (2009-12-02). "Commercial Usage Of Scala At Capital IQ Clari F" . Boston . Retrieved 2013-02-10 . &#160; 
+ ^  Merrill, Steven (2009-11-26). "Scala, Lift, and the Future" . Retrieved 2012-12-15 . &#160; 
+ ^  "Heluna tackles e-mail spam with Play Framework, Akka and Scala - The Typesafe Blog" . Retrieved 2013-04-21 . &#160; 
+ ^  Schmidt, Christopher (2013-04-03). "Holidaycheck's new technology stack" . Retrieved 2013-10-03 . &#160; 
+ ^  Ross, David (2012-10-02). "Scaling the Klout API with Scala, Akka, and Play" . The Official Klout Blog . Retrieved 2013-03-23 . &#160; 
+ ^  Ford, Neal (2013-01-29). "Java.next: The Java.next languages" . IBM developerWorks . Retrieved 2013-03-21 . &#160; 
+ ^  Ford, Neal (2013-03-12). "Java.next: Common ground in Groovy, Scala, and Clojure, Part 1" . IBM developerWorks . Retrieved 2013-03-21 . &#160; 
+ ^  Typesafe (2012-08-31). "Intel hosts Dr. Martin Odersky presenting Scala 2.10 - The Typesafe Blog" . Retrieved 2013-03-21 . &#160; 
+ ^  Synodinos, Dio (2010-10-11). "LinkedIn Signal: A Case Study for Scala, JRuby and Voldemort" . Infoq.com . Retrieved 2012-12-15 . &#160; 
+ ^  Conrad, Chris (2011-06-03). "Scala at LinkedIn: Distributed Computing with Norbert" . Retrieved 2013-03-14 . &#160; 
+ ^  Scala Team (2012-01-19). "Scala in the Enterprise" . The Scala Programming Language . Retrieved 2013-03-05 . &#160; 
+ ^  Dhananjay Ragade, Marc Pascual, Joshua Erlich , Rui Wang, Joel Koshy (2012-05-14). "Scala Usage at LinkedIn" . LinkedInTechTalks . Event occurs at 4241 seconds . Retrieved 2013-01-30 . &#160; 
+ ^  Brikman, Yevgeniy (2013-02-25). "The Play Framework at LinkedIn" . LinkedIn Engineering . Retrieved 2013-03-05 . &#160; 
+ ^  Parsons, Sean; Mark Baker. "Scala at Mind Candy" . The Mosh Pit . Retrieved 2013-03-22 . &#160; Cite uses deprecated parameters ( help ) 
+ ^  "Real-life Meetups Deserve Real-time APIs" . 2011-01-25 . Retrieved 2012-12-15 . &#160; 
+ ^  Hamblen, Nathan (2013-02-23). "Measuring Scala 2.10" . Retrieved 2013-03-19 . &#160; 
+ ^  "Novell Vibe" . Vibe.novell . Retrieved 2013-01-28 . &#160; 
+ ^  Bagwell, Phil (2010-06-20). "NASA/JPL Launch DSLs in Scala" . Retrieved 2013-01-28 . &#160; 
+ ^  "Scala in the Enterprise" . &#160; 
+ ^  "Local marketing met push notifications" . Plot . Retrieved 2013-03-29 . &#160; 
+ ^  Plotproject Team. "Developer Blog" . Plot . Retrieved 2013-03-29 . &#160; 
+ ^  Seng Tay, Kah. "Is the Quora team considering adopting Scala? Why?" . Quora . Retrieved 2013-04-04 . &#160; 
+ ^  Kilani, Omar (2011-08-02). "Real time updating comes to the Remember The Milk web app" . Retrieved 2012-12-15 . &#160; 
+ ^  "Scala in the Enterprise" . &#160; 
+ ^  "Rhinofly doet interactieve communicatie" (in Dutch) . Retrieved 2013-04-19 . &#160; 
+ ^  Walker-Morgan, D.J. (2011-04-05). "Guardian switching from Java to Scala - The H Open: News and Features" . Retrieved 2012-12-15 . &#160; 
+ ^  Humble, Charles (2011-04-04). "Guardian.co.uk Switching from Java to Scala" . Retrieved 2012-12-15 . &#160; 
+ ^  Greene, Kate (2009-04-01). "The Secret Behind Twitter's Growth, How a new Web programming language is helping the company handle its increasing popularity." . Technology Review . MIT . Retrieved 2012-12-15 . &#160; 
+ ^  West, Jordan (2011-11-02). "Why StackMob uses Scalaz with Scala" . Retrieved 2013-02-11 . &#160; 
+ ^  Andrew Binstock (2011-07-14). "Interview with Scala's Martin Odersky" . Retrieved 2012-12-15 . &#160; 
+ ^  Raffi Krikorian (2009-03-11). "Scala + WattzOn, sitting in a tree...." . Retrieved 2013-04-04 . &#160; 
+ ^  Bagwell, Phil (2009-08-26). "Interview with Tim Perrett, an XMPie Scala Developer" . Retrieved 2013-02-11 . &#160; 
+ ^  Bagwell, Phil (2011-10-28). "Interview with Anthony Rose and Kevin Wright from zeebox" . Retrieved 2013-05-08 . &#160; 
+ ^  Greene, Kate (April 1, 2009). "The Secret Behind Twitter's Growth, How a new Web programming language is helping the company handle its increasing popularity." . Technology Review . MIT . Retrieved April 6, 2009 . &#160; 
+ ^   
+ ^  Scala, Lift, and the Future 
+ ^  "Guardian switching from Java to Scala" . Heise Online . 2011-04-05 . Retrieved 2011-04-05 . &#160; 
+ ^  "Guardian.co.uk Switching from Java to Scala" . InfoQ.com. 2011-04-04 . Retrieved 2011-04-05 . &#160; 
+ ^  David Reid and Tania Teixeira (26 February 2010). "Are people ready to pay for online news?" . BBC . Retrieved 2010-02-28 . &#160; 
+ ^  Binstock, Andrew (2011-07-14). "Interview with Scala's Martin Odersky" . Dr. Dobb's Journal . Retrieved 2012-02-10 . &#160; 
+ ^  Synodinos, Dionysios G. (2010-10-11). "LinkedIn Signal: A Case Study for Scala, JRuby and Voldemort" . InfoQ . &#160; 
+ ^  "Real-life Meetups Deserve Real-time APIs" . &#160; 
+ ^  "Real time updating comes to the Remember The Milk web app" . &#160; 
+ ^  Hale, Coda (29 November 2011). "The Rest of the Story" . codahale.com . Retrieved 7 November 2013 . &#160; 
+ ^  Allan, Graham (23 June 2013). "Using Scala Will Make You Less Productive" . grundlefleck.github.io . Retrieved 7 November 2013 . &#160; 
+ ^  Pollack, David (14 September 2011). "Scala use is less good than Java use for at least half of all Java projects" . Retrieved 7 November 2013 . &#160; 
+ 
+ 
+ Further reading  
+ 
+ 
+ Suereth, Joshua D. (Spring 2011). Scala in Depth . Manning Publications. p.&#160;225. ISBN &#160; 978-1-935182-70-2 . &#160; 
+ Meredith, Gregory (2011). Monadic Design Patterns for the Web (1st ed.). p.&#160;300. &#160; 
+ Raychaudhuri, Nilanjan (Fall 2011). Scala in Action (1st ed.). Manning. p.&#160;525. ISBN &#160; 978-1-935182-75-7 . &#160; 
+ Wampler, Dean; Payne, Alex (September 15, 2009). Programming Scala: Scalability = Functional Programming + Objects (1st ed.). O'Reilly Media . p.&#160;448. ISBN &#160; 0-596-15595-6 . &#160; 
+ Odersky, Martin; Spoon, Lex; Venners, Bill (December 13, 2010). Programming in Scala: A Comprehensive Step-by-step Guide (2nd ed.). Artima Inc . pp.&#160;883/852. ISBN &#160; 978-0-9815316-4-9 . &#160; 
+ Pollak, David (May 25, 2009). Beginning Scala (1st ed.). Apress . p.&#160;776. ISBN &#160; 1-4302-1989-0 . &#160; 
+ Perrett, Tim (July 2011). Lift in Action (1st ed.). Manning . p.&#160;450. ISBN &#160; 978-1-935182-80-1 . &#160; 
+ Loverdos, Christos; Syropoulos, Apostolos (September 2010). Steps in Scala: An Introduction to Object-Functional Programming (1st ed.). Cambridge University Press . pp.&#160;xviii + 485. ISBN &#160; 978-0-521-74758-5 . &#160; 
+ Subramaniam, Venkat (July 28, 2009). Programming Scala: Tackle Multi-Core Complexity on the Java Virtual Machine (1st ed.). Pragmatic Bookshelf . p.&#160;250. ISBN &#160; 1-934356-31-X . &#160; 
+ Horstmann, Cay (March 2012). Scala for the Impatient (1st ed.). Addison-Wesley Professional . p.&#160;360. ISBN &#160; 0-321-77409-4 . &#160; 
+ 
+ 
+ External links  
+ 
+ 
+ 
+ Wikibooks has a book on the topic of: Scala 
+ 
+ 
+ 
+ Official website 
+ Typesafe company website 
+ Scala Forum 
+ Scala communities around the globe 
+ Scala IDE , open source Scala IDE for Eclipse 
+ Scala Tour , open source Scala Tour 
+ Interactive Tour , a tour of Scala 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ v 
+ t 
+ e 
+ 
+ 
+ Java 
+ 
+ 
+ 
+ 
+ 
+ 
+ Java platforms 
+ 
+ 
+ 
+ Java language 
+ JVM 
+ Micro Edition 
+ Standard Edition 
+ Enterprise Edition 
+ Java Card 
+ Android SDK 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ Sun technologies 
+ 
+ 
+ 
+ Squawk 
+ Java Development Kit 
+ OpenJDK 
+ Java virtual machine 
+ JavaFX 
+ Maxine VM 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Platform technologies 
+ 
+ 
+ 
+ Applets 
+ Servlets 
+ MIDlets 
+ JSP 
+ Web Start (JNLP) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Major third-party technologies 
+ 
+ 
+ 
+ JRockit 
+ GNU Classpath 
+ Kaffe 
+ TopLink 
+ Apache Harmony 
+ Apache Struts 
+ Spring framework 
+ Hibernate 
+ JBoss application server 
+ Tapestry 
+ Jazelle 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ History 
+ 
+ 
+ 
+ Java version history 
+ Java Community Process 
+ Sun Microsystems 
+ Free Java implementations 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Major programming languages 
+ 
+ 
+ 
+ BeanShell 
+ Clojure 
+ Groovy 
+ Oxygene 
+ Java Tcl 
+ JRuby 
+ Jython 
+ Processing 
+ Rhino 
+ Scala 
+ more… 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Java conferences 
+ 
+ 
+ 
+ JavaOne 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ v 
+ t 
+ e 
+ 
+ 
+ .NET Framework 
+ 
+ 
+ 
+ 
+ 
+ 
+ Architecture 
+ 
+ 
+ 
+ History 
+ Base Class Library 
+ Common Language Runtime 
+ 
+ NGEN 
+ ILAsm 
+ 
+ 
+ Code Access Security 
+ Assembly 
+ Manifest 
+ Metadata 
+ COM Interop 
+ Application domain 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Common Language 
+Infrastructure (CLI) 
+ 
+ 
+ 
+ Common Language Infrastructure 
+ Common Type System 
+ Common Intermediate Language 
+ Virtual Execution System 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ CLI Languages 
+ 
+ 
+ 
+ 
+ 
+ Common 
+ 
+ 
+ 
+ 
+ C# 
+ Visual Basic .NET 
+ C++/CLI 
+ 
+ Managed 
+ 
+ 
+ F# 
+ J# 
+ JScript .NET 
+ Windows PowerShell 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Other 
+ 
+ 
+ 
+ 
+ Axum 
+ A# 
+ Boo 
+ Cobra 
+ M 
+ Oxygene 
+ IronScheme ( IronLisp ) 
+ IronPython 
+ IronRuby 
+ Nemerle 
+ Phalanger 
+ P# 
+ Scala 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Components 
+ 
+ 
+ 
+ ADO.NET 
+ 
+ Entity Framework 
+ Data Services 
+ 
+ 
+ ASP.NET 
+ 
+ AJAX 
+ MVC 
+ Dynamic Data 
+ 
+ 
+ CardSpace 
+ ClickOnce 
+ CLR Profiler 
+ Communication Foundation 
+ Dynamic Language Runtime 
+ Forms 
+ LINQ 
+ Managed Extensibility Framework 
+ Parallel Extensions 
+ Presentation Foundation 
+ Remoting 
+ "Roslyn" 
+ Workflow Foundation 
+ XAML 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Other implementations 
+ 
+ 
+ 
+ Mono 
+ Compact Framework 
+ XNA Framework 
+ Micro Framework 
+ Portable.NET 
+ Silverlight 
+ SSCLI 
+ eCLR 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Comparisons 
+ 
+ 
+ 
+ Java and C# 
+ C# and Visual Basic .NET 
+ Java and .NET platforms 
+ Visual Basic and Visual Basic .NET 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Category 
+ List 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+ 								 
+				Retrieved from " http://en.wikipedia.org/w/index.php?title=Scala_(programming_language)&amp;oldid=598328661 "				 
+												 Categories : .NET programming languages Concurrent programming languages Java platform Java programming language family JVM programming languages Functional languages Object-oriented programming languages Scala programming language Scripting languages Statically typed programming languages 2003 introductions Programming languages created in 2003 Programming languages created in the 2000s  Hidden categories: Articles with Dutch-language external links Pages containing cite templates with deprecated parameters Articles needing additional references from June 2013 All articles needing additional references Articles with example code  												 
+							 
+		 
+		 
+			 Navigation menu 
+			 
+				 
+	 Personal tools 
+	 
+ Create account Log in 	 
+ 
+				 
+					 
+	 Namespaces 
+	 
+					 Article 
+					 Talk 
+			 
+ 
+ 
+	 
+		 
+	 Variants 
+	 
+		 
+					 
+	 
+ 
+				 
+				 
+					 
+	 Views 
+	 
+					 Read 
+					 Edit 
+					 View history 
+			 
+ 
+ 
+	 Actions 
+	 
+		 
+					 
+	 
+ 
+ 
+	 Search 
+	 
+					 
+					 		 
+	 
+ 
+				 
+			 
+			 
+					 
+				 
+	 Navigation 
+	 
+		 
+			 Main page 
+			 Contents 
+			 Featured content 
+			 Current events 
+			 Random article 
+			 Donate to Wikipedia 
+			 Wikimedia Shop 
+		 
+	 
+ 
+ 
+	 Interaction 
+	 
+		 
+			 Help 
+			 About Wikipedia 
+			 Community portal 
+			 Recent changes 
+			 Contact page 
+		 
+	 
+ 
+ 
+	 Tools 
+	 
+		 
+			 What links here 
+			 Related changes 
+			 Upload file 
+			 Special pages 
+			 Permanent link 
+			 Page information 
+			 Data item 
+ Cite this page 		 
+	 
+ 
+ 
+	 Print/export 
+	 
+		 
+			 Create a book 
+			 Download as PDF 
+			 Printable version 
+		 
+	 
+ 
+ 
+	 Languages 
+	 
+		 
+			 العربية 
+			 Català 
+			 Čeština 
+			 Dansk 
+			 Deutsch 
+			 Ελληνικά 
+			 Español 
+			 Esperanto 
+			 فارسی 
+			 Français 
+			 Galego 
+			 한국어 
+			 Italiano 
+			 עברית 
+			 Latviešu 
+			 Lietuvių 
+			 Nederlands 
+			 日本語 
+			 Norsk bokmål 
+			 Polski 
+			 Português 
+			 Română 
+			 Русский 
+			 Suomi 
+			 Svenska 
+			 తెలుగు 
+			 Türkçe 
+			 Українська 
+			 Tiếng Việt 
+			 中文 
+			 
+			 Edit links 
+		 
+	 
+ 
+			 
+		 
+		 
+							 
+											 This page was last modified on 5 March 2014 at 23:52. 
+											 Text is available under the Creative Commons Attribution-ShareAlike License ;
+additional terms may apply. By using this site, you agree to the Terms of Use and Privacy Policy. 
+Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc. , a non-profit organization. 
+									 
+							 
+											 Privacy policy 
+											 About Wikipedia 
+											 Disclaimers 
+											 Contact Wikipedia 
+											 Developers 
+											 Mobile view

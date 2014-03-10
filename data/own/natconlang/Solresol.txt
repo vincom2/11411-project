@@ -1,0 +1,608 @@
+Solresol - Wikipedia, the free encyclopedia 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+ 
+ 
+		 
+		 
+		 
+			 
+			 
+						 
+						 Solresol 
+			 
+								 From Wikipedia, the free encyclopedia 
+								 
+												 
+					Jump to:					 navigation , 					 search 
+				 
+				 
+ 
+ Solresol 
+ 
+ 
+  
+ 
+ 
+ Created&#160;by 
+ François Sudre 
+ 
+ 
+ Date 
+ 1827 
+ 
+ 
+ Purpose 
+ 
+ constructed languages 
+ 
+ musical language 
+ 
+ Solresol 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Sources 
+ a priori 
+ 
+ 
+ Language codes 
+ 
+ 
+ ISO 639-3 
+ None ( mis ) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ This article has multiple issues. Please help improve it or discuss these issues on the talk page . 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ This article includes a list of references , but its sources remain unclear because it has insufficient inline citations . Please help to improve this article by introducing more precise citations. (April 2009) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ This article possibly contains original research . Please improve it by verifying the claims made and adding inline citations . Statements consisting only of original research may be removed. (March 2013) 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ This article needs additional citations for verification . Please help improve this article by adding citations to reliable sources . Unsourced material may be challenged and removed. (March 2013) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Solresol is a constructed language devised by François Sudre , beginning in 1827. His major book on it, Langue musicale universelle , was published after his death in 1866,  though he had already been publicizing it for some years. Solresol enjoyed a brief spell of popularity, reaching its pinnacle with Boleslas Gajewski 's 1902 posthumous publication of Grammaire du Solresol . 
+ The teaching of sign languages to the deaf was discouraged between 1880 and 1991 in France, contributing to Solresol's descent into obscurity. After a few years of popularity, Solresol nearly vanished in the face of more successful languages, such as Volapük and Esperanto . There is still a small community of Solresol enthusiasts scattered across the world, better able to communicate with one another now more than before thanks to the Internet . 
+ 
+ 
+ 
+ Contents 
+ 
+ 
+ 1 Phonology 
+ 2 Vocabulary 
+ 3 Grammar 
+ 4 Further attributes 
+ 5 See also 
+ 6 References 
+ 7 External links 
+ 
+ 
+ 
+ Phonology  
+ 
+ 
+ 
+  
+The seven conventional notes, colors, syllables, numerals, and glyphs used to convey solresol phonemes. 
+ 
+ 
+ Solresol words are made up of from one to five syllables or notes . Each of these may be one of only seven basic phonemes , which may in turn be accented or lengthened. There is another phoneme, silence, which is used to separate words: words cannot be run together as they are in English. 
+ The phonemes can be represented in a number of different ways – as the seven musical notes in an octave , as spoken syllables (based on solfège , a way of identifying musical notes ), with the seven colors of the rainbow, symbols, hand gestures etc. Thus, theoretically Solresol communication can be done through speaking, singing, flags of different color – even painting. 
+ Vocabulary  
+ As in Ro , the longer words are divided into categories of meaning, based on their first syllable , or note. Words beginning with 'sol' have meanings related to arts and sciences , or, if they begin with 'solsol', sickness and medicine (e.g. solresol, "language"; solsolredo, "migraine"). Like other constructed languages with a priori vocabulary, Solresol faces considerable problems in categorizing the real world around it sensibly. The last couple of syllables may be arbitrary, to capture distinctions such as "apple" vs "pear" which do not fit simple categories. 
+ Feminine words are formed by accenting the last syllable, and plurals by lengthening it. 
+ A unique feature of Solresol is that meanings are negated by reversing the syllables in words. For instance fala means good or tasty, and lafa means bad. It is unclear how this interacts with the way words are categorized by their first note, and is not true in all instances, such as young man, bachelor and of not being opposites. 
+ 
+ The following table shows the words of up to two syllables: 
+ 
+ 
+ First (below) and second (right) syllables 
+ No second syllable 
+ -do 
+ -re 
+ -mi 
+ -fa 
+ -sol 
+ -la 
+ -si 
+ 
+ 
+ Do- 
+ no, not, neither, nor 
+ (past) 
+ I, me 
+ you  
+ he 
+ self, oneself 
+ one, someone 
+ other 
+ 
+ 
+ Re- 
+ and, as well as 
+ my, mine 
+ (pluperfect) 
+ your, yours  
+ his 
+ our, ours 
+ your, yours  
+ their 
+ 
+ 
+ Mi- 
+ or, or even 
+ for, in order to/that 
+ who, which (rel pron), that (conj) 
+ (future) 
+ whose, of which 
+ well (adv) 
+ here/there is, behold 
+ good evening/night 
+ 
+ 
+ Fa- 
+ to 
+ what? 
+ with, jointly 
+ this, that 
+ (conditional) 
+ why, for what reason 
+ good, tasty, delectable 
+ much, very, extremely 
+ 
+ 
+ Sol- 
+ if 
+ but 
+ in, within 
+ wrong, ill (adv) 
+ because 
+ (imperative) 
+ perpetually, always, without end, without ceasing 
+ thank, thanks 
+ 
+ 
+ La- 
+ the 
+ nothing, no one, nobody 
+ by 
+ here, there 
+ bad 
+ never, at no time 
+ (present participle) 
+ of 
+ 
+ 
+ Si- 
+ yes, okay, gladly, agreed 
+ the same (thing) 
+ each, every 
+ good morning/afternoon 
+ little, scarcely 
+ mister, sir* 
+ young man, bachelor* 
+ (passive participle) 
+ 
+ 
+ * Feminine versions are formed by stressing the last syllable. 
+ Grammar  
+ Apart from stress and length, solresol words are not inflected. Word order is also rather strict. 
+ Solresol marks feminine gender and plural number, by stressing or lengthening the last syllable a word: 
+ 
+ resimire brother, resimiré sister 
+ resimiree brothers, resimiréé sisters 
+ 
+ This only affects the first word in a noun phrase . That is, it only affects a noun when the noun is alone, as above; any determiner ('the', 'my', etc.) will take the gender or number marking instead: 
+ 
+ redo resimire my brother, redó resimire my sister 
+ redoo resimire my brothers, redóó resimire my sisters 
+ 
+ Parts of speech are derived from verbs by lengthening (or perhaps stressing; the description is not clear) one of the syllables: abstract noun (1st syllable), agent/doer (2nd syllable), adjective (penult), adverb (last syllable). For example, 
+ 
+ midofa to prefer, miidofa preference, midoofa preferable, midofaa preferably 
+ resolmila to continue, reesolmila continuation, resoolmila one who continues, resolmiila continual, resolmilaa continually 
+ 
+ Questions are formed by inverted subject and verb. 
+ The various tense-and-mood particles are the double syllables, as given in vocabulary above. In addition, passive verbs are formed with faremi between this particle and the verb. The subjunctive is formed with mire before the pronoun. The negative do only appears once in the clause, before the word it negates. 
+ The word fasi before a noun or adjective is augmentative ; after it is superlative . Sifa is the opposite ( diminutive ): 
+ 
+ fala good, fasi fala very good, fala fasi excellent, the best; sifa fala okay, fala sifa not very good (and similarly with lafa bad) 
+ sisire wind, fasi sisire gale, sisire fasi cyclone; sifa sisire breeze, sisire sifa movement of air 
+ 
+ Further attributes  
+ 
+ impartial and relatively simple 
+ integrated systems ( signs , colors, etc.) for most different handicapped people, immediately operative without special learning 
+ gives fast learning success to illiterate people (only 7 syllables or signs or 10 letters to know and to recognize) 
+ very simple but effective system to differentiate the function of the words in the sentences 
+ 
+ See also  
+ 
+ Solfege 
+ Musical language 
+ Tonic sol-fa 
+ Voyage to Faremido 
+ Sarus (language) 
+ 
+ References  
+ 
+ 
+ ^  http://www.ifost.org.au/~gregb/solresol/sudre-book.pdf 
+ 
+ 
+ 
+ Umberto Eco . The Search for the Perfect Language . 1993. ISBN 0-631-20510-1 
+ 
+ External links  
+ 
+ 
+ 
+ Wikimedia Commons has media related to Solresol . 
+ 
+ 
+ 
+ Langmaker.com about Solresol 
+ html-version of the text of the book of François Sudre edition from 1866, Gajewski's Grammar of Solresol , edition 1902, translated in different languages, dictionary of Solresol with more than 13.000 French equivalents in a MySQL data base, and different other texts on artificial languages ( Esperanto from 1897, Ido from 1908, Occidental from 1930, and soon, Universalglot , Jean Pirro , from 1868) 
+ Omniglot on the various ways of writing Solresol 
+ The Athanasius Kircher Society's blog entry on Solresol 
+ Grammar of Solresol by Boleslas Gajewski 
+ Solresol-English dictionary, 2600 words 
+ Solresol-English/French Mini-Dictionary 
+ Solresol text collection including full Solresol–French dictionary 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ v 
+ t 
+ e 
+ 
+ 
+ Constructed languages (conlangs) 
+ 
+ 
+ 
+ 
+ 
+ 
+ Types and concepts 
+ 
+ 
+ 
+ Artistic language 
+ Constructed script 
+ Engineered language 
+ Fictional language 
+ International auxiliary language (IAL) 
+ Language game 
+ Musical language 
+ Relexification 
+ Universal language 
+ Zonal language 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Conlangs 
+ 
+ 
+ 
+ Afrihili 
+ Atlantean 
+ Balaibalan 
+ Blissymbols 
+ Brithenig 
+ Damin 
+ Dothraki 
+ Enochian 
+ Esperanto 
+ Glosa 
+ Idiom Neutral 
+ Ido 
+ Interlingua 
+ Ithkuil ( Ilaksh ) 
+ Kalaba-X 
+ Kēlen 
+ Klingon 
+ Láadan 
+ Languages of Middle-earth 
+ Langue nouvelle (1765) 
+ Lingua Franca Nova 
+ Lingua Ignota 
+ Loglan 
+ Lojban 
+ Na'vi 
+ Nadsat 
+ Nal Bino 
+ Neo 
+ Novial 
+ Occidental 
+ Quenya 
+ Ro 
+ Sambahsa 
+ Sindarin 
+ Slovianski 
+ Solresol 
+ Sona 
+ Spokil 
+ Talossan 
+ Teonaht 
+ Toki Pona 
+ Tsolyáni 
+ Uropi 
+ Valyrian 
+ Verdurian 
+ Volapük 
+ Wenedyk 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Resources 
+ 
+ 
+ 
+ Codes for constructed languages 
+ Conlanger 
+ Language Creation Conference 
+ Language Creation Society 
+ Zompist.com 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Portal 
+ WikiProject 
+ List of constructed languages 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+ 								 
+				Retrieved from " http://en.wikipedia.org/w/index.php?title=Solresol&amp;oldid=598159023 "				 
+												 Categories : Conlangs without ISO 639-3 code Musical languages Constructed languages International auxiliary languages 1827 introductions  Hidden categories: Articles lacking in-text citations from April 2009 All articles lacking in-text citations Articles that may contain original research from March 2013 All articles that may contain original research Articles needing additional references from March 2013 All articles needing additional references Commons category with local link same as on Wikidata  												 
+							 
+		 
+		 
+			 Navigation menu 
+			 
+				 
+	 Personal tools 
+	 
+ Create account Log in 	 
+ 
+				 
+					 
+	 Namespaces 
+	 
+					 Article 
+					 Talk 
+			 
+ 
+ 
+	 
+		 
+	 Variants 
+	 
+		 
+					 
+	 
+ 
+				 
+				 
+					 
+	 Views 
+	 
+					 Read 
+					 Edit 
+					 View history 
+			 
+ 
+ 
+	 Actions 
+	 
+		 
+					 
+	 
+ 
+ 
+	 Search 
+	 
+					 
+					 		 
+	 
+ 
+				 
+			 
+			 
+					 
+				 
+	 Navigation 
+	 
+		 
+			 Main page 
+			 Contents 
+			 Featured content 
+			 Current events 
+			 Random article 
+			 Donate to Wikipedia 
+			 Wikimedia Shop 
+		 
+	 
+ 
+ 
+	 Interaction 
+	 
+		 
+			 Help 
+			 About Wikipedia 
+			 Community portal 
+			 Recent changes 
+			 Contact page 
+		 
+	 
+ 
+ 
+	 Tools 
+	 
+		 
+			 What links here 
+			 Related changes 
+			 Upload file 
+			 Special pages 
+			 Permanent link 
+			 Page information 
+			 Data item 
+ Cite this page 		 
+	 
+ 
+ 
+	 Print/export 
+	 
+		 
+			 Create a book 
+			 Download as PDF 
+			 Printable version 
+		 
+	 
+ 
+ 
+	 Languages 
+	 
+		 
+			 Aragonés 
+			 Беларуская 
+			 Беларуская (тарашкевіца)‎ 
+			 Català 
+			 Čeština 
+			 Deutsch 
+			 Eesti 
+			 Ελληνικά 
+			 Español 
+			 Esperanto 
+			 Euskara 
+			 Français 
+			 한국어 
+			 Interlingua 
+			 Interlingue 
+			 Italiano 
+			 Latina 
+			 Magyar 
+			 Bahasa Melayu 
+			 Nederlands 
+			 日本語 
+			 Norsk bokmål 
+			 Novial 
+			 Occitan 
+			 Polski 
+			 Português 
+			 Русский 
+			 Suomi 
+			 Svenska 
+			 Українська 
+			 Volapük 
+			 中文 
+			 
+			 Edit links 
+		 
+	 
+ 
+			 
+		 
+		 
+							 
+											 This page was last modified on 4 March 2014 at 20:52. 
+											 Text is available under the Creative Commons Attribution-ShareAlike License ;
+additional terms may apply. By using this site, you agree to the Terms of Use and Privacy Policy. 
+Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc. , a non-profit organization. 
+									 
+							 
+											 Privacy policy 
+											 About Wikipedia 
+											 Disclaimers 
+											 Contact Wikipedia 
+											 Developers 
+											 Mobile view

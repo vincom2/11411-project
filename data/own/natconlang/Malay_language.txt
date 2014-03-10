@@ -1,0 +1,863 @@
+Malay language - Wikipedia, the free encyclopedia 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+ 
+ 
+		 
+		 
+		 
+			 
+			 
+						 
+						 Malay language 
+			 
+								 From Wikipedia, the free encyclopedia 
+								 
+												 
+					Jump to:					 navigation , 					 search 
+				 
+				 This article is about the language which forms the basis of standard Indonesian and Malaysian. For the different Malay variants and dialects, see Malay languages . 
+ 
+ 
+ Malay 
+ 
+ 
+ Bahasa Melayu 
+ بهاس ملايو 
+ 
+ 
+ Native&#160;to 
+ 
+ Brunei 
+ Malaysia (as Malaysian ) 
+ Singapore 
+ Cocos (Keeling) Islands ( de jure ) 
+ Christmas Island   
+ Thailand (as Bahasa Jawi ) 
+ Indonesia (as Indonesian ) 
+ East Timor (as Indonesian ) 
+ 
+ 
+ 
+ Native speakers 
+ 
+ 77 million &#160;(2007)  
+Total: 220 million or more  
+ 
+ 
+ 
+ Language family 
+ 
+ 
+ Austronesian 
+ 
+ Malayo-Polynesian (MP)
+ 
+ Nuclear MP 
+ 
+ Malayo-Sumbawan 
+ 
+ Malayic 
+ 
+ Malayan 
+ 
+ Malay 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Standard forms 
+ 
+ 
+ Malaysian 
+ Indonesian 
+ 
+ 
+ 
+ 
+ Writing system 
+ 
+ 
+ Latin ( Malay alphabet ) 
+ Arabic ( Jawi )  
+ Thai (in Thailand) 
+Historically Pallava , Kawi , Rencong 
+ 
+ 
+ 
+ Signed form(s) 
+ 
+ Bahasa Malaysia Kod Tangan 
+ Sistem Isyarat Bahasa Indonesia 
+ 
+ 
+ Official status 
+ 
+ 
+ 
+ Official language&#160;in 
+ 
+ &#160; Brunei 
+ &#160; Malaysia 
+ &#160; Singapore 
+ &#160; Cocos (Keeling) Islands ( de jure ) 
+ &#160; Indonesia 
+ 
+ 
+ 
+ Recognised minority language&#160;in 
+ 
+ &#160; Indonesia 
+ (Local Malay enjoys the status of a regional language in Sumatra apart from the national standard of Indonesian ) 
+ 
+ 
+ Regulated&#160;by 
+ Dewan Bahasa dan Pustaka (Institute of Language and Literature); 
+ Majlis Bahasa Brunei–Indonesia–Malaysia (Brunei–Indonesia–Malaysia Language Council – MABBIM) (a trilateral joint-venture) 
+ 
+ 
+ Language codes 
+ 
+ 
+ ISO 639-1 
+ ms 
+ 
+ 
+ ISO 639-2 
+ may &#160;(B) 
+ msa &#160;(T) 
+ 
+ 
+ ISO 639-3 
+ zlm – inclusive code 
+Individual codes: 
+ zsm &#160;–&#160; Malaysian 
+ ind &#160;–&#160; Indonesian 
+ lrt &#160;–&#160; Larantuka Malay &#160;? 
+ kxd &#160;–&#160; Brunei &#160;? 
+ meo &#160;–&#160; Kedah Malay &#160;? 
+ zmi &#160;–&#160; Negeri Sembilan Malay &#160;? 
+ dup &#160;–&#160; Duano &#160;? 
+ jak &#160;–&#160; Jakun &#160;? 
+ orn &#160;–&#160; Orang Kanaq &#160;? 
+ ors &#160;–&#160; Orang Seletar &#160;? 
+ tmw &#160;–&#160; Temuan &#160;? 
+ 
+ 
+ 
+ 
+ &#160; &#160;Malaysia 
+ &#160; &#160;Indonesia 
+ &#160; &#160;Singapore and Brunei, where Standard Malay is an official language 
+ &#160; &#160;East Timor, where Indonesian is a working language 
+ &#160; &#160;Southern Thailand and the Cocos Isl., where other varieties of Malay are spoken 
+ 
+ 
+ 
+ 
+ This article contains IPA phonetic symbols. Without proper rendering support , you may see question marks, boxes, or other symbols instead of Unicode characters. 
+ 
+ 
+ Malay ( /  m  ə  ˈ  l  eɪ  / ;  
+ As the Bahasa Kebangsaan or Bahasa Nasional (National Language) of several states, Standard Malay has various official names. In Singapore and Brunei it is called Bahasa Melayu (Malay language); in Malaysia, Bahasa Malaysia ( Malaysian language ); and in Indonesia, Bahasa Indonesia ( Indonesian language ) and is designated the Bahasa Persatuan/Pemersatu ("unifying language/ lingua franca "). However, in areas of central to southern Sumatra where the language is indigenous, Indonesians refer to it as Bahasa Melayu and consider it one of their regional languages. 
+ Standard Malay, also called Court Malay, was the literary standard of the pre-colonial Malacca and Johor Sultanates, and so the language is sometimes called Malacca, Johor, or Riau Malay (or various combinations of those names) to distinguish it from the various other Malayan languages , though it has no connection to the Malay dialect of the Riau Islands . According to Ethnologue 16, several of the Malayan varieties they currently list as separate languages, including the Orang Asli varieties of Peninsular Malay, are so closely related to standard Malay that they may prove to be dialects. (These are listed with question marks in the table at right.) There are also several Malay-based creole languages which are based on a lingua franca derived from Classical Malay, as well as Makassar Malay , which appears to be a mixed language . 
+ 
+ 
+ 
+ Contents 
+ 
+ 
+ 1 Origin 
+ 2 History 
+ 3 Classification and related languages 
+ 4 Writing system 
+ 5 Extent of use 
+ 6 Phonology 
+ 
+ 6.1 Consonants 
+ 6.2 Vowels 
+ 
+ 
+ 7 Grammar 
+ 8 Borrowed words 
+ 9 Examples 
+ 
+ 9.1 Article 1 of the Universal Declaration of Human Rights 
+ 9.2 Basic phrases in Malay 
+ 
+ 
+ 10 See also 
+ 11 References 
+ 12 Further reading 
+ 13 External links 
+ 
+ 
+ 
+ Origin  
+ Malay historical linguists agree on the likelihood of the Malay homeland being in western Borneo .  
+ However, the oldest inscriptions known in Malay, Kedukan Bukit Inscription , dating from the end of the 7th century AD, were found on the banks of the River Tatang, a tributary of the River Musi, South Sumatra . It is the oldest surviving specimen of the Malay language, in a form known as Old Malay . " Malayu " was the name of an old kingdom located in Jambi province in eastern Sumatra, it was known in ancient Chinese texts as "Mo-lo-yo". 
+ The use of Malay as a lingua franca throughout the Malay Archipelago is linked to the rise of Muslim kingdoms and the spread of Islam , itself a consequence of growing regional trade. A literary language was established in Malacca . After the defeat of Malacca by the Portuguese in 1511, the literary center shifted to the Johor Sultanate , and the literary language is therefore often called Johor Malay, though it is a continuation of Malacca Malay. When Johor was divided between British Malaya ( Johor ) and the Dutch East Indies ( Riau ), its language was accorded official status in both territories. 
+ Indonesia pronounced "Riau" (Malacca–Johor) Malay its official language ( Bahasa Indonesia ) when it gained independence. Since 1928, nationalists and young people throughout the Indonesian archipelago had declared Malay to be Indonesia's only official language, as proclaimed in the Sumpah Pemuda "Youth Vow." Thus Indonesia was the first country to designate Malay as an official language.  
+ In Malaysia, the 1957 Article 152 of the Federation adopted Johor (Malacca) Malay as the official language ( Bahasa Malaysia ). The name "Malaysia", in both language and country, emphasized that the nation consisted of more than just ethnic Malays . In 1986 the official name was changed to Bahasa Melayu , but in 2007 it was changed back.  
+ "Bahasa Melayu" was defined as Brunei's official language in the country's 1959 Constitution. It is also based on the Malaccan standard. 
+ The Indonesian and Malaysian registers of Malay are separated by some centuries of different vocabulary development (see Differences between Malaysian and Indonesian ; cf. Serbo-Croatian ). This is, in part, partly due to the influence of different colonial languages; Dutch in the case of Indonesia (see Dutch East Indies ), and English in the case of Malaysia, Singapore, and Brunei, which were formerly under British rule . However, Indonesia and Malaysia largely unified their previously divergent orthographies in 1972, and they along with Brunei have set up a joint commission to develop common scientific and technical vocabulary and otherwise cooperate to keep their standards convergent. 
+ Some Malay dialects , however, show only limited mutual intelligibility with the standard language; for example, Kelantanese or Sarawakian pronunciation is difficult for many fellow Malaysians to understand, while Indonesian contains many words unfamiliar to speakers of Malaysian, some because of Javanese , Sundanese or other local language influence, and some because of slang . 
+ The language spoken by the Peranakan (Straits Chinese, a hybrid of Chinese settlers from the Ming Dynasty and local Malays) is a unique patois of Malay and the Hokkien Chinese , which is mostly spoken in the former Straits Settlements of Penang and Malacca in Malaysia, and the Indonesian Archipelago. 
+ History  
+ Main article: History of the Malay language 
+ The history of the Malay language can be divided into five periods: Old Malay , the Transitional Period, the Malacca Period (Classical Malay), Late Modern Malay, and modern Malay. It is not clear that Old Malay was actually the ancestor of Classical Malay, but this is thought to be quite possible.  
+ Old Malay was influenced by Sanskrit , the lingua franca of Hinduism and Buddhism . Sanskrit loanwords can be found in Old Malay vocabulary. The earliest known stone inscription in the Old Malay language was found in Sumatra, written in Pallava variant of Grantha script  and dates back to 7th century – known as Kedukan Bukit Inscription , it was discovered by the Dutchman M. Batenburg on 29 November 1920, at Kedukan Bukit, South Sumatra, on the banks of the River Tatang, a tributary of the River Musi . It is a small stone of 45 by 80&#160;cm. 
+ The earliest surviving manuscript in Malay is the Tanjong Tanah Law in post- Pallava characters. This 14th-century pre-Islamic legal text produced in the Adityavarman era (1345–1377) of the Dharmasraya Kingdom, a Hindu - Buddhist kingdom that arose after the end of Srivijayan rule in Sumatra. The laws were for the Kerinci people who today still live in the highlands of Sumatra . 
+ From the island of Sumatra, the Malay language spread to peninsular South-east Asia (later known as Malaya and subsequently known as west Malaysia). The Malay language came into widespread use as the trade language of the Sultanate of Malacca (1402–1511). During this period, the Malay language developed rapidly under the influence of Islamic literature. The development changed the nature of the language with massive infusion of Arabic , Tamil , Hindi and Sanskrit vocabularies, called Classical Malay . Under the Sultanate of Malacca the language evolved into a form recognizable to speakers of modern Malay. When the court moved to establish the Johor Sultanate, it continued using the classical language; it has become so associated with Dutch Riau and British Johor that it is often assumed that the Malay of Riau is close to the classical language. However, there is no connection between Malaccan Malay as used on Riau and the Riau vernacular.  
+ One of the oldest surviving letters written in Malay is letters from Sultan Abu Hayat of Ternate , Maluku Islands in present-day Indonesia, dated around 1521–1522. The letter is addressed to the king of Portugal , following contact with Portuguese explorer Francisco Serrão .  
+ Classification and related languages  
+ See also: Austronesian languages#Cross-linguistic Comparison Chart 
+ Malay is a member of the Austronesian family of languages, which includes languages from Southeast Asia and the Pacific Ocean , with a smaller number in continental Asia . Malagasy , a geographic outlier spoken in Madagascar in the Indian Ocean , is also a member of this language family. Although each language of the family is mutually unintelligible, their similarities are rather striking. Many roots have come virtually unchanged from their common Austronesian ancestor. There are many cognates found in the languages' words for kinship, health, body parts and common animals. Numbers, especially, show remarkable similarities. 
+ Within Austronesian, Malay is part of a cluster of numerous closely related forms of speech known as the Malay languages , which were spread across Malaya and the Indonesian archipelago by Malay traders from Sumatra. There is disagreement as to which varieties of speech popularly called "Malay" should be considered dialects of this language, and which should be classified as distinct Malay languages. The local language of Brunei, Brunei Malay , for example, is not readily intelligible with the standard language, and the same is true with some varieties on the Malay Peninsula such as Kedah Malay . However, both Brunei and Kedah are quite close.  
+ The closest relatives of the Malay languages are those left behind on Sumatra, such as Minangkabau with 5.5 million speakers on the west coast. 
+ Writing system  
+ Main article: Malay alphabet 
+ Malay is now written using the Latin script ( Rumi ), although an Arabic alphabet called Arab-Melayu or Jawi also exists. Rumi is official in Malaysia, Singapore, and Indonesia. Rumi and Jawi are co-official in Brunei and Malaysia. Efforts are currently being undertaken to preserve Jawi in rural areas of Malaysia, and students taking Malay language examinations in Malaysia have the option of answering questions using Jawi. The Latin script, however, is the most commonly used in Malaysia, both for official and informal purposes. 
+ Historically, Malay has been written using various scripts. Before the introduction of Arabic script in the Malay region, Malay was written using Pallava , Kawi and Rencong script and these are still in use today by the Champa in Vietnam and Cambodia . Old Malay was written using Pallava and Kawi script, as evident from several inscription stones in the Malay region. Starting from the era of kingdom of Pasai and throughout the golden age of the Sultanate of Malacca , Jawi gradually replaced these scripts as the most commonly used script in the Malay region. Starting from the 17th century, under Dutch and British influence, Jawi was gradually replaced by the Rumi script.  
+ Extent of use  
+ Main article: Varieties of Malay 
+ See also: Malay-based creole languages 
+ Malay is spoken in Malaysia, Indonesia, Singapore, parts of Thailand,  The extent to which Malay is used in these countries varies depending on historical and cultural circumstances. Malay is the national language in Malaysia by Article 152 of the Constitution of Malaysia , and became the sole official language in West Malaysia in 1968, and in East Malaysia gradually from 1974. English continues, however, to be widely used in professional and commercial fields and in the superior courts. Other minority languages are also commonly used by the country's large ethnic minorities. The situation in Brunei is similar to that of Malaysia. 
+ Phonology  
+ Main article: Malay phonology 
+ Unlike other Southeast Asian languages, such as Thai and Vietnamese , Malay is not a tonal language . 
+ Consonants  
+ The consonants of Malaysian  are shown below. (Non-native consonants that only occur in borrowed words, principally from Arabic and English, are shown in brackets.) 
+ 
+ Table of consonant phonemes of Malay 
+ 
+ 
+ Labial 
+ Alveolar 
+ Palatal 
+ Velar 
+ Glottal 
+ 
+ 
+ Nasal 
+ m 
+ n 
+ ɲ 
+ ŋ 
+ 
+ 
+ 
+ Stop 
+ p b 
+ t d 
+ tʃ dʒ 
+ k ɡ 
+ (ʔ) 
+ 
+ 
+ Fricative 
+ (f v) 
+ s (z) 
+ (ʃ) 
+ (x) 
+ h 
+ 
+ 
+ Approximant 
+ w 
+ l 
+ j 
+ 
+ 
+ 
+ 
+ Trill 
+ 
+ r 
+ 
+ 
+ 
+ 
+ 
+ Orthographic Note : The sounds are represented orthographically by their symbols as above, except: 
+ 
+ / ɲ / is 'ny' 
+ / ŋ / is 'ng' 
+ the glottal stop / ʔ / is final 'k' or an apostrophe ' 
+ / tʃ / is 'c' 
+ / dʒ / is 'j' 
+ / ʃ / is 'sy' 
+ / x / is 'kh' 
+ / j / is 'y' 
+ 
+ Loans from Arabic : 
+ 
+ Phonemes which occur only in Arabic loans may be pronounced distinctly by speakers who know Arabic. Otherwise they tend to be substituted with native sounds. 
+ 
+ 
+ Table of borrowed Arabic consonants 
+ 
+ Distinct 
+ Assimilated 
+ Example 
+ 
+ 
+ / x / 
+ / k / , / h / 
+ khabar, kabar "news" 
+ 
+ 
+ / ð / 
+ / d / , / l / 
+ redha, rela "good will" 
+ 
+ 
+ /zˁ/ 
+ / l / , / z / 
+ lohor, zuhur "noon (prayer)" 
+ 
+ 
+ / ɣ / 
+ / ɡ / , / r / 
+ ghaib, raib "hidden" 
+ 
+ 
+ / ʕ /  
+ / ʔ / 
+ saat, sa'at "second (time)" 
+ 
+ 
+ Vowels  
+ Malay originally had four vowels, but in many dialects today, including Standard Malay, it has six.  The vowels /e, o/ are much less common than the other four. 
+ 
+ Table of vowel phonemes of Standard Malay 
+ 
+ 
+ Front 
+ Central 
+ Back 
+ 
+ 
+ Close 
+ i 
+ 
+ u 
+ 
+ 
+ Mid 
+ e 
+ ə 
+ o 
+ 
+ 
+ Open 
+ 
+ a 
+ 
+ 
+ 
+ Orthographic note : both /e/ and /ə/ are written as 'e'. This means that there are some homographs, so perang can be either /peraŋ/ ("blond") or /pəraŋ/ ("war"). 
+ Some analyses regard /ai, au, oi/ as diphthongs.  
+ There is a rule of vowel harmony : the non-open vowels /i, e, u, o/ in bisyllabic words must agree in height, so hidung ("nose") is allowed but * hedung is not.  
+ Grammar  
+ Main article: Malay grammar 
+ Malay is an agglutinative language , and new words are formed by three methods: attaching affixes onto a root word ( affixation ), formation of a compound word (composition), or repetition of words or portions of words ( reduplication ). Nouns and verbs may be basic roots, but frequently they are derived from other words by means of prefixes , suffixes and circumfixes . 
+ Malay does not make use of grammatical gender , and there are only a few words that use natural gender; the same word is used for he and she or for his and her . There is no grammatical plural in Malay either; thus orang may mean either "person" or "people". Verbs are not inflected for person or number, and they are not marked for tense; tense is instead denoted by time adverbs (such as "yesterday") or by other tense indicators, such as sudah "already" and belum "not yet". On the other hand, there is a complex system of verb affixes to render nuances of meaning and to denote voice or intentional and accidental moods . 
+ Malay does not have a grammatical subject in the sense that English does. In intransitive clauses, the noun comes before the verb. When there is both an agent and an object , these are separated by the verb (OVA or AVO), with the difference encoded in the voice of the verb. OVA, commonly but inaccurately called "passive", is the basic and most common word order.  
+ Borrowed words  
+ Main article: List of Malay loanwords 
+ The Malay language has many words borrowed from Arabic (mainly religious terms), Sanskrit , Tamil , Persian , Portuguese , Dutch , certain Chinese dialects and more recently, English (in particular many scientific and technological terms). 
+ Examples  
+ Article 1 of the Universal Declaration of Human Rights  
+ 
+ 
+ English 
+ Indonesian Language 
+ Malaysian Language 
+ 
+ 
+ Universal Declaration of Human Rights 
+ Pernyataan Umum tentang Hak Asasi Manusia 
+ Perisytiharan Hak Asasi Manusia sejagat 
+ 
+ 
+ Article 1 
+ Pasal 1 
+ Perkara 1 
+ 
+ 
+ All human beings are born free and equal in dignity and rights. They are endowed with reason and conscience and should act towards one another in a spirit of brotherhood. 
+ Semua orang dilahirkan merdeka dan mempunyai martabat dan hak-hak yang sama. Mereka dikaruniai akal dan hati nurani dan hendaknya bergaul satu sama lain dalam semangat persaudaraan. 
+ Semua manusia dilahirkan bebas dan sama rata dari segi maruah dan hak-hak. Mereka mempunyai pemikiran dan perasaan hati dan hendaklah bergaul dengan semangat persaudaraan. 
+ 
+ 
+ Basic phrases in Malay  
+ In Malaysia and Indonesia, to greet somebody with "Selamat pagi" or "Selamat sejahtera" would be considered very formal, and the borrowed word "Hi" would be more usual among friends; similarly "Bye-bye" is often used when taking one's leave. However, if you're a Muslim and the Malay person you're talking to is also a Muslim, it would be more appropriate to use the Islamic greeting of ' Assalamualaikum '. Muslim Malays, especially in Malaysia, Singapore and Brunei, rarely use ' Selamat Pagi ' (Good Morning), 'Selamat Siang' (Good "Early" Afternoon), ' Selamat Petang ' or ' Selamat Sore ' as widely used in Indonesia (Good "Late" Afternoon), ' Selamat Malam ' (Good Evening / Night) or 'Selamat Tinggal / Jalan ' (Good Bye) when talking to one another. 
+ 
+ 
+ Malay Phrase 
+ IPA 
+ English Translation 
+ 
+ 
+ Selamat datang 
+ /səlamat dataŋ/ 
+ Welcome (Used as a greeting) 
+ 
+ 
+ Selamat jalan 
+ /səlamat dʒalan/ 
+ Have a safe journey (equivalent to "goodbye", used by the party staying) 
+ 
+ 
+ Selamat tinggal 
+ /səlamat tiŋɡal/ 
+ Have a safe stay (equivalent to "goodbye", used by the party leaving) 
+ 
+ 
+ Terima kasih 
+ /tərima kasih/ 
+ Thank you 
+ 
+ 
+ Sama-sama 
+ /sama sama/ 
+ You are welcome (in Malaysian is spelled "samə-samə", as in a response to Thank You, etc.) 
+ 
+ 
+ Selamat pagi 
+ /səlamat paɡi/ 
+ Good morning 
+ 
+ 
+ Selamat petang 
+ /səlamat pətaŋ/ 
+ Good afternoon/evening (note that 'Selamat petang' must not be used at night as in English. For a general greeting, use 'Selamat sejahtera') 
+ 
+ 
+ Selamat sejahtera 
+ /səlamat sədʒahtəra/ 
+ Greetings (formal). This greeting is rarely used however, and would be unheard of, especially in Singapore. Its usage might be awkward for the receiver. But it is still used in schools, as a greeting between students and teachers. 
+ 
+ 
+ Selamat malam 
+ /səlamat malam/ 
+ Good night 
+ 
+ 
+ Jumpa lagi 
+ 
+ See you again 
+ 
+ 
+ Siapakah nama awak/kamu?/Nama kamu siapa? 
+ 
+ What is your name? 
+ 
+ 
+ Nama saya ... 
+ 
+ My name is ... (Followed immediately by the name: for example, if one's name was Munirah , then one would introduce oneself by saying "Nama saya Munirah ", which translates to "My name is Munirah ".) 
+ 
+ 
+ Apa khabar/kabar? 
+ 
+ How are you? / What's up? (literally, "What news?") 
+ 
+ 
+ Khabar/kabar baik 
+ 
+ Fine, good news 
+ 
+ 
+ Saya sakit 
+ 
+ I'm sick 
+ 
+ 
+ Ya 
+ /ja/ 
+ Yes 
+ 
+ 
+ Tidak ("tak" colloquially) 
+ 
+ No 
+ 
+ 
+ Ibu (Saya) sayang engkau/kamu (awak) 
+ 
+ I love you (In a more of a family or affectionate sort of love, e.g.: mother to daughter, the Mother addresses herself as "Ibu" (mother) or "Emak" (mother) instead of "Saya" (I). The mother also uses the informal "engkau" instead of "awak" for "you".) Generally amongst ethnic Malays "engkau" is considered a coarse way of referring to someone and would never be used to refer to one's mother whereas it is appropriate for a mother to refer to her child as "engkau". 
+ 
+ 
+ Aku (Saya) cinta pada mu (awak) 
+ 
+ I love you (romantic love. In romantic situation, use informal "Aku" instead of "Saya" for "I". And "Kamu" or just "Mu" for "You". In romance, in immediate family communication and in songs, informal pronouns are used). In Malay language, appropriate personal pronouns must be used depending on (1) whether the situation is formal or informal, (2) the social status of the people around the speaker and (3) the relationship of the speaker with the person spoken to and/or with people around the speaker. For learners of Malay language, it is advised that they stick to formal personal pronouns when speaking Malay to Malays and Indonesians. The speaker risks being considered as rude if they use informal personal pronouns in inappropriate situations. 
+ 
+ 
+ Saya benci awak/kamu 
+ 
+ I hate you 
+ 
+ 
+ Saya tidak faham/paham (or simply "tak faham" colloquially) 
+ 
+ I do not understand (or simply "don't understand" colloquially) 
+ 
+ 
+ Saya tidak tahu (or "tak tau" colloquially or "sik tau" in Sarawak) 
+ 
+ I do not know (or "don't know" colloquially) 
+ 
+ 
+ (Minta) maaf 
+ 
+ I apologise ('minta' is to request i.e. "do forgive") 
+ 
+ 
+ Tumpang/numpang tanya 
+ 
+ "May I ask...?" (used when trying to ask something) 
+ 
+ 
+ (Minta) tolong 
+ 
+ Please help (me) ('Tolong!' on its own just means "help") 
+ 
+ 
+ Apa 
+ 
+ What 
+ 
+ 
+ Tiada/tidak ada 
+ 
+ Nothing, none 
+ 
+ 
+ See also  
+ 
+ List of English words of Malay origin 
+ Malajoe Batawi 
+ Malay-based creole languages 
+ Malaysian English , English language used formally in Malaysia. 
+ Varieties of Malay 
+ 
+ References  
+ 
+ 
+ ^  Influences come mostly from Indonesian 
+ ^  Nationalencyklopedin "Världens 100 största språk 2007" The World's 100 Largest Languages in 2007 
+ ^  a   b  Uli, Kozok (2012-03-10). "How many people speak Indonesian" . University of Hawaii at Manoa . Retrieved 20 October 2012 . "Even if we are very conservative and consider only two third of Malaysians and 85% of Indonesians as fluent speakers (either native, or near-native), there are still more than 215 million speakers of Malay-Indonesian." &#160; 
+ ^  "Kedah MB defends use of Jawi on signboards" . The Star . 26 August 2008. &#160; 
+ ^  Laurie Bauer, 2007, The Linguistics Student’s Handbook , Edinburgh 
+ ^  10 million in Malaysia, 5 million in Indonesia as "Malay" plus 23 million as "Indonesian", etc. 
+ ^  K. Alexander Adelaar, "Where does Malay come from? Twenty years of discussions about homeland, migrations and classifications", Bijdragen tot de Taal-, Land- en Volkenkunde , 160 (2004), No. 1, Leiden , pp. 1-30 
+ ^  Languages of Indonesia (Sumatra) 
+ ^  Penggunaan Istilah Bahasa Malaysia Dan Bukan Bahasa Melayu Muktamad, Kata Zainuddin . BERNAMA, 5 November 2007 
+ ^  Wurm, Mühlhäusler, &amp; Tryon, Atlas of languages of intercultural communication in the Pacific, Asia and the Americas , 1996:677 
+ ^  "Bahasa Melayu Kuno" . Bahasa-malaysia-simple-fun.com. 15 September 2007 . Retrieved 22 December 2010 . &#160; 
+ ^  Sneddon 2003, "The Indonesian Language: Its History and Role in Modern Society", p. 70 
+ ^  a   b  Sneddon, James N. (2003). The Indonesian language: its history and role in modern society . UNSW Press. p.&#160;62. ISBN &#160; 0-86840-598-1, 9780868405988 Check |isbn= value ( help ) . &#160; 
+ ^  Ethnologue 16 classifies them as distinct languages, iso3 kxd and meo , but states that they "are so closely related that they may one day be included as dialects of Malay". 
+ ^  Malay (Bahasa Melayu) . Retrieved 30 August 2008. 
+ ^  "Malay Can Be 'Language Of Asean' | Local News" . Brudirect.com. 24 October 2010 . Retrieved 22 December 2010 . &#160; 
+ ^  Salleh, Haji (2008). An introduction to modern Malaysian literature . Kuala Lumpur: Institut Terjemahan Negara Malaysia Berhad. pp.&#160;xvi. ISBN &#160; 978-983-068-307-2 . &#160; 
+ ^  a   b  Clynes, A., &amp; Deterding, D. (2011). Standard Malay (Brunei). Journal of the International Phonetic Association , 41 , 259–268. On-line Version 
+ ^  Soderberg, C. D., &amp; K. S. Olson. 2008. Indonesian. Journal of the International Phonetic Association , 38 , 209–213. 
+ ^  Asmah Hj Omar (1985). Susur galur bahasa Melayu . Kuala Lumpur: Dewan Bahasa dan Pustaka. 
+ ^  Zaharani Ahmad (1993). Fonologi generatif: Teori dan penerapan . Kuala Lumpur: Dewan Bahasa dan Pustaka. 
+ ^  Clynes, A. (1997). On the Proto-Austronesian ‘diphthongs’. Oceanic Linguistics , 36, 347–362. 
+ ^  Adelaar, K. A. (1992). Proto Malayic: The reconstruction of its phonology and parts of its lexicon and morphology . Canberra: Pacific Linguistics. 
+ 
+ 
+ Further reading  
+ 
+ Adelaar, K., "Where does Malay come from? Twenty years of discussions about homeland, migrations and classifications", Bijdragen tot de Taal-, Land- en Volkenkunde 160 (2004), no: 1, Leiden, 1-30 
+ 
+ External links  
+ 
+ 
+ 
+ Wikimedia Commons has media related to Indonesian language . 
+ 
+ 
+ 
+ 
+ 
+ Wikimedia Commons has media related to Malay language . 
+ 
+ 
+ 
+ 
+ 
+ Malay edition of Wikipedia , the free encyclopedia 
+ 
+ 
+ 
+ Adelaar, K., "Where does Malay come from? Twenty years of discussions about homeland, migrations and classifications", Bijdragen tot de Taal-, Land- en Volkenkunde 160 (2004), no: 1, Leiden , 1-30 
+ The list of Malay words and list of words of Malay origin at Wiktionary , the free dictionary and Wikipedia's sibling project 
+ Swadesh list of Malay words 
+ Digital version of Wilkinson's 1926 Malay-English Dictionary 
+ Kamus Besar Bahasa Indonesia dalam jaringan (Great Dictionary of the Indonesian Language of the Language Center, in Indonesian only) 
+ Dewan Bahasa dan Pustaka (Institute of Language and Literature Malaysia, in Malay only) 
+ The Malay Spelling Reform , Asmah Haji Omar, (Journal of the Simplified Spelling Society, 1989-2 pp.&#160;9–13 later designated J11) 
+ Malay Chinese Dictionary 
+ 
+ 
+
+
+
+ 								 
+				Retrieved from " http://en.wikipedia.org/w/index.php?title=Malay_language&amp;oldid=596956191 "				 
+												 Categories : Languages with ISO 639-2 code Languages with ISO 639-1 code Agglutinative languages Malay language Malayic languages Languages of Brunei Languages of Indonesia Languages of Malaysia Languages of Thailand Malay languages in Singapore  Hidden categories: Pages with ISBN errors Articles containing Malay-language text Articles containing non-English-language text All articles with unsourced statements Articles with unsourced statements from January 2011 Articles with unsourced statements from March 2012 Commons category with local link different than on Wikidata Commons category with local link same as on Wikidata Use dmy dates from October 2010  												 
+							 
+		 
+		 
+			 Navigation menu 
+			 
+				 
+	 Personal tools 
+	 
+ Create account Log in 	 
+ 
+				 
+					 
+	 Namespaces 
+	 
+					 Article 
+					 Talk 
+			 
+ 
+ 
+	 
+		 
+	 Variants 
+	 
+		 
+					 
+	 
+ 
+				 
+				 
+					 
+	 Views 
+	 
+					 Read 
+					 Edit 
+					 View history 
+			 
+ 
+ 
+	 Actions 
+	 
+		 
+					 
+	 
+ 
+ 
+	 Search 
+	 
+					 
+					 		 
+	 
+ 
+				 
+			 
+			 
+					 
+				 
+	 Navigation 
+	 
+		 
+			 Main page 
+			 Contents 
+			 Featured content 
+			 Current events 
+			 Random article 
+			 Donate to Wikipedia 
+			 Wikimedia Shop 
+		 
+	 
+ 
+ 
+	 Interaction 
+	 
+		 
+			 Help 
+			 About Wikipedia 
+			 Community portal 
+			 Recent changes 
+			 Contact page 
+		 
+	 
+ 
+ 
+	 Tools 
+	 
+		 
+			 What links here 
+			 Related changes 
+			 Upload file 
+			 Special pages 
+			 Permanent link 
+			 Page information 
+			 Data item 
+ Cite this page 		 
+	 
+ 
+ 
+	 Print/export 
+	 
+		 
+			 Create a book 
+			 Download as PDF 
+			 Printable version 
+		 
+	 
+ 
+ 
+	 Languages 
+	 
+		 
+			 Acèh 
+			 Afrikaans 
+			 العربية 
+			 Aragonés 
+			 Azərbaycanca 
+			 বাংলা 
+			 Bahasa Banjar 
+			 Bân-lâm-gú 
+			 Беларуская 
+			 Беларуская (тарашкевіца)‎ 
+			 Български 
+			 Bosanski 
+			 Brezhoneg 
+			 Català 
+			 Cebuano 
+			 Čeština 
+			 Dansk 
+			 Deutsch 
+			 Eesti 
+			 Español 
+			 Esperanto 
+			 Euskara 
+			 فارسی 
+			 Fiji Hindi 
+			 Français 
+			 Frysk 
+			 Gaeilge 
+			 Galego 
+			 客家語/Hak-kâ-ngî 
+			 Хальмг 
+			 한국어 
+			 हिन्दी 
+			 Hornjoserbsce 
+			 Hrvatski 
+			 Ido 
+			 Ilokano 
+			 Bahasa Indonesia 
+			 Interlingua 
+			 Italiano 
+			 עברית 
+			 Basa Jawa 
+			 ქართული 
+			 Қазақша 
+			 Коми 
+			 Latina 
+			 Latviešu 
+			 Lietuvių 
+			 Ligure 
+			 Magyar 
+			 Македонски 
+			 Malagasy 
+			 Māori 
+			 मराठी 
+			 مصرى 
+			 Bahasa Melayu 
+			 Baso Minangkabau 
+			 မြန်မာဘာသာ 
+			 Nederlands 
+			 日本語 
+			 Norsk bokmål 
+			 Norsk nynorsk 
+			 Occitan 
+			 پنجابی 
+			 ភាសាខ្មែរ 
+			 Piemontèis 
+			 Plattdüütsch 
+			 Polski 
+			 Português 
+			 Română 
+			 Runa Simi 
+			 Русский 
+			 Scots 
+			 Simple English 
+			 Ślůnski 
+			 Српски / srpski 
+			 Srpskohrvatski / српскохрватски 
+			 Suomi 
+			 Svenska 
+			 Tagalog 
+			 தமிழ் 
+			 ไทย 
+			 Тоҷикӣ 
+			 Türkçe 
+			 Українська 
+			 اردو 
+			 ئۇيغۇرچە / Uyghurche 
+			 Tiếng Việt 
+			 Winaray 
+			 吴语 
+			 粵語 
+			 中文 
+			 
+			 Edit links 
+		 
+	 
+ 
+			 
+		 
+		 
+							 
+											 This page was last modified on 24 February 2014 at 19:14. 
+											 Text is available under the Creative Commons Attribution-ShareAlike License ;
+additional terms may apply. By using this site, you agree to the Terms of Use and Privacy Policy. 
+Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc. , a non-profit organization. 
+									 
+							 
+											 Privacy policy 
+											 About Wikipedia 
+											 Disclaimers 
+											 Contact Wikipedia 
+											 Developers 
+											 Mobile view

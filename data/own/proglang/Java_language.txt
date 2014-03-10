@@ -1,0 +1,1596 @@
+Java (programming language) - Wikipedia, the free encyclopedia 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+ 
+ 
+		 
+		 
+		 
+			 
+			 
+						 
+						 Java (programming language) 
+			 
+								 From Wikipedia, the free encyclopedia 
+								   (Redirected from Java language ) 
+				  
+ This is the latest accepted revision , accepted on 7 March 2014 . 
+ 
+ 
+ 
+												 
+					Jump to:					 navigation , 					 search 
+				 
+				  
+ "Java language" redirects here. For the natural language from the Indonesian island of Java, see Javanese language . 
+ Not to be confused with JavaScript . 
+ 
+ Java 
+ 
+  
+ 
+ 
+ Paradigm(s) 
+ multi-paradigm : object-oriented , structured , imperative , generic , reflective , concurrent 
+ 
+ 
+ Appeared in 
+ 1995 &#160;( 1995 )  
+ 
+ 
+ Designed by 
+ James Gosling and 
+ Sun Microsystems 
+ 
+ 
+ Developer 
+ Oracle Corporation 
+ 
+ 
+ Stable release 
+ Java Standard Edition 7 Update 51 (1.7.51) (January&#160;14, 2014 ; 55 days ago &#160;( 2014-01-14 ) ) 
+ 
+ 
+ Typing discipline 
+ Static, strong, safe , nominative , manifest 
+ 
+ 
+ Major implementations 
+ OpenJDK , many others 
+ 
+ 
+ Dialects 
+ Generic Java , Pizza 
+ 
+ 
+ Influenced by 
+ Ada 83 , C++ , C# ,   Smalltalk 
+ 
+ 
+ Influenced 
+ Ada 2005 , BeanShell , C# , Clojure , D , ECMAScript , Groovy , J# , JavaScript , Kotlin , PHP , Python , Scala , Seed7 , Vala 
+ 
+ 
+ Implementation language 
+ C and C++ 
+ 
+ 
+ OS 
+ Cross-platform (multi-platform) 
+ 
+ 
+ License 
+ GNU General Public License , Java Community Process 
+ 
+ 
+ Usual filename extensions 
+ .java , .class , .jar 
+ 
+ 
+ Website 
+ For Java Developers 
+ 
+ 
+ 
+ 
+ Java Programming at Wikibooks 
+ 
+ 
+ 
+ 
+ Java is a computer programming language that is concurrent , class-based , object-oriented , and specifically designed to have as few implementation dependencies as possible. It is intended to let application developers " write once, run anywhere " (WORA), meaning that code that runs on one platform does not need to be recompiled to run on another. Java applications are typically compiled to bytecode ( class file ) that can run on any Java virtual machine (JVM) regardless of computer architecture . Java is, as of 2014, one of the most popular programming languages in use, particularly for client-server web applications, with a reported 9 million developers.  Java was originally developed by James Gosling at Sun Microsystems (which has since merged into Oracle Corporation ) and released in 1995 as a core component of Sun Microsystems' Java platform . The language derives much of its syntax from C and C++ , but it has fewer low-level facilities than either of them. 
+ The original and reference implementation Java compilers , virtual machines, and class libraries were developed by Sun from 1991 and first released in 1995. As of May 2007, in compliance with the specifications of the Java Community Process , Sun relicensed most of its Java technologies under the GNU General Public License . Others have also developed alternative implementations of these Sun technologies, such as the GNU Compiler for Java (bytecode compiler), GNU Classpath (standard libraries), and IcedTea -Web (browser plugin for applets). 
+ 
+ 
+ 
+ Contents 
+ 
+ 
+ 1 History 
+ 
+ 1.1 Principles 
+ 1.2 Versions 
+ 
+ 
+ 2 Practices 
+ 
+ 2.1 Java platform 
+ 
+ 2.1.1 Implementations 
+ 2.1.2 Performance 
+ 
+ 
+ 2.2 Automatic memory management 
+ 
+ 
+ 3 Syntax 
+ 4 Examples 
+ 
+ 4.1 Hello world 
+ 4.2 A more comprehensive example 
+ 
+ 
+ 5 Special classes 
+ 
+ 5.1 Applet 
+ 5.2 Servlet 
+ 5.3 JavaServer Pages 
+ 5.4 Swing application 
+ 5.5 Generics 
+ 
+ 
+ 6 Criticism 
+ 7 Use by external companies 
+ 
+ 7.1 Google 
+ 
+ 
+ 8 Class libraries 
+ 9 Documentation 
+ 10 Editions 
+ 11 See also 
+ 
+ 11.1 Comparison of Java with other languages 
+ 
+ 
+ 12 Notes 
+ 13 References 
+ 14 External links 
+ 
+ 
+ 
+ History  
+ See also: Java (software platform)#History 
+ 
+ 
+ 
+  
+Duke, the Java mascot 
+ 
+ 
+ James Gosling , Mike Sheridan, and Patrick Naughton initiated the Java language project in June 1991.  
+ Sun Microsystems released the first public implementation as Java 1.0 in 1995.  It promised "Write Once, Run Anywhere" (WORA), providing no-cost run-times on popular platforms . Fairly secure and featuring configurable security, it allowed network- and file-access restrictions. Major web browsers soon incorporated the ability to run Java applets within web pages, and Java quickly became popular. With the advent of Java 2 (released initially as J2SE 1.2 in December 1998 – 1999), new versions had multiple configurations built for different types of platforms. For example, J2EE targeted enterprise applications and the greatly stripped-down version J2ME for mobile applications (Mobile Java). J2SE designated the Standard Edition. In 2006, for marketing purposes, Sun renamed new J2 versions as Java EE , Java ME , and Java SE , respectively. 
+ In 1997, Sun Microsystems approached the ISO/IEC JTC1 standards body and later the Ecma International to formalize Java, but it soon withdrew from the process.  At one time, Sun made most of its Java implementations available without charge, despite their proprietary software status. Sun generated revenue from Java through the selling of licenses for specialized products such as the Java Enterprise System. Sun distinguishes between its Software Development Kit (SDK) and Runtime Environment (JRE) (a subset of the SDK); the primary distinction involves the JRE's lack of the compiler, utility programs, and header files. 
+ On November 13, 2006, Sun released much of Java as free and open source software , (FOSS), under the terms of the GNU General Public License (GPL). On May 8, 2007, Sun finished the process, making all of Java's core code available under free software /open-source distribution terms, aside from a small portion of code to which Sun did not hold the copyright.  
+ Sun's vice-president Rich Green said that Sun's ideal role with regards to Java was as an "evangelist."  
+ Principles  
+ 
+ 
+ 
+  
+ James Gosling , the creator of Java 
+ 
+ 
+ There were five primary goals in the creation of the Java language:  
+ 
+ It should be "simple, object-oriented and familiar" 
+ It should be "robust and secure" 
+ It should be "architecture-neutral and portable" 
+ It should execute with "high performance" 
+ It should be "interpreted, threaded, and dynamic" 
+ 
+ Versions  
+ Main article: Java version history 
+ Major release versions of Java, along with their release dates: 
+ 
+ JDK 1.0 (January 21, 1996) 
+ JDK 1.1 (February 19, 1997) 
+ J2SE 1.2 (December 8, 1998) 
+ J2SE 1.3 (May 8, 2000) 
+ J2SE 1.4 (February 6, 2002) 
+ J2SE 5.0 (September 30, 2004) 
+ Java SE 6 (December 11, 2006) 
+ Java SE 7 (July 28, 2011) 
+ Java SE 8 (March 18, 2014) 
+ 
+ Practices  
+ Java platform  
+ Main articles: Java (software platform) and Java virtual machine 
+ One characteristic of Java is portability, which means that computer programs written in the Java language must run similarly on any hardware/operating-system platform. This is achieved by compiling the Java language code to an intermediate representation called Java bytecode , instead of directly to platform-specific machine code . Java bytecode instructions are analogous to machine code, but they are intended to be interpreted by a virtual machine (VM) written specifically for the host hardware. End-users commonly use a Java Runtime Environment (JRE) installed on their own machine for standalone Java applications, or in a Web browser for Java applets . 
+ Standardized libraries provide a generic way to access host-specific features such as graphics, threading , and networking . 
+ A major benefit of using bytecode is porting. However, the overhead of interpretation means that interpreted programs almost always run more slowly than programs compiled to native executables would. Just-in-Time (JIT) compilers were introduced from an early stage that compile bytecodes to machine code during runtime. 
+ Implementations  
+ See also: Free Java implementations 
+ Oracle Corporation is the current owner of the official implementation of the Java SE platform, following their acquisition of Sun Microsystems on January 27, 2010. This implementation is based on the original implementation of Java by Sun. The Oracle implementation is available for Mac OS X , Windows and Solaris . Because Java lacks any formal standardization recognized by Ecma International, ISO/IEC, ANSI, or other third-party standards organization, the Oracle implementation is the de facto standard . 
+ The Oracle implementation is packaged into two different distributions: The Java Runtime Environment (JRE) which contains the parts of the Java SE platform required to run Java programs and is intended for end-users, and the Java Development Kit (JDK), which is intended for software developers and includes development tools such as the Java compiler , Javadoc , Jar , and a debugger . 
+ OpenJDK is another notable Java SE implementation that is licensed under the GPL . The implementation started when Sun began releasing the Java source code under the GPL . As of Java SE 7, OpenJDK is the official Java reference implementation. 
+ The goal of Java is to make all implementations of Java compatible. Historically, Sun's trademark license for usage of the Java brand insists that all implementations be "compatible". This resulted in a legal dispute with Microsoft after Sun claimed that the Microsoft implementation did not support RMI or JNI and had added platform-specific features of their own. Sun sued in 1997, and in 2001 won a settlement of US$20 million, as well as a court order enforcing the terms of the license from Sun.  As a result, Microsoft no longer ships Windows with Java. 
+ Platform-independent Java is essential to Java EE , and an even more rigorous validation is required to certify an implementation. This environment enables portable server-side applications. 
+ Performance  
+ Main article: Java performance 
+ Programs written in Java have a reputation for being slower and requiring more memory than those written in C++ .  the addition of language features supporting better code analysis (such as inner classes, the StringBuilder class, optional assertions, etc.), and optimizations in the Java virtual machine itself, such as HotSpot becoming the default for Sun's JVM in 2000. 
+ Some platforms offer direct hardware support for Java; there are microcontrollers that can run Java in hardware instead of a software Java virtual machine, and ARM based processors can have hardware support for executing Java bytecode through their Jazelle option. 
+ Automatic memory management  
+ Java uses an automatic garbage collector to manage memory in the object lifecycle . The programmer determines when objects are created, and the Java runtime is responsible for recovering the memory once objects are no longer in use. Once no references to an object remain, the unreachable memory becomes eligible to be freed automatically by the garbage collector. Something similar to a memory leak may still occur if a programmer's code holds a reference to an object that is no longer needed, typically when objects that are no longer needed are stored in containers that are still in use. If methods for a nonexistent object are called, a "null pointer exception" is thrown.  
+ One of the ideas behind Java's automatic memory management model is that programmers can be spared the burden of having to perform manual memory management. In some languages, memory for the creation of objects is implicitly allocated on the stack , or explicitly allocated and deallocated from the heap . In the latter case the responsibility of managing memory resides with the programmer. If the program does not deallocate an object, a memory leak occurs. If the program attempts to access or deallocate memory that has already been deallocated, the result is undefined and difficult to predict, and the program is likely to become unstable and/or crash. This can be partially remedied by the use of smart pointers , but these add overhead and complexity. Note that garbage collection does not prevent "logical" memory leaks, i.e. those where the memory is still referenced but never used. 
+ Garbage collection may happen at any time. Ideally, it will occur when a program is idle. It is guaranteed to be triggered if there is insufficient free memory on the heap to allocate a new object; this can cause a program to stall momentarily. Explicit memory management is not possible in Java. 
+ Java does not support C/C++ style pointer arithmetic , where object addresses and unsigned integers (usually long integers) can be used interchangeably. This allows the garbage collector to relocate referenced objects and ensures type safety and security. 
+ As in C++ and some other object-oriented languages, variables of Java's primitive data types are not objects. Values of primitive types are either stored directly in fields (for objects) or on the stack (for methods) rather than on the heap, as is commonly true for objects (but see escape analysis ). This was a conscious decision by Java's designers for performance reasons. Because of this, Java was not considered to be a pure object-oriented programming language. However, as of Java 5.0, autoboxing enables programmers to proceed as if primitive types were instances of their wrapper class. 
+ Java contains multiple types of garbage collectors. By default,  Oracle aims to replace CMS with the Garbage-first collector (G1). 
+ Syntax  
+ Main article: Java syntax 
+ The syntax of Java is largely derived from C++ . Unlike C++, which combines the syntax for structured, generic, and object-oriented programming, Java was built almost exclusively as an object-oriented language. All code is written inside a class, and everything is an object, with the exception of the primitive data types (i.e. integers, floating-point numbers, boolean values, and characters), which are not classes for performance reasons. 
+ Unlike C++, Java does not support operator overloading or multiple inheritance for classes . This simplifies the language and aids in preventing potential errors and anti-pattern design. 
+ Java uses similar commenting methods to C++. There are three different styles of comments: a single line style marked with two slashes ( // ), a multiple line style opened with /* and closed with */ , and the Javadoc commenting style opened with /** and closed with */ . The Javadoc style of commenting allows the user to run the Javadoc executable to compile documentation for the program. 
+ Example: 
+ 
+ 
+ 
+ // This is an example of a single line comment using two slashes 
+ 
+ /* This is an example of a multiple line comment using the slash and asterisk.
+ This type of comment can be used to hold a lot of information or deactivate
+ code, but it is very important to remember to close the comment. */ 
+ 
+ /**
+ * This is an example of a Javadoc comment; Javadoc can compile documentation
+ * from this text.
+ */ 
+ 
+ /** Finally, an example of a method written in Java, wrapped in a class. */ 
+ package fibsandlies ; 
+ import java.util.HashMap ; 
+ 
+ public class FibCalculator extends Fibonacci implements Calculator { 
+  private static HashMap &lt; Integer , Integer &gt; memoized = new HashMap &lt; Integer , Integer &gt; ( ) ; 
+  static { 
+  memoized. put ( 1 , 1 ) ; 
+  memoized. put ( 2 , 1 ) ; 
+  } 
+ 
+  /** Given a non-negative number FIBINDEX, returns
+  * the Nth Fibonacci number, where N equals FIBINDEX.
+  * @param fibIndex The index of the Fibonacci number
+  * @return The Fibonacci number itself
+  */ 
+ @Override
+  public static int fibonacci ( int fibIndex ) { 
+   if ( memoized. containsKey ( fibIndex ) ) { 
+    return memoized. get ( fibIndex ) ; 
+   } else { 
+    int answer = fibonacci ( fibIndex - 1 ) + fibonacci ( fibIndex - 2 ) ; 
+   memoized. put ( fibIndex, answer ) ; 
+    return answer ; 
+   } 
+  } 
+ } 
+ 
+ 
+ Examples  
+ 
+ 
+ 
+ 
+ 
+ This article contains instructions, advice, or how-to content . The purpose of Wikipedia is to present facts, not to train. Please help improve this article either by rewriting the how-to content or by moving it to Wikiversity , Wikibooks or Wikivoyage  (January 2012) 
+ 
+ 
+ Hello world  
+ The traditional Hello world program can be written in Java as:  
+ 
+ 
+ 
+ class HelloWorldApp { 
+  public static void main ( String  args ) { 
+   System . out . println ( "Hello World!" ) ; // Display the string. 
+  } 
+ } 
+ 
+ 
+ To compare this to other programming languages see the list of hello world program examples . 
+ Source files must be named after the public class they contain, appending the suffix .java , for example, HelloWorldApp.java . It must first be compiled into bytecode, using a Java compiler , producing a file named HelloWorldApp.class . Only then can it be executed, or 'launched'. The Java source file may only contain one public class, but it can contain multiple classes with other than public access and any number of public inner classes . 
+ A class that is not declared public may be stored in any .java file. The compiler will generate a class file for each class defined in the source file. The name of the class file is the name of the class, with .class appended. For class file generation, anonymous classes are treated as if their name were the concatenation of the name of their enclosing class, a $ , and an integer. 
+ The keyword public denotes that a method can be called from code in other classes, or that a class may be used by classes outside the class hierarchy. The class hierarchy is related to the name of the directory in which the .java file is located. 
+ The keyword static in front of a method indicates a static method , which is associated only with the class and not with any specific instance of that class. Only static methods can be invoked without a reference to an object. Static methods cannot access any class members that are not also static. 
+ The keyword void indicates that the main method does not return any value to the caller. If a Java program is to exit with an error code, it must call System.exit() explicitly. 
+ The method name " main " is not a keyword in the Java language. It is simply the name of the method the Java launcher calls to pass control to the program. Java classes that run in managed environments such as applets and Enterprise JavaBean do not use or need a main() method. A Java program may contain multiple classes that have main methods, which means that the VM needs to be explicitly told which class to launch from. 
+ The main method must accept an array of String objects. By convention, it is referenced as args although any other legal identifier name can be used. Since Java 5, the main method can also use variable arguments , in the form of public static void main(String... args) , allowing the main method to be invoked with an arbitrary number of String arguments. The effect of this alternate declaration is semantically identical (the args parameter is still an array of String objects), but it allows an alternative syntax for creating and passing the array. 
+ The Java launcher launches Java by loading a given class (specified on the command line or as an attribute in a JAR ) and starting its public static void main(String args parameter is an array of String objects containing any arguments passed to the class. The parameters to main are often passed by means of a command line . 
+ Printing is part of a Java standard library: The System class defines a public static field called out . The out object is an instance of the PrintStream class and provides many methods for printing data to standard out , including println(String) which also appends a new line to the passed string. 
+ The string "Hello, world!" is automatically converted to a String object by the compiler. 
+ A more comprehensive example  
+ 
+ 
+ 
+  
+ 
+ This section does not cite any references or sources . Please help improve this section by adding citations to reliable sources . Unsourced material may be challenged and removed . (May 2013) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ This article contains instructions, advice, or how-to content . The purpose of Wikipedia is to present facts, not to train. Please help improve this article either by rewriting the how-to content or by moving it to Wikiversity , Wikibooks or Wikivoyage  (May 2013) 
+ 
+ 
+ 
+ 
+ 
+ // OddEven.java 
+ import javax.swing.JOptionPane ; 
+ 
+ public class OddEven { 
+ 
+  private int userInput ; // a whole number("int" means integer) 
+ 
+  /**
+  * This is the constructor method. It gets called when an object of the OddEven type
+  * is being created.
+  */ 
+  public OddEven ( ) { 
+   /*
+   * In most Java programs constructors can initialize objects with default values, or create
+   * other objects that this object might use to perform its functions. In some Java programs, the
+   * constructor may simply be an empty function if nothing needs to be initialized prior to the
+   * functioning of the object. In this program's case, an empty constructor would suffice.
+   * A constructor must exist; however, if the user doesn't put one in then the compiler
+   * will create an empty one.
+   */ 
+  } 
+ 
+  /**
+  * This is the main method. It gets called when this class is run through a Java interpreter.
+  * @param args command line arguments (unused)
+  */ 
+  public static void main ( final String  args ) { 
+  /*
+  * This line of code creates a new instance of this class called "number" (also known as an
+  * Object) and initializes it by calling the constructor. The next line of code calls
+  * the "showDialog()" method, which brings up a prompt to ask you for a number.
+  */ 
+  OddEven number = new OddEven ( ) ; 
+  number. showDialog ( ) ; 
+  } 
+ 
+  public void showDialog ( ) { 
+   /*
+   * "try" makes sure nothing goes wrong. If something does,
+   * the interpreter skips to "catch" to see what it should do.
+   */ 
+   try { 
+    /*
+    * The code below brings up a JOptionPane, which is a dialog box
+    * The String returned by the "showInputDialog()" method is converted into
+    * an integer, making the program treat it as a number instead of a word.
+    * After that, this method calls a second method, calculate() that will
+    * display either "Even" or "Odd."
+    */ 
+   userInput = Integer . parseInt ( JOptionPane . showInputDialog ( "Please enter a number." ) ) ; 
+   calculate ( ) ; 
+   } catch ( final NumberFormatException e ) { 
+    /*
+    * Getting in the catch block means that there was a problem with the format of
+    * the number. Probably some letters were typed in instead of a number.
+    */ 
+    System . err . println ( "ERROR: Invalid input. Please type in a numerical value." ) ; 
+   } 
+  } 
+ 
+  /**
+  * When this gets called, it sends a message to the interpreter.
+  * The interpreter usually shows it on the command prompt (For Windows users)
+  * or the terminal (For *nix users).(Assuming it's open)
+  */ 
+  private void calculate ( ) { 
+   if ( ( userInput % 2 ) == 0 ) { 
+    JOptionPane . showMessageDialog ( null , "Even" ) ; 
+   } else { 
+    JOptionPane . showMessageDialog ( null , "Odd" ) ; 
+   } 
+  } 
+ } 
+ 
+ 
+ 
+ The import statement imports the JOptionPane class from the javax.swing  package . 
+ The OddEven class declares a single private  field of type int named userInput . Every instance of the OddEven class has its own copy of the userInput field. The private declaration means that no other class can access (read or write) the userInput field. 
+ OddEven() is a public constructor . Constructors have the same name as the enclosing class they are declared in, and unlike a method, have no return type . A constructor is used to initialize an object that is a newly created instance of the class. 
+ The calculate() method is declared without the static keyword . This means that the method is invoked using a specific instance of the OddEven class. (The reference used to invoke the method is passed as an undeclared parameter of type OddEven named this .) The method tests the expression userInput&#160;% 2 == 0 using the if keyword to see if the remainder of dividing the userInput field belonging to the instance of the class by two is zero. If this expression is true, then it prints Even ; if this expression is false it prints Odd . (The calculate method can be equivalently accessed as this.calculate and the userInput field can be equivalently accessed as this.userInput , which both explicitly use the undeclared this parameter.) 
+ OddEven number = new OddEven(); declares a local object reference variable in the main method named number . This variable can hold a reference to an object of type OddEven . The declaration initializes number by first creating an instance of the OddEven class, using the new keyword and the OddEven() constructor, and then assigning this instance to the variable. 
+ The statement number.showDialog(); calls the calculate method. The instance of OddEven object referenced by the number local variable is used to invoke the method and passed as the undeclared this parameter to the calculate method. 
+ userInput = Integer.parseInt(JOptionPane.showInputDialog("Please Enter A Number")); is a statement that converts the type of String to the primitive data type int by using a utility function in the primitive wrapper class Integer . 
+ 
+ Special classes  
+ 
+ 
+ 
+ 
+ 
+ This article contains instructions, advice, or how-to content . The purpose of Wikipedia is to present facts, not to train. Please help improve this article either by rewriting the how-to content or by moving it to Wikiversity , Wikibooks or Wikivoyage  (January 2012) 
+ 
+ 
+ Applet  
+ Main article: Java applet 
+ Java applets are programs that are embedded in other applications, typically in a Web page displayed in a Web browser . 
+ 
+ 
+ 
+ // Hello.java 
+ import javax.swing.JApplet ; 
+ import java.awt.Graphics ; 
+ 
+ public class Hello extends JApplet { 
+  public void paintComponent ( final Graphics g ) { 
+  g. drawString ( "Hello, world!" , 65 , 95 ) ; 
+  } 
+ } 
+ 
+ 
+ The import statements direct the Java compiler to include the javax.swing.JApplet and java.awt.Graphics classes in the compilation. The import statement allows these classes to be referenced in the source code using the simple class name (i.e. JApplet ) instead of the fully qualified class name (i.e. javax.swing.JApplet ). 
+ The Hello class extends ( subclasses ) the JApplet (Java Applet) class; the JApplet class provides the framework for the host application to display and control the lifecycle of the applet. The JApplet class is a JComponent (Java Graphical Component) which provides the applet with the capability to display a graphical user interface (GUI) and respond to user events . 
+ The Hello class overrides the paintComponent(Graphics) method (additionally indicated with the annotation , supported as of JDK 1.5, Override ) inherited from the Container superclass to provide the code to display the applet. The paintComponent() method is passed a Graphics object that contains the graphic context used to display the applet. The paintComponent() method calls the graphic context drawString(String, int, int) method to display the "Hello, world!" string at a pixel offset of ( 65, 95 ) from the upper-left corner in the applet's display. 
+ 
+ 
+ 
+ &lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" 
+ "http://www.w3.org/TR/html4/strict.dtd"&gt; 
+ &lt;!-- Hello.html --&gt; 
+ &lt; html &gt; 
+  &lt; head &gt; 
+   &lt; title &gt; Hello World Applet &lt; / title &gt; 
+  &lt; / head &gt; 
+  &lt; body &gt; 
+   &lt; applet code = "Hello.class" width = "200" height = "200" &gt; 
+   &lt; / applet &gt; 
+  &lt; / body &gt; 
+ &lt; / html &gt; 
+ 
+ 
+ An applet is placed in an HTML document using the &lt;applet&gt; HTML element . The applet tag has three attributes set: code="Hello" specifies the name of the JApplet class and width="200" height="200" sets the pixel width and height of the applet. Applets may also be embedded in HTML using either the object or embed element,  However, the applet tag is deprecated, so the object tag is preferred where supported. 
+ The host application, typically a Web browser, instantiates the Hello applet and creates an AppletContext for the applet. Once the applet has initialized itself, it is added to the AWT display hierarchy. The paintComponent() method is called by the AWT event dispatching thread whenever the display needs the applet to draw itself. 
+ Servlet  
+ Main article: Java Servlet 
+ Java Servlet technology provides Web developers with a simple, consistent mechanism for extending the functionality of a Web server and for accessing existing business systems. Servlets are server-side Java EE components that generate responses (typically HTML pages) to requests (typically HTTP requests) from clients . A servlet can almost be thought of as an applet that runs on the server side—without a face. 
+ 
+ 
+ 
+ // Hello.java 
+ import java.io.* ; 
+ import javax.servlet.* ; 
+ 
+ public class Hello extends GenericServlet { 
+  public void service ( final ServletRequest request, final ServletResponse response ) 
+  throws ServletException, IOException { 
+  response. setContentType ( "text/html" ) ; 
+   final PrintWriter pw = response. getWriter ( ) ; 
+   try { 
+   pw. println ( "Hello, world!" ) ; 
+   } finally { 
+   pw. close ( ) ; 
+   } 
+  } 
+ } 
+ 
+ 
+ The import statements direct the Java compiler to include all of the public classes and interfaces from the java.io and javax.servlet packages in the compilation. Packages make Java well suited for large scale applications. 
+ The Hello class extends the GenericServlet class; the GenericServlet class provides the interface for the server to forward requests to the servlet and control the servlet's lifecycle. 
+ The Hello class overrides the service(ServletRequest, ServletResponse) method defined by the Servlet interface to provide the code for the service request handler. The service() method is passed: a ServletRequest object that contains the request from the client and a ServletResponse object used to create the response returned to the client. The service() method declares that it throws the exceptions ServletException and IOException if a problem prevents it from responding to the request. 
+ The setContentType(String) method in the response object is called to set the MIME content type of the returned data to "text/html" . The getWriter() method in the response returns a PrintWriter object that is used to write the data that is sent to the client. The println(String) method is called to write the "Hello, world!" string to the response and then the close() method is called to close the print writer, which causes the data that has been written to the stream to be returned to the client. 
+ JavaServer Pages  
+ Main article: JavaServer Pages 
+ JavaServer Pages (JSP) are server-side Java EE components that generate responses, typically HTML pages, to HTTP requests from clients . JSPs embed Java code in an HTML page by using the special delimiters &lt;% and %&gt; . A JSP is compiled to a Java servlet , a Java application in its own right, the first time it is accessed. After that, the generated servlet creates the response. 
+ Swing application  
+ Main article: Swing (Java) 
+ Swing is a graphical user interface library for the Java SE platform. It is possible to specify a different look and feel through the pluggable look and feel system of Swing. Clones of Windows , GTK+ and Motif are supplied by Sun. Apple also provides an Aqua look and feel for Mac OS X . Where prior implementations of these looks and feels may have been considered lacking, Swing in Java SE 6 addresses this problem by using more native GUI widget drawing routines of the underlying platforms. 
+ This example Swing application creates a single window with "Hello, world!" inside: 
+ 
+ 
+ 
+ // Hello.java (Java SE 5) 
+ import javax.swing.* ; 
+ 
+ public class Hello extends JFrame { 
+  public Hello ( ) { 
+   super ( "hello" ) ; 
+   super . setDefaultCloseOperation ( WindowConstants . EXIT_ON_CLOSE ) ; 
+   super . add ( new JLabel ( "Hello, world!" ) ) ; 
+   super . pack ( ) ; 
+   super . setVisible ( true ) ; 
+  } 
+ 
+  public static void main ( final String  args ) { 
+   new Hello ( ) ; 
+  } 
+ } 
+ 
+ 
+ The first import includes all of the public classes and interfaces from the javax.swing package. 
+ The Hello class extends the JFrame class; the JFrame class implements a window with a title bar and a close control . 
+ The Hello() constructor initializes the frame by first calling the superclass constructor, passing the parameter "hello" , which is used as the window's title. It then calls the setDefaultCloseOperation(int) method inherited from JFrame to set the default operation when the close control on the title bar is selected to WindowConstants.EXIT_ON_CLOSE — this causes the JFrame to be disposed of when the frame is closed (as opposed to merely hidden), which allows the Java virtual machine to exit and the program to terminate. Next, a JLabel is created for the string "Hello, world!" and the add(Component) method inherited from the Container superclass is called to add the label to the frame. The pack() method inherited from the Window superclass is called to size the window and lay out its contents. 
+ The main() method is called by the Java virtual machine when the program starts. It instantiates a new Hello frame and causes it to be displayed by calling the setVisible(boolean) method inherited from the Component superclass with the boolean parameter true . Once the frame is displayed, exiting the main method does not cause the program to terminate because the AWT event dispatching thread remains active until all of the Swing top-level windows have been disposed. 
+ Generics  
+ Main article: Generics in Java 
+ In 2004, generics were added to the Java language, as part of J2SE 5.0. Prior to the introduction of generics, each variable declaration had to be of a specific type. For container classes, for example, this is a problem because there is no easy way to create a container that accepts only specific types of objects. Either the container operates on all subtypes of a class or interface, usually Object , or a different container class has to be created for each contained class. Generics allow compile-time type checking without having to create a large number of container classes, each containing almost identical code. In addition to enabling more efficient code, certain runtime exceptions are converted to compile-time errors, a characteristic known as type safety . 
+ Criticism  
+ Main article: Criticism of Java 
+ Criticisms directed at Java include the implementation of generics,  
+ Use by external companies  
+ 
+ 
+ 
+  
+ Android makes extensive use of Java-related technology 
+ 
+ 
+ Google  
+ See also: Oracle v. Google 
+ Google and Android, Inc. have chosen to use Java as a key pillar in the creation of the Android operating system , an open-source smartphone operating system . Although the Android operating system, built on the Linux kernel , was written largely in C, the Android SDK uses the Java language as the basis for Android applications. However, Android uses Java only for its syntax, but not its class library. Instead of instantiating classes from the standard Java Class Library, Android provides its own class library which apps are expected to use. Android apps are compiled through Java bytecode as an intermediate step into Dalvik Executables targeting Android's own Dalvik virtual machine . Some of the classes in the Dalvik class library resembled their Java counterparts, which became a major point of contention between Sun/Oracle and Google/Android. 
+ On May 7, 2012, a San Francisco jury found that if APIs could be copyrighted, then Google had infringed Oracle's copyrights by the use of Java in Android devices.  
+ Class libraries  
+ 
+ 
+ 
+  
+ 
+ This section does not cite any references or sources . Please help improve this section by adding citations to reliable sources . Unsourced material may be challenged and removed . (May 2013) 
+ 
+ 
+ 
+ The Java Class Library are the compiled bytecodes of source code developed by the JRE implementor to support application development in Java. Examples of these libraries are:
+ 
+ The core libraries, which include:
+ 
+ Many low level, GUI, Integration, Deployment and Tools Java Platform Standard Edition 7 Documentation 
+ Collection libraries that implement data structures such as lists , dictionaries , trees , sets , queues and double-ended queue , or stacks 
+ XML Processing (Parsing, Transforming, Validating) libraries 
+ Security 
+ Internationalization and localization libraries 
+ 
+ 
+ The integration libraries, which allow the application writer to communicate with external systems. These libraries include:
+ 
+ The Java Database Connectivity (JDBC) API for database access 
+ Java Naming and Directory Interface (JNDI) for lookup and discovery 
+ RMI and CORBA for distributed application development 
+ JMX for managing and monitoring applications 
+ 
+ 
+ User interface libraries, which include:
+ 
+ The (heavyweight, or native ) Abstract Window Toolkit (AWT), which provides GUI components, the means for laying out those components and the means for handling events from those components 
+ The (lightweight) Swing libraries, which are built on AWT but provide (non-native) implementations of the AWT widgetry 
+ APIs for audio capture, processing, and playback 
+ 
+ 
+ 
+ 
+ A platform dependent implementation of the Java virtual machine that is the means by which the bytecodes of the Java libraries and third party applications are executed 
+ Plugins, which enable applets to be run in Web browsers 
+ Java Web Start , which allows Java applications to be efficiently distributed to end-users across the Internet 
+ Licensing and documentation. 
+ 
+ Documentation  
+ Main article: Javadoc 
+ Javadoc is a comprehensive documentation system, created by Sun Microsystems , used by many Java developers. It provides developers with an organized system for documenting their code. Javadoc comments have an extra asterisk at the beginning, i.e. the tags are /** and */, whereas the normal multi-line comments in Java are set off with the tags /* and */. 
+ Editions  
+ See also: Free Java implementations#Class library 
+ 
+ 
+ Java Editions 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ Java Card 
+ Micro Edition (ME) 
+ Standard Edition (SE) 
+ Enterprise Edition (EE) 
+ JavaFX 
+ PersonalJava (discontinued) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ v 
+ t 
+ e 
+ 
+ 
+ 
+ 
+ 
+ Sun has defined and supports four editions of Java targeting different application environments and segmented many of its APIs so that they belong to one of the platforms. The platforms are: 
+ 
+ Java Card for smartcards. 
+ Java Platform, Micro Edition (Java ME) — targeting environments with limited resources. 
+ Java Platform, Standard Edition (Java SE) — targeting workstation environments. 
+ Java Platform, Enterprise Edition (Java EE) — targeting large distributed enterprise or Internet environments. 
+ 
+ The classes in the Java APIs are organized into separate groups called packages . Each package contains a set of related interfaces , classes and exceptions . Refer to the separate platforms for a description of the packages available. 
+ The set of APIs is controlled by Sun Microsystems in cooperation with others through the Java Community Process program. Companies or individuals participating in this process can influence the design and development of the APIs. This process has been a subject of controversy. 
+ Sun also provided an edition called PersonalJava that has been superseded by later, standards-based Java ME configuration-profile pairings. 
+ See also  
+ 
+ 
+ 
+  
+ Java portal 
+ 
+ 
+  
+ Computer programming portal 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Book: Programming for Students 
+ 
+ 
+ 
+ 
+ 
+ Dalvik 
+ JavaOne 
+ Javapedia 
+ List of Java virtual machines 
+ List of Java APIs 
+ List of JVM languages 
+ Graal , a project aiming to implement a high performance Java dynamic compiler and interpreter 
+ 
+ Comparison of Java with other languages  
+ 
+ Comparison of programming languages 
+ Comparison of Java and C++ 
+ Comparison of Java and C# 
+ 
+ Notes  
+ 
+ 
+ ^  a   b   "The History of Java Technology" . Retrieved October 6, 2012 . &#160; 
+ ^  Java 5.0 added several new language features (the enhanced for loop , autoboxing , varargs and annotations ), after they were introduced in the similar (and competing) C# language  
+ ^  Gosling, James; and McGilton, Henry (May 1996). "The Java Language Environment" . &#160; 
+ ^  Gosling, James; Joy, Bill; Steele, Guy; and Bracha, Gilad. "The Java Language Specification, 2nd Edition" . &#160; 
+ ^  "The A-Z of Programming Languages: Modula-3" . Computerworld.com.au . Retrieved 2010-06-09 . &#160; 
+ ^  Niklaus Wirth stated on a number of public occasions, e.g. in a lecture at the Polytechnic Museum, Moscow in September, 2005 (several independent first-hand accounts in Russian exist, e.g. one with an audio recording: Filippova, Elena (September 22, 2005). "Niklaus Wirth's lecture at the Polytechnic Museum in Moscow" . &#160; ), that the Sun Java design team licenced the Oberon compiler sources a number of years prior to the release of Java and examined it: a (relative) compactness, type safety, garbage collection, no multiple inheritance for classes -- all these key overall design features are shared by Java and Oberon. 
+ ^  Patrick Naughton cites Objective-C as a strong influence on the design of the Java programming language, stating that notable direct derivatives include Java interfaces (derived from Objective-C's protocol ) and primitive wrapper classes.  
+ ^  TechMetrix Research (1999). "History of Java" . Java Application Servers Report . "The project went ahead under the name "green" and the language was based on an old model of UCSD Pascal , which makes it possible to generate interpretive code" &#160; 
+ ^  "A Conversation with James Gosling – ACM Queue" . Queue.acm.org. 2004-08-31 . Retrieved 2010-06-09 . &#160; 
+ ^  "Programming Language Popularity" . 2014 . Retrieved 2014-02-7 . &#160; Check date values in: |accessdate= ( help ) 
+ ^  "TIOBE Programming Community Index" . 2009 . Retrieved 2009-05-06 . &#160; 
+ ^  Byous, Jon (c. 1998). "Java technology: The early years" . Sun Developer Network . Sun Microsystems . Archived from the original on April 20, 2005 . Retrieved 2005-04-22 . &#160; 
+ ^  Object-oriented programming "The History of Java Technology" . Sun Developer Network . c. 1995 . Retrieved 2010-04-30 . &#160; 
+ ^  " So why did they decide to call it Java? ", Kieron Murphy, JavaWorld.com, 10/04/96 
+ ^  Kabutz, Heinz; Once Upon an Oak . Artima. Retrieved April 29, 2007. 
+ ^  Java Study Group ; Why Java Was – Not – Standardized Twice ; What is ECMA—and why Microsoft cares 
+ ^  "Java Community Process website" . Jcp.org. 2010-05-24 . Retrieved 2010-06-09 . &#160; 
+ ^  "JAVAONE: Sun – The bulk of Java is open sourced" . open.itworld.com . Retrieved 2010-06-09 . &#160;  
+ ^  "Sun’s Evolving Role as Java Evangelist" . O'Reilly Media . &#160; 
+ ^  "Oracle and Java" . oracle.com . Oracle Corporation . Retrieved 2010-08-23 . "Oracle has been a leading and substantive supporter of Java since its emergence in 1995 and takes on the new role as steward of Java technology with a relentless commitment to fostering a community of participation and transparency." &#160; 
+ ^  "Learn About Java Technology" . Oracle . Retrieved 21 November 2011 . &#160; 
+ ^  Gosling, James (April 9, 2010). "Time to move on..." . On a New Road . Retrieved 2011-11-16 . &#160; 
+ ^  "The Java Language Environment" . 1.2 Design Goals of the Java™ Programming Language . Oracle. 1999-01-01 . Retrieved 2013-01-14 . &#160; 
+ ^  Niccolai, James (January 23, 2001). "Sun, Microsoft settle Java lawsuit" . JavaWorld ( IDG ) . Retrieved 2008-07-09 . &#160; 
+ ^  Jelovic, Dejan. "Why Java will always be slower than C++" . Retrieved 2008-02-15 . &#160; 
+ ^  Google. "Loop Recognition in C++/Java/Go/Scala" . Retrieved 2012-07-12 . &#160; 
+ ^  "Symantec's Just-In-Time Java Compiler To Be Integrated Into Sun JDK 1.1" . &#160; 
+ ^  "NullPointerException" . Java.sun.com . Retrieved 2010-06-09 . &#160; 
+ ^  "Exceptions in Java" . Artima.com . Retrieved 2010-08-10 . &#160; 
+ ^  "Java HotSpot VM Options" . Oracle.com. 2010-09-07 . Retrieved 2012-06-30 . &#160; 
+ ^  "Lesson: A Closer Look at the "Hello World!" Application" . The Java™ Tutorials &gt; Getting Started . Oracle Corporation . Retrieved 2011-04-14 . &#160; 
+ ^  "Using applet, object and embed Tags" . oracle.com . Retrieved 2010-10-14 . &#160; 
+ ^  "Deploying Applets in a Mixed-Browser Environment" . oracle.com . Retrieved 2010-10-14 . &#160; 
+ ^  Arnold, Ken. "Generics Considered Harmful" . java.net . Retrieved 4 July 2011 . &#160; 
+ ^  Goetz, Brian (2005-09-27). "Java theory and practice: Urban performance legends, revisited" . ibm.com . Retrieved 2012-11-26 . &#160; "The Java language is the target of a lot of abuse for performance." 
+ ^  Jelovic, Dejan. "Why Java Will Always Be Slower than C++" . www.jelovic.com . Retrieved 17 October 2012 . &#160; 
+ ^  Owens, Sean R. "Java and unsigned int, unsigned short, unsigned byte, unsigned long, etc. (Or rather, the lack thereof)" . Archived from the original on 2004-11-09 . Retrieved 2011-07-04 . &#160; 
+ ^  Kahan, William. "How Java’s Floating-Point Hurts Everyone Everywhere" . Electrical Engineering &amp; Computer Science, University of California at Berkeley . Retrieved 4 June 2011 . &#160; 
+ ^  "Have you checked the Java?" . &#160; 
+ ^  Marquit, Miranda (2013-09-26). "JavaOne: #1 Programming Language Ready for Revolution" . insidetechtalk.com . Retrieved 2013-10-08 . &#160; "JavaOne 2013 featured a technical keynote that described some of the features of the next incarnation of Java. 
+ ^  Mullin, Joe. "Google guilty of infringement in Oracle trial; future legal headaches loom" . Law &amp; Disorder . Ars Technica . Retrieved 8 May 2012 . &#160; 
+ ^  Joe Mullin (May 31, 2012). "Google wins crucial API ruling, Oracle’s case decimated" . Ars Technica . Retrieved 2012-06-01 . &#160; 
+ 
+ 
+ References  
+ 
+ 
+ Gosling, James , A brief history of the Green project . . Retrieved April 29, 2007. 
+ Gosling, James , A brief history of the Green project . . Retrieved September 4, 2013. 
+ Gosling, James; Joy, Bill ; Steele, Guy L., Jr. ; Bracha, Gilad (2005). The Java Language Specification (3rd ed.). Addison-Wesley. ISBN &#160; 0-321-24678-0 . &#160; 
+ Lindholm, Tim; Yellin, Frank (1999). The Java Virtual Machine Specification (2nd ed.). Addison-Wesley. ISBN &#160; 0-201-43294-3 . &#160; 
+ 
+ 
+ External links  
+ 
+ 
+ Find more about Java (programming language) at Wikipedia's sister projects 
+ 
+ 
+  
+ Definitions and translations from Wiktionary 
+ 
+ 
+  
+ Media from Commons 
+ 
+ 
+  
+ Quotations from Wikiquote 
+ 
+ 
+  
+ Textbooks from Wikibooks 
+ 
+ 
+  
+ Learning resources from Wikiversity 
+ 
+ 
+ 
+ 
+ 
+ Wikiversity has learning materials about Java Platform, Enterprise Edition/Java EE Tutorial 
+ 
+ 
+ 
+ java.com : Main website 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ v 
+ t 
+ e 
+ 
+ 
+ Java 
+ 
+ 
+ 
+ 
+ 
+ 
+ Java platforms 
+ 
+ 
+ 
+ Java language 
+ JVM 
+ Micro Edition 
+ Standard Edition 
+ Enterprise Edition 
+ Java Card 
+ Android SDK 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ Sun technologies 
+ 
+ 
+ 
+ Squawk 
+ Java Development Kit 
+ OpenJDK 
+ Java virtual machine 
+ JavaFX 
+ Maxine VM 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Platform technologies 
+ 
+ 
+ 
+ Applets 
+ Servlets 
+ MIDlets 
+ JSP 
+ Web Start (JNLP) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Major third-party technologies 
+ 
+ 
+ 
+ JRockit 
+ GNU Classpath 
+ Kaffe 
+ TopLink 
+ Apache Harmony 
+ Apache Struts 
+ Spring framework 
+ Hibernate 
+ JBoss application server 
+ Tapestry 
+ Jazelle 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ History 
+ 
+ 
+ 
+ Java version history 
+ Java Community Process 
+ Sun Microsystems 
+ Free Java implementations 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Major programming languages 
+ 
+ 
+ 
+ BeanShell 
+ Clojure 
+ Groovy 
+ Oxygene 
+ Java Tcl 
+ JRuby 
+ Jython 
+ Processing 
+ Rhino 
+ Scala 
+ more… 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Java conferences 
+ 
+ 
+ 
+ JavaOne 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ v 
+ t 
+ e 
+ 
+ 
+ Sun Microsystems (acquired by Oracle Corporation , 2010) 
+ 
+ 
+ 
+ 
+ 
+ 
+ Hardware 
+ 
+ 
+ 
+ Sun-1 
+ Sun-2 
+ Sun-3 
+ Sun386i 
+ Sun-4 
+ SPARCstation 
+ Netra 
+ Ultra 
+ Enterprise 
+ Sun Blade 
+ Sun Fire 
+ SPARC Enterprise 
+ SPARC 
+ JavaStation 
+ Sun Ray 
+ Sun Modular Datacenter 
+ more... 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Software 
+ 
+ 
+ 
+ SunOS 
+ Solaris 
+ NIS ( + ) 
+ NFS 
+ ZFS 
+ SunView 
+ NeWS 
+ OpenWindows 
+ Java Desktop System 
+ Sun Studio 
+ Java 
+ StarOffice 
+ iPlanet / Sun ONE / Java Enterprise System 
+ Sun Secure Global Desktop 
+ MySQL 
+ Sun xVM 
+ GlassFish 
+ more... 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Storage 
+ 
+ 
+ 
+ StorageTek 
+ Sun Open Storage 
+ QFS 
+ ZFS 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ High-performance computing 
+ 
+ 
+ 
+ Sun Cloud 
+ Sun Constellation System 
+ Sun Visualization System 
+ Sun Grid Engine 
+ Lustre 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Research 
+ 
+ 
+ 
+ Sun Labs 
+ picoJava 
+ Fortress 
+ Project Looking Glass 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Education and recognition 
+ 
+ 
+ 
+ SCPs 
+ List of notable employees 
+ BlueJ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Community 
+ 
+ 
+ 
+ CDDL 
+ Java Community Process 
+ NetBeans 
+ OpenOffice.org 
+ OpenSolaris 
+ OpenSPARC 
+ OpenJDK 
+ OSUM 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ v 
+ t 
+ e 
+ 
+ 
+ Free and open-source software 
+ 
+ 
+ 
+ 
+ 
+ 
+ General 
+ 
+ 
+ 
+ Alternative terms for free software 
+ Comparison of open source and closed source 
+ Comparison of open-source software hosting facilities 
+ Formerly proprietary software 
+ Free and open-source Android applications 
+ Free and open-source software packages 
+ Free software 
+ Free software events 
+ Free software movement 
+ Free software project directories 
+ Free software web applications 
+ Gratis versus libre 
+ Long-term support 
+ Open-source software 
+ Outline 
+ SPDX 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Operating system 
+families 
+ 
+ 
+ 
+ AROS 
+ BSD 
+ Darwin 
+ eCos 
+ FreeDOS 
+ GNU 
+ Haiku 
+ Inferno 
+ Linux 
+ Mach 
+ MINIX 
+ OpenSolaris 
+ Plan 9 
+ ReactOS 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Development 
+ 
+ 
+ 
+ Basic For Qt 
+ Eclipse 
+ Free Pascal 
+ FreeBASIC 
+ Gambas 
+ GCC 
+ Java 
+ LLVM 
+ Lua 
+ NetBeans 
+ Open64 
+ Perl 
+ PHP 
+ Python 
+ ROSE 
+ Ruby 
+ Tcl 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ History 
+ 
+ 
+ 
+ GNU 
+ Haiku 
+ Linux 
+ Mozilla 
+ 
+ Application Suite 
+ Firefox 
+ Thunderbird 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Organizations 
+ 
+ 
+ 
+ Android Open Source Project 
+ Apache Software Foundation 
+ Blender Foundation 
+ The Document Foundation 
+ Eclipse Foundation 
+ Free Software Foundation 
+ 
+ Europe 
+ India 
+ Latin America 
+ 
+ 
+ FreeBSD Foundation 
+ freedesktop.org 
+ FSMI 
+ GNOME Foundation 
+ GNU Project 
+ Google Code 
+ KDE e.V. 
+ Linux Foundation 
+ Mozilla Foundation 
+ Open Knowledge Foundation 
+ Open Source Geospatial Foundation 
+ Open Source Initiative 
+ Software Freedom Conservancy 
+ SourceForge 
+ Symbian Foundation 
+ Ubuntu Foundation 
+ X.Org Foundation 
+ Xiph.Org Foundation 
+ XMPP Standards Foundation 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Licenses 
+ 
+ 
+ 
+ Apache 
+ Artistic 
+ Beerware 
+ Boost 
+ BSD 
+ CC0 
+ GNU GPL 
+ GNU LGPL 
+ ISC 
+ MIT 
+ MPL 
+ Ms-PL/RL 
+ WTFPL 
+ zlib 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ License types 
+and standards 
+ 
+ 
+ 
+ Comparison of free and open-source software licenses 
+ Contributor License Agreement 
+ Copyfree 
+ Copyleft 
+ Debian Free Software Guidelines 
+ Definition of Free Cultural Works 
+ Free license 
+ The Free Software Definition 
+ The Open Source Definition 
+ Open-source license 
+ Permissive free software licence 
+ Public domain 
+ Viral license 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Challenges 
+ 
+ 
+ 
+ Binary blob 
+ Digital rights management 
+ Free and open-source graphics device driver 
+ Hardware restrictions 
+ License proliferation 
+ Mozilla software rebranding 
+ Proprietary software 
+ SCO–Linux controversies 
+ Secure boot 
+ Software patents 
+ Software security 
+ Trusted Computing 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Related topics 
+ 
+ 
+ 
+ The Cathedral and the Bazaar 
+ Forking 
+ Linux distribution 
+ Microsoft Open Specification Promise 
+ Revolution OS 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Book 
+ Category 
+ Commons 
+ Portal 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+ 								 
+				Retrieved from " http://en.wikipedia.org/w/index.php?title=Java_(programming_language)&amp;oldid=598514521 "				 
+												 Categories : C programming language family Class-based programming languages Concurrent programming languages Cross-platform software Java platform Java programming language Java specification requests JVM programming languages Object-oriented programming languages Programming languages created in 1995 Sun Microsystems  Hidden categories: CS1 errors: dates All articles with dead external links Articles with dead external links from June 2012 Wikipedia pending changes protected pages (level 1) All articles with unsourced statements Articles with unsourced statements from April 2013 Articles with unsourced statements from June 2013 Articles needing cleanup from January 2012 All pages needing cleanup Articles containing how-to sections Articles needing additional references from May 2013 All articles needing additional references Articles needing cleanup from May 2013 Articles with dead external links from June 2011 Articles with dead external links from December 2013  												 
+							 
+		 
+		 
+			 Navigation menu 
+			 
+				 
+	 Personal tools 
+	 
+ Create account Log in 	 
+ 
+				 
+					 
+	 Namespaces 
+	 
+					 Article 
+					 Talk 
+			 
+ 
+ 
+	 
+		 
+	 Variants 
+	 
+		 
+					 
+	 
+ 
+				 
+				 
+					 
+	 Views 
+	 
+					 Read 
+					 Edit 
+					 View history 
+			 
+ 
+ 
+	 Actions 
+	 
+		 
+					 
+	 
+ 
+ 
+	 Search 
+	 
+					 
+					 		 
+	 
+ 
+				 
+			 
+			 
+					 
+				 
+	 Navigation 
+	 
+		 
+			 Main page 
+			 Contents 
+			 Featured content 
+			 Current events 
+			 Random article 
+			 Donate to Wikipedia 
+			 Wikimedia Shop 
+		 
+	 
+ 
+ 
+	 Interaction 
+	 
+		 
+			 Help 
+			 About Wikipedia 
+			 Community portal 
+			 Recent changes 
+			 Contact page 
+		 
+	 
+ 
+ 
+	 Tools 
+	 
+		 
+			 What links here 
+			 Related changes 
+			 Upload file 
+			 Special pages 
+			 Permanent link 
+			 Page information 
+			 Data item 
+ Cite this page 		 
+	 
+ 
+ 
+	 Print/export 
+	 
+		 
+			 Create a book 
+			 Download as PDF 
+			 Printable version 
+		 
+	 
+ 
+ 
+	 Languages 
+	 
+		 
+			 Acèh 
+			 Afrikaans 
+			 አማርኛ 
+			 العربية 
+			 অসমীয়া 
+			 Azərbaycanca 
+			 বাংলা 
+			 Беларуская 
+			 Беларуская (тарашкевіца)‎ 
+			 Български 
+			 Bosanski 
+			 Català 
+			 Чӑвашла 
+			 Čeština 
+			 Corsu 
+			 Cymraeg 
+			 Dansk 
+			 Deutsch 
+			 Eesti 
+			 Ελληνικά 
+			 Español 
+			 Esperanto 
+			 Euskara 
+			 فارسی 
+			 Français 
+			 Gaeilge 
+			 Galego 
+			 ગુજરાતી 
+			 한국어 
+			 Հայերեն 
+			 हिन्दी 
+			 Hrvatski 
+			 Bahasa Indonesia 
+			 Interlingua 
+			 Íslenska 
+			 Italiano 
+			 עברית 
+			 ಕನ್ನಡ 
+			 ქართული 
+			 Қазақша 
+			 Kreyòl ayisyen 
+			 Кыргызча 
+			 Latina 
+			 Latviešu 
+			 Lietuvių 
+			 Ligure 
+			 Magyar 
+			 Македонски 
+			 മലയാളം 
+			 मराठी 
+			 Bahasa Melayu 
+			 Mìng-dĕ̤ng-ngṳ̄ 
+			 Монгол 
+			 မြန်မာဘာသာ 
+			 Nederlands 
+			 日本語 
+			 Norsk bokmål 
+			 Norsk nynorsk 
+			 Oʻzbekcha 
+			 ਪੰਜਾਬੀ 
+			 Polski 
+			 Português 
+			 Qaraqalpaqsha 
+			 Română 
+			 Русский 
+			 Саха тыла 
+			 Scots 
+			 Shqip 
+			 සිංහල 
+			 Simple English 
+			 Slovenčina 
+			 Slovenščina 
+			 کوردی 
+			 Српски / srpski 
+			 Srpskohrvatski / српскохрватски 
+			 Suomi 
+			 Svenska 
+			 Tagalog 
+			 தமிழ் 
+			 తెలుగు 
+			 ไทย 
+			 Тоҷикӣ 
+			 Türkçe 
+			 ᨅᨔ ᨕᨘᨁᨗ 
+			 Українська 
+			 Vèneto 
+			 Tiếng Việt 
+			 Winaray 
+			 吴语 
+			 粵語 
+			 Žemaitėška 
+			 中文 
+			 
+			 Edit links 
+		 
+	 
+ 
+			 
+		 
+		 
+							 
+											 This page was last modified on 7 March 2014 at 06:56. 
+											 Text is available under the Creative Commons Attribution-ShareAlike License ;
+additional terms may apply. By using this site, you agree to the Terms of Use and Privacy Policy. 
+Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc. , a non-profit organization. 
+									 
+							 
+											 Privacy policy 
+											 About Wikipedia 
+											 Disclaimers 
+											 Contact Wikipedia 
+											 Developers 
+											 Mobile view

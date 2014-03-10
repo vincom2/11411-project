@@ -1,0 +1,1772 @@
+C Sharp (programming language) - Wikipedia, the free encyclopedia 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+ 
+ 
+		 
+		 
+		 
+			 
+			 
+						 
+						 C Sharp (programming language) 
+			 
+								 From Wikipedia, the free encyclopedia 
+								 
+												 
+					Jump to:					 navigation , 					 search 
+				 
+				 This article is about a programming language. For other uses, see C-sharp (disambiguation) . 
+ The correct title of this article is C# (programming language) . The substitution or omission of the # is because of technical restrictions . 
+ 
+ C♯ 
+ 
+  
+ 
+ 
+ Paradigm(s) 
+ multi-paradigm : structured , imperative , object-oriented , event-driven , functional , generic , reflective , concurrent 
+ 
+ 
+ Appeared in 
+ 2000 
+ 
+ 
+ Designed by 
+ Microsoft 
+ 
+ 
+ Developer 
+ Microsoft 
+ 
+ 
+ Stable release 
+ 5.0 (August&#160;15, 2012 ; 18 months ago &#160;( 2012-08-15 ) ) 
+ 
+ 
+ Typing discipline 
+ static , dynamic ,   strong , safe , nominative , partially inferred 
+ 
+ 
+ Major implementations 
+ Visual C♯ , .NET Framework , Mono , DotGNU 
+ 
+ 
+ Dialects 
+ Cω , Spec# , Polyphonic C♯ 
+ 
+ 
+ Influenced by 
+ C++ ,  
+ 
+ 
+ Influenced 
+ D , F# , Java ,   Kotlin , Monkey , Nemerle , Vala 
+ 
+ 
+ Platform 
+ Common Language Infrastructure 
+ 
+ 
+ License 
+ CLR is proprietary, Mono compiler is dual GPLv3 , MIT/X11 and libraries are LGPLv 2, DotGNU is dual GPL and LGPLv 2 
+ 
+ 
+ Usual filename extensions 
+ .cs 
+ 
+ 
+ 
+ 
+ C Sharp Programming at Wikibooks 
+ 
+ 
+ 
+ 
+ C♯  
+ C♯ is intended to be a simple, modern, general-purpose, object-oriented programming language.  Its development team is led by Anders Hejlsberg . The most recent version is C♯ 5.0, which was released on August 15, 2012. 
+ 
+ 
+ 
+ Contents 
+ 
+ 
+ 1 Design goals 
+ 2 Name 
+ 3 History 
+ 4 Versions 
+ 5 Syntax 
+ 
+ 5.1 Distinguishing features 
+ 
+ 
+ 6 Common type system 
+ 
+ 6.1 Categories of data types 
+ 6.2 Boxing and unboxing 
+ 6.3 Generics 
+ 
+ 
+ 7 Preprocessor 
+ 8 Code comments 
+ 9 XML documentation system 
+ 10 Libraries 
+ 11 "Hello, world" example 
+ 12 Standardization and licensing 
+ 13 Implementations 
+ 14 See also 
+ 15 Notes 
+ 16 References 
+ 17 Further reading 
+ 18 External links 
+ 
+ 
+ 
+ Design goals  
+ The ECMA standard lists these design goals for C#:  
+ 
+ The C# language is intended to be a simple, modern, general-purpose, object-oriented programming language. 
+ The language, and implementations thereof, should provide support for software engineering principles such as strong type checking, array bounds checking , detection of attempts to use uninitialized variables , and automatic garbage collection . Software robustness, durability, and programmer productivity are important. 
+ The language is intended for use in developing software components suitable for deployment in distributed environments. 
+ Source code portability is very important, as is programmer portability, especially for those programmers already familiar with C and C++ . 
+ Support for internationalization is very important. 
+ C# is intended to be suitable for writing applications for both hosted and embedded systems , ranging from the very large that use sophisticated operating systems , down to the very small having dedicated functions. 
+ Although C# applications are intended to be economical with regard to memory and processing power requirements, the language was not intended to compete directly on performance and size with C or assembly language. 
+ 
+ Name  
+ 
+ 
+ 
+  
+ C-sharp musical note 
+ 
+ 
+ The name "C sharp" was inspired by musical notation where a sharp indicates that the written note should be made a semitone higher in pitch .  This is similar to the language name of C++ , where "++" indicates that a variable should be incremented by 1. The sharp symbol also resembles a ligature of four "+" symbols (in a two-by-two grid), further implying that the language is an increment of C++. 
+ Due to technical limitations of display (standard fonts, browsers, etc.) and the fact that the sharp symbol ( U+266F ♯  music sharp sign (HTML: &amp;#9839; )) is not present on the standard keyboard, the number sign ( U+0023 # number sign (HTML: &amp;#35; )) was chosen to represent the sharp symbol in the written name of the programming language.  ), Microsoft uses the intended musical symbol. 
+ The "sharp" suffix has been used by a number of other .NET languages that are variants of existing languages, including J# (a .NET language also designed by Microsoft that is derived from Java 1.1), A# (from Ada ), and the functional programming language F# .  a name retired since the full Eiffel language is now supported. The suffix has also been used for libraries , such as Gtk# (a .NET wrapper for GTK+ and other GNOME libraries), Cocoa# (a wrapper for Cocoa ). 
+ History  
+ During the development of the .NET Framework, the class libraries were originally written using a managed code compiler system called Simple Managed C (SMC).  Microsoft had considered keeping the name "Cool" as the final name of the language, but chose not to do so for trademark reasons. By the time the .NET project was publicly announced at the July 2000 Professional Developers Conference , the language had been renamed C#, and the class libraries and ASP.NET runtime had been ported to C#. 
+ C#'s principal designer and lead architect at Microsoft is Anders Hejlsberg , who was previously involved with the design of Turbo Pascal , Embarcadero Delphi (formerly CodeGear Delphi, Inprise Delphi and Borland Delphi), and Visual J++ . In interviews and technical papers he has stated that flaws  in most major programming languages (e.g. C++ , Java , Delphi , and Smalltalk ) drove the fundamentals of the Common Language Runtime (CLR), which, in turn, drove the design of the C# language itself. 
+ James Gosling , who created the Java programming language in 1994, and Bill Joy , a co-founder of Sun Microsystems, the originator of Java, called C# an "imitation" of Java; Gosling further said that " 
+ Since the release of C# 2.0 in November 2005, the C# and Java languages have evolved on increasingly divergent trajectories, becoming somewhat less similar. One of the first major departures came with the addition of generics to both languages, with vastly different implementations. C# makes use of reification to provide "first-class" generic objects that can be used like any other class, with code generation performed at class-load time.  
+ Furthermore, C# has added several major features to accommodate functional-style programming, culminating in the LINQ extensions released with C# 3.0 and its supporting framework of lambda expressions , extension methods , and anonymous types.  
+ C# used to have a mascot called Andy (named after Anders Hejlsberg). It was retired on Jan 29, 2004.  
+ C# was originally submitted for review to the ISO subcommittee JTC 1/SC 22  
+ Versions  
+ In the course of its development, the C# language has gone through several versions: 
+ 
+ 
+ 
+ Version 
+ CLR  
+ Language specification 
+ Date 
+ .NET Framework 
+ Visual Studio 
+ 
+ 
+ ECMA 
+ ISO/IEC 
+ Microsoft 
+ 
+ 
+ C# 1.0 
+ 1.0 
+ December 2002 
+ April 2003 
+ January 2002 
+ January 2002 
+ .NET Framework 1.0 
+ Visual Studio .NET 2002 
+ 
+ 
+ C# 1.2 
+ 1.1 
+ October 2003 
+ April 2003 
+ .NET Framework 1.1 
+ Visual Studio .NET 2003 
+ 
+ 
+ C# 2.0 
+ 2.0 
+ June 2006 
+ September 2006 
+ September 2005  
+ November 2005 
+ .NET Framework 2.0 
+ Visual Studio 2005 
+ 
+ 
+ C# 3.0 
+ 2.0 
+2.0 SP1 
+ None  
+ August 2007 
+ November 2007 
+ 
+ .NET Framework 2.0 (Except LINQ/Query Extensions)  
+ .NET Framework 3.0 (Except LINQ/Query Extensions)  
+ .NET Framework 3.5 
+ 
+ Visual Studio 2008 
+ Visual Studio 2010 
+ 
+ 
+ C# 4.0 
+ 4.0  
+ April 2010 
+ April 2010 
+ .NET Framework 4 
+ Visual Studio 2010 
+ 
+ 
+ C# 5.0 
+ 4.5  
+ June 2013 
+ August 2012 
+ .NET Framework 4.5 
+ Visual Studio 2013 
+ 
+ 
+ 
+ 
+  A  The Microsoft C# 2.0 specification document only contains the new 2.0 features. For older features use the 1.2 specification above. 
+ 
+ 
+  B  No ECMA or ISO/IEC specifications exist for C# 3.0, 4.0 or 5.0. 
+ 
+ 
+  C  There was no CLR version 3.0. 
+ 
+ 
+  D  CLR documentation refers to as 4.5 but Environment.Version points to 4.0.  
+ 
+ 
+ 
+ Summary of versions 
+ 
+ 
+ C# 2.0 
+ C# 3.0 
+ C# 4.0 
+ C# 5.0  
+ Future 
+ 
+ 
+ Features 
+added 
+ 
+ 
+ Generics 
+ Partial types 
+ Anonymous methods 
+ Iterators 
+ Nullable types 
+ Private setters (properties) 
+ Method group conversions (delegates) 
+ Covariance and Contra-variance 
+ Static classes 
+ 
+ 
+ 
+ 
+ Implicitly typed local variables 
+ Object and collection initializers 
+ Auto-Implemented properties 
+ Anonymous types 
+ Extension methods 
+ Query expressions 
+ Lambda expressions 
+ Expression trees 
+ Partial Methods 
+ 
+ 
+ 
+ 
+ Dynamic binding 
+ Named and optional arguments 
+ Generic co- and contravariance 
+ Embedded interop types ("NoPIA") 
+ 
+ 
+ 
+ 
+ Asynchronous methods 
+ Caller info attributes 
+ 
+ 
+ 
+ 
+ C# 5.0 
+ 
+ 
+ Compiler-as-a-service ( Roslyn ) 
+ 
+ 
+ C# 6.0 
+ 
+ 
+ Import type members into namespace 
+ Succinct syntax for primary constructors 
+ Readonly properties 
+ Property expressions (property lambdas) 
+ Method expressions 
+ Parameter arrays for IEnumerable interfaces 
+ Succinct null checking 
+ Multiple return values 
+ Constructor type inference 
+ 
+ 
+ 
+ 
+ 
+ Syntax  
+ Main article: C Sharp syntax 
+ See also: Syntax (programming languages) 
+ C# has the following syntax: 
+ 
+ Semicolons are used to denote the end of a statement. 
+ Curly braces are used to group statements. Statements are commonly grouped into methods (functions), methods into classes, and classes into namespaces . 
+ Variables are assigned using an equals sign , but compared using two consecutive equals signs . 
+ Square brackets are used with arrays , both to declare them and to get a value at a given index in one of them. 
+ 
+ Distinguishing features  
+ 
+ Note: The following description is based on the language standard and other documents listed in the " External links " section. 
+ 
+ By design, C# is the programming language that most directly reflects the underlying Common Language Infrastructure &#160;(CLI).  Most of its intrinsic types correspond to value-types implemented by the CLI framework. However, the language specification does not state the code generation requirements of the compiler: that is, it does not state that a C# compiler must target a Common Language Runtime, or generate Common Intermediate Language (CIL), or generate any other specific format. Theoretically, a C# compiler could generate machine code like traditional compilers of C++ or Fortran . Some notable features of C# that distinguish it from C and C++ (and Java, where noted) are: 
+ 
+ C# supports strongly typed implicit variable declarations with the keyword var , and implicitly typed arrays with the keyword new  followed by a collection initializer. 
+ Meta programming via C# attributes is part of the language. Many of these attributes duplicate the functionality of GCC's and VisualC++'s platform-dependent preprocessor directives. 
+ Like C++, and unlike Java, C# programmers must use the keyword virtual to allow methods to be overridden by subclasses. 
+ Extension methods in C# allow programmers to use static methods as if they were methods from a class's method table, allowing programmers to add methods to an object that they feel should exist on that object and its derivatives. 
+ The type dynamic allows for run-time method binding, allowing for JavaScript like method calls and run-time object composition. 
+ C# has support for strongly-typed function pointers via the keyword delegate . 
+ Like the Qt framework's pseudo-C++ signal and slot , C# has semantics specifically surrounding publish-subscribe style events, though C# uses delegates to do so. 
+ C# offers Java-like synchronized method calls, via the attribute  , and has support for mutually-exclusive locks via the keyword lock . 
+ The C# languages does not allow for global variables or functions. All methods and members must be declared within classes. Static members of public classes can substitute for global variables and functions. 
+ Local variables cannot shadow variables of the enclosing block, unlike C and C++. 
+ A C# namespace provides the same level of code isolation as a Java package or a C++ namespace , with very similar rules and features to a package . 
+ C# supports a strict Boolean data type , bool . Statements that take conditions, such as while and if , require an expression of a type that implements the true operator, such as the boolean type. While C++ also has a boolean type, it can be freely converted to and from integers, and expressions such as if ( a ) require only that a is convertible to bool, allowing a to be an int, or a pointer. C# disallows this "integer meaning true or false" approach, on the grounds that forcing programmers to use expressions that return exactly bool can prevent certain types of programming mistakes common in C or C++ such as if ( a = b ) (use of assignment = instead of equality == ). 
+ In C#, memory address pointers can only be used within blocks specifically marked as unsafe , and programs with unsafe code need appropriate permissions to run. Most object access is done through safe object references, which always either point to a "live" object or have the well-defined null value; it is impossible to obtain a reference to a "dead" object (one that has been garbage collected), or to a random block of memory. An unsafe pointer can point to an instance of a value-type, array, string, or a block of memory allocated on a stack. Code that is not marked as unsafe can still store and manipulate pointers through the System . IntPtr type, but it cannot dereference them. 
+ Managed memory cannot be explicitly freed; instead, it is automatically garbage collected. Garbage collection addresses the problem of memory leaks by freeing the programmer of responsibility for releasing memory that is no longer needed. 
+ In addition to the try ... catch construct to handle exceptions , C# has a try ... finally construct to guarantee execution of the code in the finally block, whether an exception occurs or not. 
+ Multiple inheritance is not supported, although a class can implement any number of interfaces. This was a design decision by the language's lead architect to avoid complication and simplify architectural requirements throughout CLI. When implementing multiple interfaces that contain a method with the same signature, C# allows the programmer to implement each method depending on which interface that method is being called through, or, like Java, allows the programmer to implement the method once and have that be the single invocation on a call through any of the class's interfaces. 
+ C#, unlike Java, supports operator overloading . Only the most commonly overloaded operators in C++ may be overloaded in C#. 
+ C# is more type safe than C++. The only implicit conversions by default are those that are considered safe, such as widening of integers. This is enforced at compile-time, during JIT , and, in some cases, at runtime. No implicit conversions occur between booleans and integers, nor between enumeration members and integers (except for literal 0, which can be implicitly converted to any enumerated type). Any user-defined conversion must be explicitly marked as explicit or implicit, unlike C++ copy constructors and conversion operators, which are both implicit by default. 
+ C# has explicit support for covariance and contravariance in generic types, unlike C++ which has some degree of support for contravariance simply through the semantics of return types on virtual methods. 
+ Enumeration members are placed in their own scope . 
+ C# provides properties as syntactic sugar for a common pattern in which a pair of methods, accessor (getter) and mutator (setter) encapsulate operations on a single attribute of a class. No redundant method signatures for the getter/setter implementations need be written, and the property may be accessed using attribute syntax rather than more verbose method calls. 
+ Checked exceptions are not present in C# (in contrast to Java). This has been a conscious decision based on the issues of scalability and versionability.  
+ Though primarily an imperative language, C# 2.0 offered limited support for functional programming through first-class functions and closures in the form of anonymous delegates. C# 3.0 expanded support for functional programming with the introduction of a light weight syntax for lambda expressions, extension methods (an affordance for modules), and a list comprehension syntax in the form of a "query comprehension" language. 
+ 
+ Common type system  
+ C# has a unified type system . This unified type system is called Common Type System (CTS).  
+ A unified type system implies that all types, including primitives such as integers, are subclasses of the System . Object class. For example, every type inherits a ToString ( ) method. 
+ Categories of data types  
+ CTS separates data types into two categories:  
+ 
+ Reference types 
+ Value types 
+ 
+ Instances of value types do not have referential identity nor referential comparison semantics - equality and inequality comparisons for value types compare the actual data values within the instances, unless the corresponding operators are overloaded. Value types are derived from System . ValueType , always have a default value, and can always be created and copied. Some other limitations on value types are that they cannot derive from each other (but can implement interfaces) and cannot have an explicit default (parameterless) constructor. Examples of value types are all primitive types, such as int (a signed 32-bit integer), float (a 32-bit IEEE floating-point number), char (a 16-bit Unicode code unit), and System . DateTime (identifies a specific point in time with nanosecond precision). Other examples are enum (enumerations) and struct (user defined structures). 
+ In contrast, reference types have the notion of referential identity - each instance of a reference type is inherently distinct from every other instance, even if the data within both instances is the same. This is reflected in default equality and inequality comparisons for reference types, which test for referential rather than structural equality, unless the corresponding operators are overloaded (such as the case for System . String ). In general, it is not always possible to create an instance of a reference type, nor to copy an existing instance, or perform a value comparison on two existing instances, though specific reference types can provide such services by exposing a public constructor or implementing a corresponding interface (such as ICloneable or IComparable ). Examples of reference types are object (the ultimate base class for all other C# classes), System . String (a string of Unicode characters), and System . Array (a base class for all C# arrays). 
+ Both type categories are extensible with user-defined types. 
+ Boxing and unboxing  
+ Boxing is the operation of converting a value-type object into a value of a corresponding reference type.  Boxing in C# is implicit. 
+ Unboxing is the operation of converting a value of a reference type (previously boxed) into a value of a value type.  
+ Example: 
+ 
+ 
+ 
+ int foo1 = 42 ;   // Value type. 
+ object bar = foo1 ;  // foo is boxed to bar. 
+ int foo2 = ( int ) bar ; // Unboxed back to value type. 
+ 
+ 
+ Generics  
+ Generics were added to version 2.0 of the C# language. Generics use type parameters, which make it possible to design classes and methods that do not specify the type used until the class or method is instantiated. The main advantage is that one can use generic type parameters to create classes and methods that can be used without incurring the cost of runtime casts or boxing operations, as shown here:  
+ 
+ 
+ 
+ // Declare the generic class. 
+ 
+ public class GenericList &lt; T &gt; 
+ { 
+  void Add ( T input ) { } 
+ } 
+ 
+ class TestGenericList
+ { 
+  private class ExampleClass { } 
+  static void Main ( ) 
+  { 
+   // Declare a list of type int. 
+  GenericList &lt; int &gt; list1 = new GenericList &lt; int &gt; ( ) ; 
+ 
+   // Declare a list of type string. 
+  GenericList &lt; string &gt; list2 = new GenericList &lt; string &gt; ( ) ; 
+ 
+   // Declare a list of type ExampleClass. 
+  GenericList &lt; ExampleClass &gt; list3 = new GenericList &lt; ExampleClass &gt; ( ) ; 
+  } 
+ } 
+ 
+ 
+ When compared with C++ templates , C# generics can provide enhanced safety, but also have somewhat limited capabilities.  
+ Preprocessor  
+ C# features "preprocessor directives"  (though it does not have an actual preprocessor) based on the C preprocessor that allow programmers to define symbols , but not macros. Conditionals such as #if , #endif , and #else are also provided. Directives such as #region give hints to editors for code folding . 
+ 
+ 
+ 
+ public class Foo
+ { 
+  #region Constructors 
+  public Foo ( ) { } 
+  public Foo ( int firstParam ) { } 
+  #endregion 
+ 
+  #region Procedures 
+  public void IntBar ( int firstParam ) { } 
+  public void StrBar ( string firstParam ) { } 
+  public void BoolBar ( bool firstParam ) { } 
+  #endregion 
+ } 
+ 
+ 
+ Code comments  
+ C# utilizes a double slash ( // ) to indicate the rest of the line is a comment . This is inherited from C++ . 
+ 
+ 
+ 
+ public class Foo
+ { 
+  // a comment 
+  public static void Bar ( int firstParam ) { } // also a comment 
+ } 
+ 
+ 
+ Multi-line comments can start with slash-asterisk ( /* ) and end asterisk-slash ( */ ). This is inherited from standard C . 
+ 
+ 
+ 
+ public class Foo
+ { 
+  /* A Multi-Line
+  comment */ 
+  public static void Bar ( int firstParam ) { } 
+ } 
+ 
+ 
+ XML documentation system  
+ C#'s documentation system is similar to Java's Javadoc , but based on XML . Two methods of documentation are currently supported by the C# compiler . 
+ Single-line documentation comments, such as those commonly found in Visual Studio generated code, are indicated on a line beginning with /// . 
+ 
+ 
+ 
+ public class Foo
+ { 
+  /// &lt;summary&gt;A summary of the method.&lt;/summary&gt; 
+  /// &lt;param name="firstParam"&gt;A description of the parameter.&lt;/param&gt; 
+  /// &lt;remarks&gt;Remarks about the method.&lt;/remarks&gt; 
+  public static void Bar ( int firstParam ) { } 
+ } 
+ 
+ 
+ Multi-line documentation comments, while defined in the version 1.0 language specification, were not supported until the .NET 1.1 release.  
+ 
+ 
+ 
+ public class Foo
+ { 
+  /** &lt;summary&gt;A summary of the method.&lt;/summary&gt;
+  * &lt;param name="firstParam"&gt;A description of the parameter.&lt;/param&gt;
+  * &lt;remarks&gt;Remarks about the method.&lt;/remarks&gt; */ 
+  public static void Bar ( int firstParam ) { } 
+ } 
+ 
+ 
+ Note there are some stringent criteria regarding white space and XML documentation when using the slash/asterisk/asterisk ( /** ) technique. 
+ This code block: 
+ 
+ 
+ 
+ /**
+ * &lt;summary&gt;
+ * A summary of the method.&lt;/summary&gt;*/ 
+ 
+ 
+ produces a different XML comment from this code block:  
+ 
+ 
+ 
+ /**
+ * &lt;summary&gt;
+ A summary of the method.&lt;/summary&gt;*/ 
+ 
+ 
+ Syntax for documentation comments and their XML markup is defined in a non-normative annex of the ECMA C# standard. The same standard also defines rules for processing of such comments, and their transformation to a plain XML document with precise rules for mapping of CLI identifiers to their related documentation elements. This allows any C# IDE or other development tool to find documentation for any symbol in the code in a certain well-defined way. 
+ Libraries  
+ The C# specification details a minimum set of types and class libraries that the compiler expects to have available. In practice, C# is most often used with some implementation of the Common Language Infrastructure (CLI), which is standardized as ECMA-335 Common Language Infrastructure (CLI) . 
+ "Hello, world" example  
+ The following is a very simple C# program, a version of the classic " Hello world " example: 
+ 
+ 
+ 
+ using System ; 
+ 
+ class Program
+ { 
+  static void Main ( ) 
+  { 
+  Console . WriteLine ( "Hello, world!" ) ; 
+  } 
+ } 
+ 
+ 
+ The effect is to write the following text to the output console: 
+ 
+Hello, world!
+ 
+ Each line has a purpose: 
+ 
+ 
+ 
+ using System ; 
+ 
+ 
+ The above line of code tells the compiler to use System as a candidate prefix for types used in the source code. In this case, when the compiler sees use of the Console type later in the source code, it tries to find a type named Console , first in the current assembly, followed by all referenced assemblies. In this case the compiler fails to find such a type, since the name of the type is actually System.Console . The compiler then attempts to find a type named System.Console by using the System prefix from the using statement, and this time it succeeds. The using statement allows the programmer to state all candidate prefixes to use during compilation instead of always using full type names. 
+ 
+ 
+ 
+ class Program
+ 
+ 
+ Above is a class definition. Everything between the following pair of braces describes Program . 
+ 
+ 
+ 
+ static void Main ( ) 
+ 
+ 
+ This declares the class member method where the program begins execution. The .NET runtime calls the Main method. (Note: Main may also be called from elsewhere, like any other method, e.g. from another method of Program .) The static keyword makes the method accessible without an instance of Program . Each console application's Main entry point must be declared static . Otherwise, the program would require an instance, but any instance would require a program. To avoid that irresolvable circular dependency , C# compilers processing console applications (like that above) report an error, if there is no static Main method. The void keyword declares that Main has no return value . 
+ 
+ 
+ 
+Console . WriteLine ( "Hello, world!" ) ; 
+ 
+ 
+ This line writes the output. Console is a static class in the System namespace. It provides an interface to the standard input, output, and error streams for console applications. The program calls the Console method WriteLine , which displays on the console a line with the argument, the string "Hello world!" . 
+ A GUI example: 
+ 
+ 
+ 
+ using System.Windows.Forms ; 
+ 
+ class Program
+ { 
+  static void Main ( ) 
+  { 
+  MessageBox . Show ( "Hello, world!" ) ; 
+  } 
+ } 
+ 
+ 
+ This example is similar to the previous example, except that it generates a dialog box that contains the message "Hello, world!" instead of writing it to the console. 
+ Standardization and licensing  
+ In August 2000, Microsoft Corporation, Hewlett-Packard and Intel Corporation co-sponsored the submission of specifications for C# as well as the Common Language Infrastructure (CLI) to the standards organization Ecma International . In December 2001, ECMA released ECMA-334 C# Language Specification . C# became an ISO standard in 2003 (ISO/IEC 23270:2003 - Information technology — Programming languages — C# ). ECMA had previously adopted equivalent specifications as the 2nd edition of C#, in December 2002. 
+ In June 2005, ECMA approved edition 3 of the C# specification, and updated ECMA-334. Additions included partial classes, anonymous methods, nullable types, and generics (similar to C++ templates ). 
+ In July 2005, ECMA submitted the standards and related TRs to ISO/IEC JTC 1 via the latter's Fast-Track process. This process usually takes 6–9 months. 
+ The C# language definition and the CLI are standardized under ISO and Ecma standards that provide reasonable and non-discriminatory licensing protection from patent claims. However, Microsoft uses C# and the CLI in its Base Class Library (BCL) that is the foundation of its proprietary .NET framework, and which provides a variety of non-standardized classes (extended I/O , GUI , Web services , etc.). Some cases where Microsoft patents apply to standards used in the .NET framework are documented by Microsoft and the applicable patents are available on either RAND terms or through Microsoft's Open Specification Promise that releases patent rights to the public,  but there is some concern and debate as to whether there are additional aspects patented by Microsoft that are not covered, which may deter independent implementations of the full framework. 
+ Microsoft has agreed not to sue open source developers for violating patents in non-profit projects for the part of the framework that is covered by the OSP.  
+ In a note posted on the Free Software Foundation 's news website in June 2009, Richard Stallman warned that he believes that "Microsoft is probably planning to force all free C# implementations underground some day using software patents", and recommended that developers avoid taking what he described as the "gratuitous risk" associated with "depend would not prevent Microsoft from harming free implementations of C#, because many specific Windows libraries included with .NET or Mono were not covered by this promise. 
+ Implementations  
+ The reference C# compiler is Microsoft Visual C# , which is closed-source. 
+ Other C# compilers exist, often including an implementation of the Common Language Infrastructure and the .NET class libraries up to .NET 2.0: 
+ 
+ The Mono project provides an open source C# compiler, a complete open source implementation of the Common Language Infrastructure including the required framework libraries as they appear in the ECMA specification, and a nearly complete implementation of the Microsoft proprietary .NET class libraries up to .NET 3.5. As of Mono 2.6, no plans exist to implement WPF ; WF is planned for a later release; and there are only partial implementations of LINQ to SQL and WCF .  
+ The DotGNU project also provides an open source C# compiler, a nearly complete implementation of the Common Language Infrastructure including the required framework libraries as they appear in the ECMA specification, and subset of some of the remaining Microsoft proprietary .NET class libraries up to .NET 2.0 (those not documented or included in the ECMA specification, but included in Microsoft's standard .NET Framework distribution). 
+ Microsoft's Rotor project (currently called Shared Source Common Language Infrastructure ) (licensed for educational and research use only) provides a shared source implementation of the CLR runtime and a C# compiler, and a subset of the required Common Language Infrastructure framework libraries in the ECMA specification (up to C# 2.0, and supported on Windows XP only). 
+ 
+ See also  
+ 
+ 
+ 
+ 
+ 
+ 
+ C# topics 
+ 
+ 
+ C# syntax 
+ Comparison of C# and Java 
+ 
+ 
+ Implementations 
+ 
+ 
+ Microsoft Visual C# 
+ Oxygene 
+ Sing# 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ Computer programming portal 
+ 
+ 
+ 
+ 
+ IDEs 
+ 
+ 
+ Microsoft Visual Studio 
+ Microsoft Visual Studio Express ( freeware ) 
+ MonoDevelop 
+ Morfik 
+ SharpDevelop 
+ Turbo C Sharp 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Notes  
+ 
+ 
+ ^  for async 
+ ^  By convention, a number sign is used for the second character in normal text; in artistic representations, sometimes a true sharp sign is used: C♯. 
+ 
+ 
+ References  
+ 
+ 
+ ^  Torgersen, Mads (October 27, 2008). "New features in C# 4.0" . Microsoft . Retrieved October 28, 2008 . &#160; 
+ ^  a   b  Naugler, David (May 2007). "C# 2.0 for C++ and Java programmer: conference workshop". Journal of Computing Sciences in Colleges 22 (5). "Although C# has been strongly influenced by Java it has also been strongly influenced by C++ and is best viewed as a descendant of both C++ and Java." &#160; 
+ ^  Hamilton, Naomi (October 1, 2008). "The A-Z of Programming Languages: C#" . Computerworld . Retrieved February 12, 2010 . "We all stand on the shoulders of giants here and every language builds on what went before it so we owe a lot to C, C++, Java, Delphi, all of these other things that came before us. ( Anders Hejlsberg )" &#160; 
+ ^  Cornelius, Barry (December 1, 2005). "Java 5 catches up with C#" . University of Oxford Computing Services . Retrieved June 18, 2009 . "In my opinion, it is C# that has caused these radical changes to the Java language. ( Barry Cornelius )" &#160; 
+ ^  C++ -&gt; C#: What You Need to Know to Move from C++ to C# 
+ ^  a   b   c   C# Language Specification (4th ed.). Ecma International . June 2006 . Retrieved January 26, 2012 . &#160; 
+ ^  Kovacs, James (September 7, 2007). "C#/.NET History Lesson" . Retrieved June 18, 2009 . &#160; 
+ ^  "Microsoft C# FAQ" . Microsoft . Retrieved March 25, 2008 . &#160;  
+ ^  "Visual C#.net Standard" (JPEG). Microsoft . September 4, 2003 . Retrieved June 18, 2009 . &#160; 
+ ^  "F# FAQ" . Microsoft Research . Retrieved June 18, 2009 . &#160;  
+ ^  Simon, Raphael; Stapf, Emmanuel; Meyer, Bertrand (June 2002). "Full Eiffel on the .NET Framework" . Microsoft . Retrieved June 18, 2009 . &#160; 
+ ^  Zander, Jason (November 24, 2008). "Couple of Historical Facts" . Retrieved February 23, 2009 . &#160; 
+ ^  "C# 3.0 New Features" . Retrieved June 9, 20010 . &#160; Check date values in: |accessdate= ( help ) 
+ ^  Guthrie, Scott (November 28, 2006). "What language was ASP.Net originally written in?" . Retrieved February 21, 2008 . &#160; 
+ ^  Hamilton, Naomi (October 1, 2008). "The A-Z of Programming Languages: C#" . Computerworld . Retrieved October 1, 2008 . &#160; 
+ ^  Wylie Wong (2002). "Why Microsoft's C# isn't" . CNET: CBS Interactive . Retrieved November 14, 2009 . &#160; 
+ ^  Bill Joy (February 7, 2002). "Microsoft's blind spot" . cnet.com . Retrieved January 12, 2010 . &#160; 
+ ^  Klaus Kreft and Angelika Langer (2003). "After Java and C# - what is next?" . Retrieved June 18, 2013 . &#160; 
+ ^  Klaus Kreft and Angelika Langer (July 3, 2003). "After Java and C# - what is next?" . artima.com . Retrieved January 12, 2010 . &#160; 
+ ^  Osborn, John (August 1, 2000). Deep Inside C#: An Interview with Microsoft Chief Architect Anders Hejlsberg . O'Reilly Media . Retrieved November 14, 2009 &#160; 
+ ^  "Generics (C# Programming Guide)" . Microsoft . Retrieved March 21, 2011 . &#160; 
+ ^  Bracha, Gilad (July 5, 2004). "Generics in the Java Programming Language" . Sun Microsystems . Retrieved March 21, 2011 . &#160; 
+ ^  Don Box and Anders Hejlsberg (February 2007). "LINQ: .NET Language-Integrated Query" . Microsoft . Retrieved March 21, 2011 . &#160; 
+ ^  Mercer, Ian (April 15, 2010). "Why functional programming and LINQ is often better than procedural code" . abodit.com . Retrieved March 21, 2011 . &#160; 
+ ^  "Andy Retires" . Dan Fernandez's Blog . Blogs.msdn.com. January 29, 2004 . Retrieved October 4, 2012 . &#160; 
+ ^  "Technical committees - JTC 1/SC 22 - Programming languages, their environments and system software interfaces" . ISO . Retrieved October 4, 2012 . &#160; 
+ ^  "ISO/IEC 23270:2003 - Information technology - C# Language Specification" . Iso.org. August 23, 2006 . Retrieved October 4, 2012 . &#160; 
+ ^  "ISO/IEC 23270:2006 - Information technology - Programming languages - C#" . Iso.org. January 26, 2012 . Retrieved October 4, 2012 . &#160; 
+ ^  "Common Language Runtime (CLR)" . Microsoft Developer Network . .NET Framework 4.5. Microsoft . Retrieved 2013-11-26 . &#160; 
+ ^  a   b   "Using C# 3.0 from .NET 2.0" . Danielmoth.com. May 13, 2007 . Retrieved October 4, 2012 . &#160; 
+ ^  Skeet, Jon (September 2013). C# in Depth (3rd ed.). Manning Publications Co. p.&#160;559. ISBN &#160; 9781617291340 &#160; 
+ ^  Hejlsberg, Anders. "Future directions for C# and Visual Basic" . C# lead architect . Channel 9 . Retrieved September 21, 2011 . &#160; 
+ ^  Visual Studio 2010 and .NET 4 Six-in-One . Wrox Press. 2010. ISBN &#160; 0470499486 . &#160; 
+ ^  Venners, Bill; Eckel, Bruce (August 18, 2003). "The Trouble with Checked Exceptions" . Retrieved March 30, 2010 . &#160; 
+ ^  a   b   c   d  Archer, Tom (2001). "Part 2, Chapter 4: The Type System". Inside C# . Redmond, Washington: Microsoft Press. ISBN &#160; 0-7356-1288-9 . &#160; 
+ ^  Lippert, Eric (March 19, 2009). "Representation and Identity" . Fabulous Adventures In Coding . Blogs.msdn.com . Retrieved October 4, 2012 . &#160; 
+ ^  "Generics (C# Programming Guide)" . Microsoft . Retrieved August 7, 2011 . &#160; 
+ ^  "An Introduction to C# Generics" . Microsoft. &#160; 
+ ^  "Differences Between C++ Templates and C# Generics" . Microsoft. &#160; 
+ ^  "C# Preprocessor Directives" . C# Language Reference . Microsoft . Retrieved June 18, 2009 . &#160; 
+ ^  Horton, Anson (September 11, 2006). "C# XML documentation comments FAQ" . Retrieved December 11, 2007 . &#160; 
+ ^  a   b   "Delimiters for Documentation Tags" . C# Programmer's Reference . Microsoft . January 1, 1970 GMT . Retrieved June 18, 2009 . &#160; Check date values in: |date= ( help ) 
+ ^  "Interoperability Principles" . &#160; 
+ ^  "Patent Pledge for Open Source Developers" . &#160; 
+ ^  "Patent Cooperation Agreement - Microsoft &amp; Novell Interoperability Collaboration" . Microsoft . November 2, 2006 . Retrieved July 5, 2009 . "Microsoft, on behalf of itself and its Subsidiaries (collectively "Microsoft"), hereby covenants not to sue Novell's Customers and Novell's Subsidiaries' Customers for infringement under Covered Patents of Microsoft on account of such a Customer's use of specific copies of a Covered Product as distributed by Novell or its Subsidiaries (collectively "Novell") for which Novell has received Revenue (directly or indirectly) for such specific copies; provided the foregoing covenant is limited to use by such Customer (i) of such specific copies that are authorized by Novell in consideration for such Revenue, and (ii) within the scope authorized by Novell in consideration for such Revenue." &#160; 
+ ^  "Definitions" . Microsoft . November 2, 2006 . Retrieved July 5, 2009 . &#160; 
+ ^  Steinman, Justin (November 7, 2006). "Novell Answers Questions from the Community" . Retrieved July 5, 2009 . "We maintain that Mono does not infringe any Microsoft patents." &#160; 
+ ^  "Covenant to Downstream Recipients of Moonlight - Microsoft &amp; Novell Interoperability Collaboration" . Microsoft . September 28, 2007 . Retrieved March 8, 2008 . ""Downstream Recipient" means an entity or individual that uses for its intended purpose a Moonlight Implementation obtained directly from Novell or through an Intermediate Recipient... Microsoft reserves the right to update (including discontinue) the foregoing covenant... "Moonlight Implementation" means only those specific portions of Moonlight 1.0 or Moonlight 1.1 that run only as a plug-in to a browser on a Personal Computer and are not licensed under GPLv3 or a Similar License." &#160; 
+ ^  Stallman, Richard (June 26, 2009). "Why free software shouldn't depend on Mono or C#" . Free Software Foundation . Retrieved July 2, 2009 . "The danger is that Microsoft is probably planning to force all free C# implementations underground some day using software patents. ... We should systematically arrange to depend on the free C# implementations as little as possible. In other words, we should discourage people from writing programs in C#. Therefore, we should not include C# implementations in the default installation of GNU/Linux distributions, and we should distribute and recommend non-C# applications rather than comparable C# applications whenever possible." &#160; 
+ ^  "Microsoft's Empty Promise" . Free Software Foundation . July 16, 2009 . Retrieved 2009-078-03 . "Until that happens, free software developers still should not write software that depends on Mono. C# implementations can still be attacked by Microsoft's patents: the Community Promise is designed to give the company several outs, if it wants them. We don't want to see developers' hard work lost to the community, if we lose the ability to use Mono, and until we eliminate software patents altogether, using another language is the best way to prevent that from happening." &#160; Check date values in: |accessdate= ( help ) 
+ ^  "The ECMA C# and CLI Standards" . July 6, 2009 . Retrieved 2009-078-03 . &#160; Check date values in: |accessdate= ( help ) 
+ ^  "Compatibility - Mono" . Mono-project.com. December 19, 2011 . Retrieved October 4, 2012 . &#160; 
+ 
+ 
+ Further reading  
+ 
+ Drayton, Peter; Albahari, Ben; Neward, Ted (2002). C# Language Pocket Reference . O'Reilly. ISBN &#160; 0-596-00429-X . &#160; 
+ Petzold, Charles (2002). Programming Microsoft Windows with C# . Microsoft Press. ISBN &#160; 0-7356-1370-2 . &#160; 
+ 
+ External links  
+ 
+ 
+ 
+ Wikibooks has a book on the topic of: C Sharp Programming 
+ 
+ 
+ 
+ C# Language Specification (from MSDN) 
+ C# Language Specification (hyperlinked, Visual C# Developer Center) 
+ C# Programming Guide (MSDN) 
+ C# Programming Help(Videos) 
+ Download C# Express 
+ ISO C# Language Specification . 
+ Microsoft Visual C# .NET 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ v 
+ t 
+ e 
+ 
+ 
+ .NET Framework 
+ 
+ 
+ 
+ 
+ 
+ 
+ Architecture 
+ 
+ 
+ 
+ History 
+ Base Class Library 
+ Common Language Runtime 
+ 
+ NGEN 
+ ILAsm 
+ 
+ 
+ Code Access Security 
+ Assembly 
+ Manifest 
+ Metadata 
+ COM Interop 
+ Application domain 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Common Language 
+Infrastructure (CLI) 
+ 
+ 
+ 
+ Common Language Infrastructure 
+ Common Type System 
+ Common Intermediate Language 
+ Virtual Execution System 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ CLI Languages 
+ 
+ 
+ 
+ 
+ 
+ Common 
+ 
+ 
+ 
+ 
+ C# 
+ Visual Basic .NET 
+ C++/CLI 
+ 
+ Managed 
+ 
+ 
+ F# 
+ J# 
+ JScript .NET 
+ Windows PowerShell 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Other 
+ 
+ 
+ 
+ 
+ Axum 
+ A# 
+ Boo 
+ Cobra 
+ M 
+ Oxygene 
+ IronScheme ( IronLisp ) 
+ IronPython 
+ IronRuby 
+ Nemerle 
+ Phalanger 
+ P# 
+ Scala 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Components 
+ 
+ 
+ 
+ ADO.NET 
+ 
+ Entity Framework 
+ Data Services 
+ 
+ 
+ ASP.NET 
+ 
+ AJAX 
+ MVC 
+ Dynamic Data 
+ 
+ 
+ CardSpace 
+ ClickOnce 
+ CLR Profiler 
+ Communication Foundation 
+ Dynamic Language Runtime 
+ Forms 
+ LINQ 
+ Managed Extensibility Framework 
+ Parallel Extensions 
+ Presentation Foundation 
+ Remoting 
+ "Roslyn" 
+ Workflow Foundation 
+ XAML 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Other implementations 
+ 
+ 
+ 
+ Mono 
+ Compact Framework 
+ XNA Framework 
+ Micro Framework 
+ Portable.NET 
+ Silverlight 
+ SSCLI 
+ eCLR 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Comparisons 
+ 
+ 
+ 
+ Java and C# 
+ C# and Visual Basic .NET 
+ Java and .NET platforms 
+ Visual Basic and Visual Basic .NET 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Category 
+ List 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ v 
+ t 
+ e 
+ 
+ 
+ Standards of Ecma International 
+ 
+ 
+ 
+ 
+ 
+ 
+ Application Interfaces 
+ 
+ 
+ 
+ ANSI escape code 
+ Common Language Infrastructure 
+ Office Open XML 
+ OpenXPS 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ File Systems (Tape) 
+ 
+ 
+ 
+ Advanced Intelligent Tape 
+ DDS 
+ DLT 
+ Super DLT 
+ Holographic Versatile Disc 
+ Linear Tape-Open (Ultrium-1) 
+ VXA 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ File Systems (Disk) 
+ 
+ 
+ 
+ CD-ROM 
+ CD File System (CDFS) 
+ FAT 
+ FD 
+ UDF 
+ Ultra Density Optical 
+ Universal Media Disc 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Graphics 
+ 
+ 
+ 
+ Universal 3D 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Programming Languages 
+ 
+ 
+ 
+ C++/CLI 
+ C# 
+ Eiffel 
+ JavaScript ( E4X , ECMAScript ) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Radio Link Interfaces 
+ 
+ 
+ 
+ NFC 
+ UWB 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Other 
+ 
+ 
+ 
+ TC20 Electromagnetic Compatibility  
+ TC12 Product safety  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ List of Ecma standards (1961 - Present) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ v 
+ t 
+ e 
+ 
+ 
+ ISO standards 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Lists 
+ List of ISO standards 
+ List of ISO romanizations 
+ List of IEC standards 
+ Categories 
+ ISO standards 
+ ISO/IEC standards 
+ OSI protocols 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 1–9999 
+ 
+ 
+ 
+ 1 
+ 2 
+ 3 
+ 4 
+ 5 
+ 6 
+ 7 
+ 9 
+ 16 
+ 31 
+ 
+ -0 
+ -1 
+ -2 
+ -3 
+ -4 
+ -5 
+ -6 
+ -7 
+ -8 
+ -9 
+ -10 
+ -11 
+ -12 
+ -13 
+ 
+ 
+ 128 
+ 216 
+ 217 
+ 226 
+ 228 
+ 233 
+ 259 
+ 269 
+ 302 
+ 306 
+ 428 
+ 518 
+ 519 
+ 639 
+ 
+ -1 
+ -2 
+ -3 
+ -5 
+ -6 
+ 
+ 
+ 646 
+ 690 
+ 732 
+ 764 
+ 843 
+ 898 
+ 965 
+ 1000 
+ 1004 
+ 1007 
+ 1073-1 
+ 1413 
+ 1538 
+ 1745 
+ 2014 
+ 2015 
+ 2022 
+ 2108 
+ 2145 
+ 2146 
+ 2240 
+ 2281 
+ 2709 
+ 2711 
+ 2788 
+ 2852 
+ 3029 
+ 3103 
+ 3166 
+ 
+ -1 
+ -2 
+ -3 
+ 
+ 
+ 3297 
+ 3307 
+ 3602 
+ 3864 
+ 3901 
+ 3977 
+ 4031 
+ 4157 
+ 4217 
+ 4909 
+ 5218 
+ 5775 
+ 5776 
+ 5800 
+ 5964 
+ 6166 
+ 6344 
+ 6346 
+ 6385 
+ 6425 
+ 6429 
+ 6438 
+ 6523 
+ 6709 
+ 7001 
+ 7002 
+ 7098 
+ 7185 
+ 7200 
+ 7498 
+ 7736 
+ 7810 
+ 7811 
+ 7812 
+ 7813 
+ 7816 
+ 8000 
+ 8178 
+ 8217 
+ 8571 
+ 8583 
+ 8601 
+ 8632 
+ 8652 
+ 8691 
+ 8807 
+ 8820-5 
+ 8859 
+ 
+ -1 
+ -2 
+ -3 
+ -4 
+ -5 
+ -6 
+ -7 
+ -8 
+ -8-I 
+ -9 
+ -10 
+ -11 
+ -12 
+ -13 
+ -14 
+ -15 
+ -16 
+ 
+ 
+ 8879 
+ 9000/9001 
+ 9075 
+ 9126 
+ 9293 
+ 9241 
+ 9362 
+ 9407 
+ 9506 
+ 9529 
+ 9564 
+ 9594 
+ 9660 
+ 9897 
+ 9945 
+ 9984 
+ 9985 
+ 9995 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 10000–19999 
+ 
+ 
+ 
+ 10006 
+ 10116 
+ 10118-3 
+ 10160 
+ 10161 
+ 10165 
+ 10179 
+ 10206 
+ 10218 
+ 10303 
+ 
+ -11 
+ -21 
+ -22 
+ -28 
+ -238 
+ 
+ 
+ 10383 
+ 10487 
+ 10585 
+ 10589 
+ 10646 
+ 10664 
+ 10746 
+ 10861 
+ 10957 
+ 10962 
+ 10967 
+ 11073 
+ 11170 
+ 11179 
+ 11404 
+ 11544 
+ 11783 
+ 11784 
+ 11785 
+ 11801 
+ 11898 
+ 11940 ( -2 ) 
+ 11941 
+ 11941 (TR) 
+ 11992 
+ 12006 
+ 12182 
+ 12207 
+ 12234-2 
+ 13211 
+ 
+ -1 
+ -2 
+ 
+ 
+ 13216 
+ 13250 
+ 13399 
+ 13406-2 
+ 13407 
+ 13450 
+ 13485 
+ 13490 
+ 13567 
+ 13568 
+ 13584 
+ 13616 
+ 14000 
+ 14031 
+ 14224 
+ 14396 
+ 14443 
+ 14496 
+ 
+ -2 
+ -3 
+ -6 
+ -10 
+ -11 
+ -12 
+ -14 
+ -17 
+ -20 
+ 
+ 
+ 14644 
+ 
+ -1 
+ -2 
+ -3 
+ -4 
+ -5 
+ -6 
+ -7 
+ -8 
+ -9 
+ 
+ 
+ 14649 
+ 14651 
+ 14698 
+ 
+ -2 
+ 
+ 
+ 14750 
+ 14882 
+ 14971 
+ 15022 
+ 15189 
+ 15288 
+ 15291 
+ 15292 
+ 15408 
+ 15444 
+ 15445 
+ 15438 
+ 15504 
+ 15511 
+ 15686 
+ 15693 
+ 15706 
+ 
+ -2 
+ 
+ 
+ 15707 
+ 15897 
+ 15919 
+ 15924 
+ 15926 
+ 15926 WIP 
+ 15930 
+ 16023 
+ 16262 
+ 16750 
+ 17024 
+ 17025 
+ 17369 
+ 17799 
+ 18000 
+ 18004 
+ 18014 
+ 18245 
+ 18629 
+ 18916 
+ 19005 
+ 19011 
+ 19092
+ 
+ -1 
+ -2 
+ 
+ 
+ 19114 
+ 19115 
+ 19125 
+ 19136 
+ 19439 
+ 19501:2005 
+ 19752 
+ 19757 
+ 19770 
+ 19775-1 
+ 19794-5 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 20000+ 
+ 
+ 
+ 
+ 20000 
+ 20022 
+ 20121 
+ 21000 
+ 21047 
+ 21827:2002 
+ 22000 
+ 23270 
+ 23271 
+ 23360 
+ 24613 
+ 24617 
+ 24707 
+ 25178 
+ 25964 
+ 26000 
+ 26300 
+ 26324 
+ 27000 series 
+ 27000 
+ 27001:2005 
+ 27001:2013 
+ 27002 
+ 27003 
+ 27004 
+ 27005 
+ 27006 
+ 27007 
+ 27729 
+ 27799 
+ 28000 
+ 29110 
+ 29199-2 
+ 29500 
+ 31000 
+ 32000 
+ 38500 
+ 42010 
+ 80000 
+ 
+ -1 
+ -2 
+ -3 
+ -4 
+ -5 
+ -6 
+ -7 
+ -8 
+ -9 
+ -10 
+ -11 
+ -12 
+ -13 
+ -14 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ See also 
+ All articles with prefix "ISO" 
+ Individual ISO categories 
+ ISO 639 
+ ISO 3166 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+ 								 
+				Retrieved from " http://en.wikipedia.org/w/index.php?title=C_Sharp_(programming_language)&amp;oldid=599055394 "				 
+												 Categories : .NET programming languages C programming language family Class-based programming languages C Sharp programming language family Mono (software) Object-oriented programming languages Functional languages Statically typed programming languages Programming languages created in 2001 Programming languages created in the 2000s ISO standards IEC standards Ecma standards Programming languages with an ISO standard  Hidden categories: All articles with dead external links Articles with dead external links from June 2009 Articles with dead external links from September 2010 CS1 errors: dates Articles with inconsistent citation formats Use mdy dates from October 2012 Use British (Oxford) English from December 2011 All articles with unsourced statements Articles with unsourced statements from February 2010  												 
+							 
+		 
+		 
+			 Navigation menu 
+			 
+				 
+	 Personal tools 
+	 
+ Create account Log in 	 
+ 
+				 
+					 
+	 Namespaces 
+	 
+					 Article 
+					 Talk 
+			 
+ 
+ 
+	 
+		 
+	 Variants 
+	 
+		 
+					 
+	 
+ 
+				 
+				 
+					 
+	 Views 
+	 
+					 Read 
+					 Edit 
+					 View history 
+			 
+ 
+ 
+	 Actions 
+	 
+		 
+					 
+	 
+ 
+ 
+	 Search 
+	 
+					 
+					 		 
+	 
+ 
+				 
+			 
+			 
+					 
+				 
+	 Navigation 
+	 
+		 
+			 Main page 
+			 Contents 
+			 Featured content 
+			 Current events 
+			 Random article 
+			 Donate to Wikipedia 
+			 Wikimedia Shop 
+		 
+	 
+ 
+ 
+	 Interaction 
+	 
+		 
+			 Help 
+			 About Wikipedia 
+			 Community portal 
+			 Recent changes 
+			 Contact page 
+		 
+	 
+ 
+ 
+	 Tools 
+	 
+		 
+			 What links here 
+			 Related changes 
+			 Upload file 
+			 Special pages 
+			 Permanent link 
+			 Page information 
+			 Data item 
+ Cite this page 		 
+	 
+ 
+ 
+	 Print/export 
+	 
+		 
+			 Create a book 
+			 Download as PDF 
+			 Printable version 
+		 
+	 
+ 
+ 
+	 Languages 
+	 
+		 
+			 العربية 
+			 Azərbaycanca 
+			 বাংলা 
+			 Беларуская 
+			 Беларуская (тарашкевіца)‎ 
+			 Български 
+			 Bosanski 
+			 Català 
+			 Čeština 
+			 Dansk 
+			 Deutsch 
+			 Eesti 
+			 Español 
+			 Esperanto 
+			 Euskara 
+			 فارسی 
+			 Français 
+			 Galego 
+			 ગુજરાતી 
+			 한국어 
+			 Hrvatski 
+			 Bahasa Indonesia 
+			 Íslenska 
+			 Italiano 
+			 עברית 
+			 ქართული 
+			 Қазақша 
+			 Latviešu 
+			 Lietuvių 
+			 Magyar 
+			 Македонски 
+			 മലയാളം 
+			 Bahasa Melayu 
+			 မြန်မာဘာသာ 
+			 Nederlands 
+			 नेपाल भाषा 
+			 日本語 
+			 Norsk bokmål 
+			 Oʻzbekcha 
+			 ភាសាខ្មែរ 
+			 Plattdüütsch 
+			 Polski 
+			 Português 
+			 Română 
+			 Русский 
+			 Саха тыла 
+			 Scots 
+			 Simple English 
+			 Slovenčina 
+			 کوردی 
+			 Српски / srpski 
+			 Srpskohrvatski / српскохрватски 
+			 Suomi 
+			 Svenska 
+			 தமிழ் 
+			 ไทย 
+			 Тоҷикӣ 
+			 Türkçe 
+			 Українська 
+			 Tiếng Việt 
+			 Winaray 
+			 Yorùbá 
+			 中文 
+			 
+			 Edit links 
+		 
+	 
+ 
+			 
+		 
+		 
+							 
+											 This page was last modified on 10 March 2014 at 23:09. 
+											 Text is available under the Creative Commons Attribution-ShareAlike License ;
+additional terms may apply. By using this site, you agree to the Terms of Use and Privacy Policy. 
+Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc. , a non-profit organization. 
+									 
+							 
+											 Privacy policy 
+											 About Wikipedia 
+											 Disclaimers 
+											 Contact Wikipedia 
+											 Developers 
+											 Mobile view

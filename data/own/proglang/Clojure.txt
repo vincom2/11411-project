@@ -1,0 +1,463 @@
+Clojure - Wikipedia, the free encyclopedia 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+ 
+ 
+		 
+		 
+		 
+			 
+			 
+						 
+						 Clojure 
+			 
+								 From Wikipedia, the free encyclopedia 
+								 
+												 
+					Jump to:					 navigation , 					 search 
+				 
+				 
+ 
+ 
+ 
+ 
+ This article includes a list of references , but its sources remain unclear because it has insufficient inline citations . Please help to improve this article by introducing more precise citations. (July 2012) 
+ 
+ 
+ 
+ Clojure 
+ 
+  
+ 
+ 
+ Paradigm(s) 
+ functional 
+ 
+ 
+ Appeared in 
+ 2007 
+ 
+ 
+ Designed by 
+ Rich Hickey 
+ 
+ 
+ Stable release 
+ 1.5.1  (March&#160;10, 2013 ; 11 months ago &#160;( 2013-03-10 ) ) 
+ 
+ 
+ Typing discipline 
+ dynamic , strong 
+ 
+ 
+ Influenced by 
+ Common Lisp , Erlang , Haskell , ML , Prolog , Scheme , Java , Ruby  
+ 
+ 
+ Influenced 
+ Elixir 
+ 
+ 
+ Platform 
+ JVM , CLR , JavaScript 
+ 
+ 
+ License 
+ Eclipse Public License 
+ 
+ 
+ Usual filename extensions 
+ .clj, .edn 
+ 
+ 
+ Website 
+ clojure.org 
+ 
+ 
+ 
+ 
+ Clojure Programming at Wikibooks 
+ 
+ 
+ 
+ 
+ Clojure (pronounced like " closure "  ) is a dialect of the Lisp programming language created by Rich Hickey. Clojure is a functional general-purpose language, and runs on the Java Virtual Machine , Common Language Runtime , and JavaScript engines. Like other Lisps, Clojure treats code as data and has a sophisticated macro system. 
+ Clojure's focus on programming with immutable values and explicit progression-of-time constructs are intended to facilitate the development of more robust programs, particularly multithreaded ones. 
+ 
+ 
+ 
+ Contents 
+ 
+ 
+ 1 History 
+ 2 Philosophy 
+ 3 Syntax 
+ 4 Macros 
+ 5 Language features 
+ 6 Variants 
+ 7 Examples 
+ 8 See also 
+ 9 References 
+ 10 Further reading 
+ 11 External links 
+ 
+ 
+ 
+ History  
+ 
+ 
+ 
+  
+Rich Hickey in San Francisco 
+ 
+ 
+ Rich Hickey is the creator of the Clojure programming language, with work experience on scheduling systems, broadcast automation, audio analysis and fingerprinting, database design, yield management, exit poll systems, and machine listening.  Before Clojure, he developed dotLisp , a similar project based on the .NET platform. 
+ Hickey spent about 2½ years working on Clojure before publicly releasing it, much of that time working exclusively on Clojure without external funding. At the end of this period Hickey sent an email announcing the language to some friends in the Common Lisp community. 
+ Philosophy  
+ Hickey developed Clojure because he wanted a modern Lisp for functional programming , symbiotic with the established Java platform, and designed for concurrency .  
+ Clojure's approach to concurrency is characterized by the concept of identities,  which represent a series of immutable states over time. Since states are immutable values, any number of workers can operate on them in parallel, and concurrency becomes a question of managing changes from one state to another. For this purpose, Clojure provides several mutable reference types , each having well-defined semantics for the transition between states. 
+ Syntax  
+ Like most other Lisps, Clojure's syntax is built on S-expressions that are first parsed into data structures by a reader before being compiled. Clojure's reader supports literal syntax for maps , sets and vectors in addition to lists, and these are given to the compiler as they are. In other words, the Clojure compiler does not compile only list data structures, but supports all of the mentioned types directly. Clojure is a Lisp-1 , and is not intended to be code-compatible with other dialects of Lisp. 
+ Macros  
+ Clojure's macro system is very similar to that in Common Lisp with the exception that Clojure's version of the backquote (called "syntax quote") qualifies symbols with their namespace . This helps prevent unintended name capture, as binding to namespace-qualified names is forbidden. It is possible to force a capturing macro expansion, but this must be done explicitly. Clojure also disallows rebinding global names in other namespaces that have been imported into the current namespace. 
+ Language features  
+ 
+ Produces Java Virtual Machine (JVM) bytecode . 
+ Tight Java integration: By compiling into JVM Byte code, Clojure applications can be easily packaged and deployed to JVMs and application servers without added complexity. The language also provides macros which make it simple to use existing Java APIs. Clojure's data structures all implement standard Java Interfaces, making it easy to run code implemented in Clojure from Java. 
+ Dynamic development with a read-eval-print loop . 
+ Functions as first-class objects . 
+ Emphasis on recursion and higher-order functions instead of side-effect -based looping . 
+ Lazy sequences. 
+ Provides a rich set of immutable , persistent data structures (including hashmaps, sets and lists). 
+ Concurrent programming through software transactional memory , an agent system, and a dynamic var system. 
+ Multimethods to allow dynamic dispatch on the types and values of any set of arguments (cf. the usual object-oriented polymorphism which dispatches on the type of what is effectively the first method argument). 
+ 
+ Variants  
+ Variations on the Clojure language have been developed for platforms other than the JVM: 
+ 
+ ClojureCLR,  a full port of Clojure to the Common Language Runtime, interoperable with .NET libraries 
+ ClojureScript,  a subset of Clojure, compiled to optimized JavaScript, intended for use in web browsers and mobile devices 
+ las3r,  a subset of Clojure that runs on the ActionScript Virtual Machine (the Adobe Flash Player platform) 
+ clojure-py,  an implementation of Clojure in pure Python 
+ rouge,  an implementation of Clojure on top of YARV in Ruby 
+ 
+ Examples  
+ Hello world : 
+ 
+ 
+ 
+ ( println "Hello world!" ) 
+ 
+ 
+ Defining a function: 
+ 
+ 
+ 
+ ( defn square  
+ ( * x x ) ) 
+ 
+ 
+ GUI "Hello world" by calling the Java Swing library: 
+ 
+ 
+ 
+ ( javax . swing . JOptionPane / showMessageDialog nil "Hello World" ) 
+ 
+ 
+ A thread-safe generator of unique serial numbers (though note that like many other Lisp dialects, Clojure has a built-in gensym function for this purpose): 
+ 
+ 
+ 
+ ( let  
+ ( defn generate - unique - id
+  "Returns a distinct numeric ID for each call." 
+   
+  ( swap ! i inc ) ) ) 
+ 
+ 
+ An anonymous subclass of java.io.Writer that doesn't write to anything, and a macro using that to silence all prints within it: 
+ 
+ 
+ 
+ ( def bit - bucket - writer
+ ( proxy  
+  ( write  nil ) 
+  ( close   nil ) 
+  ( flush   nil ) ) ) 
+ 
+ ( defmacro noprint
+ "Evaluates the given expressions with all printing to *out* silenced." 
+  
+ ` ( binding  
+  ~@forms ) ) 
+ 
+ ( noprint
+ ( println "Hello, nobody!" ) ) 
+ 
+ 
+ 10 threads manipulating one shared data structure, which consists of 100 vectors each one containing 10 (initially sequential) unique numbers. Each thread then repeatedly selects two random positions in two random vectors and swaps them. All changes to the vectors occur in transactions by making use of Clojure's software transactional memory system. 
+ 
+ 
+ 
+ ( defn run  
+ ( let [ vec - refs ( vec ( map ( comp ref vec ) 
+       ( partition nitems ( range ( * nvecs nitems ) ) ) ) ) 
+  swap # ( let [ v1 ( rand - int nvecs ) 
+     v2 ( rand - int nvecs ) 
+     i1 ( rand - int nitems ) 
+     i2 ( rand - int nitems ) ] 
+     ( dosync 
+     ( let  
+     ( alter ( vec - refs v1 ) assoc i1 ( nth @ ( vec - refs v2 ) i2 ) ) 
+     ( alter ( vec - refs v2 ) assoc i2 temp ) ) ) ) 
+  report # ( do 
+     ( prn ( map deref vec - refs ) ) 
+     ( println "Distinct:" 
+       ( count ( distinct ( apply concat ( map deref vec - refs ) ) ) ) ) ) ] 
+  ( report ) 
+  ( dorun ( apply pcalls ( repeat nthreads # ( dotimes  ( swap ) ) ) ) ) 
+  ( report ) ) ) 
+ 
+ ( run 100 10 10 100000 ) 
+ 
+ 
+ Output of previous example: 
+ 
+ ( ...
+)
+Distinct: 1000
+
+( ...
+)
+Distinct: 1000
+ 
+ 
+ See also  
+ 
+ List of JVM languages 
+ 
+ References  
+ 
+ 
+ ^  "Clojure 1.5.1 - Google Groups" . groups.google.com. 2013-03-10 . Retrieved 2013-03-10 . &#160; 
+ ^  "Clojure Programming" . Retrieved 2013-04-30 . &#160; 
+ ^  "meaning and pronunciation of Clojure" . Rich Hickey . Retrieved 2012-04-20 . &#160; 
+ ^  http://www.infoq.com/presentations/hickey-clojure Presentation about Clojure from JVM Language Summit 2008 
+ ^  "Rationale" . Rich Hickey . clojure.org . Retrieved 2008-10-17 . &#160; 
+ ^  By: Charles (2009-10-06). "Expert to Expert: Rich Hickey and Brian Beckman - Inside Clojure | Going Deep | Channel 9" . Channel9.msdn.com . Retrieved 2012-06-28 . &#160; 
+ ^  "On State and Identity" . Rich Hickey . clojure.org . Retrieved 2010-03-01 . &#160; 
+ ^  "clojure/clojure-clr · GitHub" . Github.com . Retrieved 2012-06-28 . &#160; 
+ ^  "clojure/clojurescript · GitHub" . Github.com . Retrieved 2012-06-28 . &#160; 
+ ^  aemoncannon (2010-12-30). "Home · aemoncannon/las3r Wiki · GitHub" . Github.com . Retrieved 2012-06-28 . &#160; 
+ ^  "halgari/clojure-py · GitHub" . Github.com . Retrieved 2012-07-10 . &#160; 
+ ^  "rouge-lang/rouge · GitHub" . Github.com . Retrieved 2013-01-25 . &#160; 
+ 
+ 
+ Further reading  
+ 
+ 
+ Fogus, Michael; Houser, Chris (2010), The Joy of Clojure (1st ed.), Manning, ISBN &#160; 1-935182-64-1 &#160; 
+ Halloway, Stuart (2012), Programming Clojure (2nd ed.), Pragmatic Bookshelf , ISBN &#160; 978-1-93435-686-9 &#160; 
+ Rathore, Amit (2011), Clojure in Action (1st ed.), Manning, ISBN &#160; 1-935182-59-5 &#160; 
+ VanderHart, Luke; Sierra, Stuart (June 7, 2010), Practical Clojure (1st ed.), Apress , ISBN &#160; 1-4302-7231-7 &#160; 
+ Emerick, Chas; Carper, Brian; Grand, Christophe (April 19, 2012), Clojure Programming (1st ed.), O'Reilly Media , ISBN &#160; 1-4493-9470-1 &#160; 
+ 
+ 
+ External links  
+ 
+ 
+ 
+ Wikibooks has a book on the topic of: Clojure Programming 
+ 
+ 
+ 
+ Official website 
+ GitHub code repository for Clojure 
+ A comprehensive overview of Clojure 
+ An overview of Clojure 1.2 in reference format 
+ Full Disclojure - Screencast 
+ Clojure talks on Youtube 
+ Clojure talks on Blip.tv 
+ clojuredocs.org - Community-powered documentation and examples 
+ clojure-doc.org - Community-driven documentation site for the Clojure programming language 
+ 4clojure.com - Interactive Clojure Problems 
+ TryClojure - An online REPL for Clojure 
+ Clojure on infoq.com 
+ Clojure community and resources on Facebook 
+ R.Hickey presentation "Are We There Yet?" where he advocates for the reexamination of basic principles like state, identity, value, time, types, genericity, complexity, as they are used by OOP. 2009 
+ 
+
+
+
+ 								 
+				Retrieved from " http://en.wikipedia.org/w/index.php?title=Clojure&amp;oldid=596594729 "				 
+												 Categories : Functional languages JVM programming languages Dynamic programming languages Lisp programming language family Articles with example Clojure code Programming languages created in 2007 Programming languages created in the 2000s Software using the Eclipse license Scripting languages  Hidden categories: Articles lacking in-text citations from July 2012 All articles lacking in-text citations  												 
+							 
+		 
+		 
+			 Navigation menu 
+			 
+				 
+	 Personal tools 
+	 
+ Create account Log in 	 
+ 
+				 
+					 
+	 Namespaces 
+	 
+					 Article 
+					 Talk 
+			 
+ 
+ 
+	 
+		 
+	 Variants 
+	 
+		 
+					 
+	 
+ 
+				 
+				 
+					 
+	 Views 
+	 
+					 Read 
+					 Edit 
+					 View history 
+			 
+ 
+ 
+	 Actions 
+	 
+		 
+					 
+	 
+ 
+ 
+	 Search 
+	 
+					 
+					 		 
+	 
+ 
+				 
+			 
+			 
+					 
+				 
+	 Navigation 
+	 
+		 
+			 Main page 
+			 Contents 
+			 Featured content 
+			 Current events 
+			 Random article 
+			 Donate to Wikipedia 
+			 Wikimedia Shop 
+		 
+	 
+ 
+ 
+	 Interaction 
+	 
+		 
+			 Help 
+			 About Wikipedia 
+			 Community portal 
+			 Recent changes 
+			 Contact page 
+		 
+	 
+ 
+ 
+	 Tools 
+	 
+		 
+			 What links here 
+			 Related changes 
+			 Upload file 
+			 Special pages 
+			 Permanent link 
+			 Page information 
+			 Data item 
+ Cite this page 		 
+	 
+ 
+ 
+	 Print/export 
+	 
+		 
+			 Create a book 
+			 Download as PDF 
+			 Printable version 
+		 
+	 
+ 
+ 
+	 Languages 
+	 
+		 
+			 العربية 
+			 Azərbaycanca 
+			 Català 
+			 Čeština 
+			 Deutsch 
+			 Ελληνικά 
+			 Español 
+			 فارسی 
+			 Français 
+			 한국어 
+			 Íslenska 
+			 Italiano 
+			 עברית 
+			 ქართული 
+			 日本語 
+			 Polski 
+			 Português 
+			 Română 
+			 Русский 
+			 Svenska 
+			 Українська 
+			 中文 
+			 
+			 Edit links 
+		 
+	 
+ 
+			 
+		 
+		 
+							 
+											 This page was last modified on 22 February 2014 at 05:21. 
+											 Text is available under the Creative Commons Attribution-ShareAlike License ;
+additional terms may apply. By using this site, you agree to the Terms of Use and Privacy Policy. 
+Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc. , a non-profit organization. 
+									 
+							 
+											 Privacy policy 
+											 About Wikipedia 
+											 Disclaimers 
+											 Contact Wikipedia 
+											 Developers 
+											 Mobile view

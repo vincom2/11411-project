@@ -1,0 +1,852 @@
+Rust (programming language) - Wikipedia, the free encyclopedia 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+ 
+ 
+		 
+		 
+		 
+			 
+			 
+						 
+						 Rust (programming language) 
+			 
+								 From Wikipedia, the free encyclopedia 
+								 
+												 
+					Jump to:					 navigation , 					 search 
+				 
+				 
+ 
+ 
+  
+ 
+ This article relies on references to primary sources . Please add references to secondary or tertiary sources . (January 2012) 
+ 
+ 
+ 
+ Rust 
+ 
+  
+ 
+ 
+ Paradigm(s) 
+ compiled , concurrent , functional , imperative , object-oriented , structured 
+ 
+ 
+ Appeared in 
+ 2012 
+ 
+ 
+ Designed by 
+ Graydon Hoare 
+ 
+ 
+ Developer 
+ Rust Project Developers 
+ 
+ 
+ Preview release 
+ 0.9  (9&#160;January 2014 ; 50 days ago &#160;( 2014-01-09 ) ) 
+ 
+ 
+ Typing discipline 
+ static , strong , inferred , structural 
+ 
+ 
+ Influenced by 
+ Alef , C# , C++ , Camlp4 , Common Lisp , Cyclone , Erlang , Haskell , Hermes , Limbo , Napier, Napier88 , Newsqueak , NIL, Ocaml , Racket , Ruby , Sather , Standard ML 
+ 
+ 
+ Implementation language 
+ Rust 
+ 
+ 
+ OS 
+ Linux , Mac OS X , Windows , FreeBSD , Android 
+ 
+ 
+ License 
+ Apache License 2.0 or MIT License  
+ 
+ 
+ Usual filename extensions 
+ .rs 
+ 
+ 
+ Website 
+ rust-lang.org 
+ 
+ 
+ Rust is a general purpose, multi-paradigm , compiled programming language developed by Mozilla Research.  supporting pure-functional , concurrent-actor , imperative-procedural , and object-oriented styles. 
+ The language grew out of a personal project by lead developer Graydon Hoare , who began work on it in 2006; his employer Mozilla became involved in 2009  The self-hosted compiler uses LLVM as its backend . 
+ The first numbered alpha release of the Rust compiler occurred in January 2012.  
+ Rust is developed entirely in the open and solicits feedback and contributions from the community. The design of the language has been refined through the experiences of writing the Servo  
+ 
+ 
+ 
+ Contents 
+ 
+ 
+ 1 Description 
+ 2 Examples 
+ 3 Language evolution 
+ 4 See also 
+ 5 References 
+ 6 External links 
+ 
+ 
+ 
+ Description  
+ The goal of Rust is to be a good language for the creation of large client and server programs that run over the Internet.  
+ The syntax of Rust is similar to C and C++ , with blocks of code delimited by curly braces, and control-flow keywords such as if , else , do , while , and for . Not all C or C++ keywords are present, however, while others (such as the match keyword for multi-directional branching) will be less familiar to programmers coming from these languages. Despite the syntactic resemblance, Rust is semantically very different from C and C++. 
+ The system is designed to be memory safe , and it does not permit null pointers or dangling pointers .  
+ The type system supports a mechanism similar to type classes , called 'traits', inspired directly by the Haskell language. This is a facility for ad-hoc polymorphism , achieved by adding constraints to type variable declarations. Other features from Haskell, such as higher-kinded polymorphism , are not yet supported. 
+ Rust features type inference , for variables declared with the let keyword. Such variables do not require a value to be initially assigned in order to determine their type. A compile-time error results if any branch of code fails to assign a value to the variable.  Functions can be given generic parameters but they must be explicitly bounded by traits. There is no way to leave off type signatures while still making use of methods and operators on the parameters. 
+ Concurrency is supported through lightweight tasks, similar to those found in Erlang and other actor-based languages. In such systems, tasks communicate via message passing, rather than sharing data directly. For performance reasons, it is possible to send data without copying, using unique boxes. Unique boxes are guaranteed to only have one owner, and can be released by the sending task for use by the receiver. 
+ The object system within Rust is based around implementations, traits and structured types . Implementations fulfill a role similar to that of classes within other languages, and are defined with the impl keyword. Inheritance and polymorphism are provided by traits; they allow methods to be defined and mixed in to implementations. Structured types are used to define fields. Implementations and traits cannot define fields themselves, and only traits can provide inheritance, in order to prevent the diamond inheritance problem of C++. 
+ Examples  
+ The following code examples are valid as of Rust 0.9. Syntax and semantics may change in subsequent versions. 
+ Hello world : 
+ 
+ 
+ 
+fn main ( ) { 
+ println ( "hello, world" ) ; 
+ } 
+ 
+ 
+ Two versions of the factorial function, in both recursive and iterative styles: 
+ 
+ 
+ 
+ /* The branches in this function exhibit Rust's optional implicit return
+ values, which can be utilized where a more "functional" style is preferred.
+ Unlike C++ and related languages, Rust's `if` construct is an expression
+ rather than a statement, and thus has a return value of its own. */ 
+fn recursive_factorial ( n : int ) - &gt; int { 
+  if n &lt;= 1 { 1 } 
+  else { n * recursive_factorial ( n - 1 ) } 
+ } 
+ 
+fn iterative_factorial ( n : int ) - &gt; int { 
+  // Variables (or more correctly, bindings) are declared with `let`. 
+  // The `mut` keyword allows these variables to be mutated. 
+ let mut i = 1 ; 
+ let mut result = 1 ; 
+  while i &lt;= n { 
+  result * = i ; 
+  i + = 1 ; 
+  } 
+  return result ; // An explicit return, in contrast to the prior function. 
+ } 
+ 
+fn main ( ) { 
+ println ! ( "Recursive result: {:i}" , recursive_factorial ( 10 ) ) ; 
+ println ! ( "Iterative result: {:i}" , iterative_factorial ( 10 ) ) ; 
+ } 
+ 
+ 
+ A simple demonstration of Rust's lightweight concurrency capabilities: 
+ 
+ 
+ 
+ /* This function creates ten "tasks" that all execute concurrently. Run it
+ several times and observe the irregular output that results as each task
+ races on stdout, due to the fact that each task may yield both between
+ successive calls to `println` and within the `println` function itself. */ 
+fn main ( ) { 
+  // This string is immutable, so it can safely be accessed from multiple tasks. 
+ let message = "This is part of a lightweight thread." ; 
+  // `for` loops work with any type that implements the `Iterator` trait. 
+  for num in range ( 0 , 10 ) { 
+   do spawn { 
+   println ( message ) ; 
+    // `println!` is a macro that statically verifies a format string. 
+    // Macros are structural (as in Scheme) rather than textual (as in C). 
+   println ! ( "Message printed by task {:i}." , num ) ; 
+   } 
+  } 
+ } 
+ 
+ 
+ A demonstration of pattern matching , inspired by the ML family of languages: 
+ 
+ 
+ 
+fn main ( ) { 
+ let argv = std :: os :: args ( ) ; 
+ 
+  // The tuple returned by `match` will be destructured into two independent variables. 
+ let ( first, last ) = match argv { 
+   // The following pattern will match any vector that has the specified structure. 
+   // The first element in `argv`, the filename, is ignored with the underscore pattern. 
+   // The double-dot pattern will cause zero or more elements to be ignored. 
+    =&gt; ( first_arg, last_arg ) ,
+ 
+   // The underscore pattern is again used here as a default case, 
+   // ignoring all vectors that do not match the prior pattern. 
+  _ =&gt; fail ! ( "Error: At least two arguments expected." ) 
+  } ; 
+ 
+ println ! ( "The first argument was {:s}, \
+    and the last argument was {:s}." , first, last ) ; 
+ } 
+ 
+ 
+ A demonstration of Rust's built-in unique smart pointers , along with tagged unions and methods : 
+ 
+ 
+ 
+ /* This program defines a recursive datastructure and implements methods upon it.
+ Recursive datastructures require a layer of indirection, which is provided here
+ by a unique pointer, indicated by the tilde `~` operator. These are analogous to
+ the C++ library type `std::unique_ptr`, though with more static safety guarantees. */ 
+fn main ( ) { 
+ let list = ~Node ( 1 , ~Node ( 2 , ~Node ( 3 , ~Empty ) ) ) ; 
+ println ! ( "Sum of all values in the list: {:i}." , list. multiply_by ( 2 ) . sum ( ) ) ; 
+ } 
+ 
+ // `enum` defines a tagged union that may be one of several different kinds of values at runtime. 
+ // The type here will either contain no value, or a value and a pointer to another `IntList`. 
+ enum IntList { 
+ Node ( int , ~IntList ) ,
+ Empty
+ } 
+ 
+ // An `impl` block allows methods to be defined on a type. 
+impl IntList { 
+ fn sum ( ~self ) - &gt; int { 
+   // As in C and C++, pointers are dereferenced with the asterisk `*` operator. 
+  match * self { 
+   Node ( value, next ) =&gt; value + next. sum ( ) ,
+   Empty =&gt; 0 
+   } 
+  } 
+ 
+ fn multiply_by ( ~self, n : int ) - &gt; ~IntList { 
+  match * self { 
+   Node ( value, next ) =&gt; ~Node ( value * n, next. multiply_by ( n ) ) ,
+   Empty =&gt; ~Empty
+   } 
+  } 
+ } 
+ 
+ 
+ Language evolution  
+ In addition to conventional static typing, prior to version 0.4 Rust also supported typestates . The typestate system modeled assertions before and after program statements, through use of a special check statement. Discrepancies could be discovered at compile time, rather than once a program was running, as might be the case with assertions in C or C++ code. The typestate concept was not unique to Rust, as it was first introduced in the NIL programming language.  
+ The style of the object system changed considerably within versions 0.2, 0.3 and 0.4 of Rust. Version 0.2 introduced classes for the first time, with version 0.3 adding a number of features including destructors and polymorphism through the use of interfaces. In Rust 0.4, traits were added as a means to provide inheritance; interfaces were unified with traits and removed as a separate feature. Classes were also removed, replaced by a combination of implementations and structured types. 
+ 
+ Release History 
+ 
+ Version 
+ Date 
+ 
+ 
+ 0.9 
+ 2014-01-09 
+ 
+ 
+ 0.8 
+ 2013-09-26 
+ 
+ 
+ 0.7 
+ 2013-07-03 
+ 
+ 
+ 0.6 
+ 2013-04-02 
+ 
+ 
+ 0.5 
+ 2012-12-20 
+ 
+ 
+ 0.4 
+ 2012-10-12 
+ 
+ 
+ 0.3 
+ 2012-07-12 
+ 
+ 
+ 0.2 
+ 2012-03-28 
+ 
+ 
+ 0.1 
+ 2012-01-20 
+ 
+ 
+ The releases of the rust compiler are available at https://github.com/mozilla/rust/releases . 
+ See also  
+ 
+ Comparison of programming languages 
+ Servo (layout engine) 
+ 
+ References  
+ 
+ 
+ ^  a   b  Rust Release Notes 
+ ^  "COPYRIGHT" . Rust compiler source repository . Retrieved 2012-12-17 . &#160; 
+ ^  "The Rust Language" . Lambda the Ultimate. 2010-07-08 . Retrieved 2010-10-30 . &#160; 
+ ^  "The Rust Programming Language" . Retrieved 2012-10-21 . &#160; 
+ ^  "Doc language FAQ" . Retrieved 2012-10-21 . &#160; 
+ ^  "Project FAQ" . 2010-09-14 . Retrieved 2012-01-11 . &#160; 
+ ^  "Future Tense" . 2011-04-29 . Retrieved 2012-02-06 . "At Mozilla Summit 2010, we launched Rust, a new programming language motivated by safety and concurrency for parallel hardware, the “manycore” future which is upon us." &#160; 
+ ^  Hoare, Graydon (2010-10-02). "Rust Progress" . Retrieved 2010-10-30 . &#160; 
+ ^  Hoare, Graydon (2011-04-20). " stage1/rustc builds" . Retrieved 2011-04-20 . "After that last change fixing the logging scope context bug, looks like stage1/rustc builds. Just shy of midnight&#160;:)" &#160; 
+ ^  catamorphism (2012-01-20). "Mozilla and the Rust community release Rust 0.1 (a strongly-typed systems programming language with a focus on memory safety and concurrency)" . Retrieved 2012-02-06 . &#160; 
+ ^  Peter Bright (2013-04-03). "Samsung teams up with Mozilla to build browser engine for multicore machines" . Retrieved 2013-04-04 . &#160; 
+ ^  "Rust Contributors" . &#160; 
+ ^  Avram, Abel (2012-08-03). "Interview on Rust, a Systems Programming Language Developed by Mozilla" . InfoQ . Retrieved 2013-08-17 . " GH: A lot of obvious good ideas, known and loved in other languages, haven't made it into widely-used systems languages... There were a lot of good competitors in the late 70s and early 80s in that space, and I wanted to revive some of their ideas and give them another go, on the theory that circumstances have changed: the internet is highly concurrent and highly security-conscious, so the design-tradeoffs that always favor C and C++ (for example) have been shifting." &#160; 
+ ^  Walton, Patrick (2010-12-05). "C++ Design Goals in the Context of Rust" . Retrieved 2011-01-21 . "… It’s impossible to be “as fast as C” in all cases while remaining safe… C++ allows all sorts of low-level tricks, mostly involving circumventing the type system, that offer practically unlimited avenues for optimization. In practice, though, C++ programmers restrict themselves to a few tools for the vast majority of the code they write, including stack-allocated variables owned by one function and passed by alias, uniquely owned objects (often used with auto_ptr or the C++0x unique_ptr ), and reference counting via shared_ptr or COM. One of the goals of Rust’s type system is to support these patterns exactly as C++ does, but to enforce their safe usage. In this way, the goal is to be competitive with the vast majority of idiomatic C++ in performance, while remaining memory-safe…" &#160; 
+ ^  Rosenblatt, Seth (2013-04-03). "Samsung joins Mozilla's quest for Rust" . Retrieved 2013-04-05 . " noted that every year browsers fall victim to hacking in the annual Pwn2Own contest at the CanSecWest conference. "There's no free memory reads" in Rust, he said, but there are in C++. Those problems "lead to a lot of browser vulnerabilities" and would be solved by Rust, which is a self-compiling language." &#160; 
+ ^  Brown, Neil (2013-04-17). "A taste of Rust" . Retrieved 2013-04-25 . "… Other more complex data structures could clearly be implemented to allow greater levels of sharing, while making sure the interface is composed only of owned and managed references, and thus is safe from unplanned concurrent access and from dangling pointer errors." &#160; 
+ ^  "Doc language FAQ" . 2010-09-14 . Retrieved 2012-01-11 . &#160; 
+ ^  Walton, Patrick (2010-10-01). "Rust Features I: Type Inference" . Retrieved 2011-01-21 . &#160; 
+ ^  Strom, Robert E.; Yemini, Shaula (1986). Typestate: A Programming Language Concept for Enhancing Software Reliability . IEEE Transactions on Software Engineering. ISSN &#160; 0098-5589 . Retrieved 2010-11-14 . &#160; 
+ ^  "Typestate Is Dead, Long Live Typestate!" . 2012-12-26 . Retrieved 2012-12-28 . &#160; 
+ 
+ 
+ External links  
+ 
+ Official website 
+ Rust Language Wiki 
+ The Rust-dev Archives (electronic mailing list) 
+ Primary source code repository and bug tracker 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ v 
+ t 
+ e 
+ 
+ 
+ Mozilla 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &#160; 
+ Project 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Mozilla Labs 
+ 
+ 
+ 
+ Bonsai 
+ Bugzilla 
+ ChatZilla 
+ Jetpack 
+ Lightning 
+ Penelope 
+ Persona 
+ Prism 
+ Raindrop 
+ Skywriter 
+ Sunbird 
+ Sync 
+ Thunderbird 
+ Tinderbox 
+ Ubiquity 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Mozilla Research 
+ 
+ 
+ 
+ Firefox OS 
+ Rust 
+ Servo 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Web browser 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Firefox 
+ 
+ 1 
+ 1.5 
+ 2 
+ 3 
+ 3.5 
+ 3.6 
+ 4 
+ 5–current 
+ Future releases 
+ for Mobile 
+ 
+ 
+ SeaMonkey 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Origins 
+ 
+ 
+ 
+ Mozilla Application Suite 
+ Netscape Navigator 
+ Netscape Communicator 
+ Netscape Communications 
+ Beonex Communicator 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Forks 
+ 
+ 
+ 
+ BurningDog 
+ Flock 
+ Gnuzilla 
+ Iceape 
+ IceCat 
+ Icedove 
+ Iceowl 
+ Miro 
+ Netscape 9 
+ Portable Edition 
+ Songbird 
+ Swiftfox 
+ Swiftweasel 
+ TenFourFox 
+ xB Browser 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Frameworks 
+ 
+ 
+ 
+ add-on 
+ Gecko 
+ Necko 
+ NPAPI 
+ 
+ XPConnect 
+ 
+ 
+ XBL 
+ XPCOM 
+ XPInstall 
+ XUL 
+ XULRunner 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Components 
+ 
+ 
+ 
+ Application Object Model 
+ Composer 
+ NSPR 
+ NSS 
+ Rhino 
+ SpiderMonkey 
+ Tamarin 
+ Venkman 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Discontinued 
+ 
+ 
+ 
+ Calendar Project 
+ Camino 
+ Grendel 
+ Minimo 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &#160; 
+ Organization 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Foundation 
+ 
+ 
+ 
+ Former Mozilla Organization 
+ Mozilla Foundation 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Subsidiaries 
+ 
+ 
+ 
+ Mozilla Corporation 
+ Mozilla Messaging 
+ Mozilla Online 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Official affiliates 
+ 
+ 
+ 
+ Mozilla China 
+ Mozilla Europe 
+ Mozilla Japan 
+ Mozilla Taiwan 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ People 
+ 
+ 
+ 
+ Mitchell Baker 
+ Brendan Eich 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &#160; 
+ Community 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ mozdev.org 
+ Mozilla Add-ons 
+ Mozilla Developer Network 
+ MozillaZine 
+ Spread Firefox 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &#160; 
+ See also 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ The Book of Mozilla 
+ Mozilla Public License 
+ Mycroft project 
+ rebranding / forking 
+ mascot 
+ Code Rush 
+ Mozilla localizations 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+ 								 
+				Retrieved from " http://en.wikipedia.org/w/index.php?title=Rust_(programming_language)&amp;oldid=596615751 "				 
+												 Categories : Rust (programming language) Systems programming languages Concurrent programming languages Statically typed programming languages Multi-paradigm programming languages Functional languages Procedural programming languages Pattern matching programming languages Mozilla Programming languages created in the 2010s  Hidden categories: Articles lacking reliable references from January 2012 All articles lacking reliable references  												 
+							 
+		 
+		 
+			 Navigation menu 
+			 
+				 
+	 Personal tools 
+	 
+ Create account Log in 	 
+ 
+				 
+					 
+	 Namespaces 
+	 
+					 Article 
+					 Talk 
+			 
+ 
+ 
+	 
+		 
+	 Variants 
+	 
+		 
+					 
+	 
+ 
+				 
+				 
+					 
+	 Views 
+	 
+					 Read 
+					 Edit 
+					 View history 
+			 
+ 
+ 
+	 Actions 
+	 
+		 
+					 
+	 
+ 
+ 
+	 Search 
+	 
+					 
+					 		 
+	 
+ 
+				 
+			 
+			 
+					 
+				 
+	 Navigation 
+	 
+		 
+			 Main page 
+			 Contents 
+			 Featured content 
+			 Current events 
+			 Random article 
+			 Donate to Wikipedia 
+			 Wikimedia Shop 
+		 
+	 
+ 
+ 
+	 Interaction 
+	 
+		 
+			 Help 
+			 About Wikipedia 
+			 Community portal 
+			 Recent changes 
+			 Contact page 
+		 
+	 
+ 
+ 
+	 Tools 
+	 
+		 
+			 What links here 
+			 Related changes 
+			 Upload file 
+			 Special pages 
+			 Permanent link 
+			 Page information 
+			 Data item 
+ Cite this page 		 
+	 
+ 
+ 
+	 Print/export 
+	 
+		 
+			 Create a book 
+			 Download as PDF 
+			 Printable version 
+		 
+	 
+ 
+ 
+	 Languages 
+	 
+		 
+			 Español 
+			 فارسی 
+			 Français 
+			 한국어 
+			 Italiano 
+			 Nederlands 
+			 日本語 
+			 Polski 
+			 Português 
+			 Русский 
+			 Українська 
+			 中文 
+			 
+			 Edit links 
+		 
+	 
+ 
+			 
+		 
+		 
+							 
+											 This page was last modified on 22 February 2014 at 10:22. 
+											 Text is available under the Creative Commons Attribution-ShareAlike License ;
+additional terms may apply. By using this site, you agree to the Terms of Use and Privacy Policy. 
+Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc. , a non-profit organization. 
+									 
+							 
+											 Privacy policy 
+											 About Wikipedia 
+											 Disclaimers 
+											 Contact Wikipedia 
+											 Developers 
+											 Mobile view

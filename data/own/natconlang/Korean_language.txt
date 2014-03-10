@@ -1,0 +1,2218 @@
+Korean language - Wikipedia, the free encyclopedia 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+ 
+ 
+		 
+		 
+		 
+			 
+			 
+						 
+						 Korean language 
+			 
+								 From Wikipedia, the free encyclopedia 
+								 
+												 
+					Jump to:					 navigation , 					 search 
+				 
+				 
+ 
+ Korean 
+ 
+ 
+ 한국어 , 조선말 
+ Hangugeo, Chosŏnmal 
+ 
+ 
+  
+ Two names for Korean, Hangugeo and Chosŏnmal , written vertically in hangul 
+ 
+ 
+ 
+ Native&#160;to 
+ South Korea 
+ North Korea 
+ Jilin · Liaoning · Heilongjiang , China 
+ United States ( Korean American ) 
+ Japan ( Koreans in Japan ) 
+ Commonwealth of Independent States ( Koryo-saram ) 
+ 
+ 
+ 
+ Native speakers 
+ 
+ 75 million &#160;(2010)  
+ 
+ 
+ 
+ Language family 
+ 
+ 
+ Altaic (disputed)
+ 
+ Koreanic 
+ 
+ Korean 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Early forms 
+ 
+ 
+ Old Korean 
+ 
+ Middle Korean 
+ 
+ Korean 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Dialects 
+ 
+ Jeju 
+ mainland Korean dialects 
+ 
+ 
+ 
+ 
+ Writing system 
+ 
+ Hangul (primary) 
+ Hanja ( mixed script ) 
+ Korean Braille 
+ Cyrillic ( Koryo-mar ) 
+ 
+ 
+ Official status 
+ 
+ 
+ 
+ Official language&#160;in 
+ 
+ &#160; South Korea 
+ &#160; North Korea 
+  Yanbian , People's Republic of China 
+ 
+ 
+ 
+ Recognised minority language&#160;in 
+ 
+ &#160; People's Republic of China 
+ &#160; Japan 
+ &#160; United States (notable, but no recognised minority languages in the USA) 
+ &#160; CIS 
+ 
+ 
+ Regulated&#160;by 
+ 
+  The National Institute of the Korean Language 
+ 국립국어원/ 國立國語院 
+   Sahoe Kwahagwon Ŏhak Yŏnguso 
+ The Language Research Institute of Social Science 
+ 사회과학원 어학연구소/ 社會科學院 語學研究所 
+ 
+ 
+ Language codes 
+ 
+ 
+ ISO 639-1 
+ ko 
+ 
+ 
+ ISO 639-2 
+ kor 
+ 
+ 
+ ISO 639-3 
+ Variously: 
+ kor &#160;–&#160;Modern Korean 
+ okm &#160;–&#160; Middle Korean 
+ oko &#160;–&#160; Old Korean 
+ 
+ 
+ 
+ Linguist list 
+ 
+ okm Middle Korean 
+ 
+ 
+ &#160; 
+ oko Old Korean 
+ 
+ 
+ Linguasphere 
+ 45-AAA-a 
+ 
+ 
+ 
+ Countries with native Korean-speaking populations. (Established immigrant communities in green) 
+ 
+ 
+ 
+ This article contains IPA phonetic symbols. Without proper rendering support , you may see question marks, boxes, or other symbols instead of Unicode characters. 
+ 
+ 
+ 
+ 
+ 
+ This article contains Korean text. Without proper rendering support , you may see question marks, boxes, or other symbols instead of Hangul and hanja . 
+ 
+ 
+ Korean ( 한국어 / 조선말 , see below ) is the official language of South Korea and North Korea as well as one of the two official languages in China 's Yanbian Korean Autonomous Prefecture . Approximately 80 million people speak Korean worldwide. For over a millennium, Korean was written with adapted Chinese characters called hanja , complemented by phonetic systems like hyangchal , gugyeol , and idu . In the 15th century, a national writing system called hangul was commissioned by Sejong the Great , but it only came into widespread use in the 20th century, because of the yangban aristocracy's preference for hanja. 
+ Most historical linguists classify Korean as a language isolate  The Korean language is agglutinative in its morphology and SOV in its syntax . 
+ 
+ 
+ 
+ Contents 
+ 
+ 
+ 1 Names 
+ 2 Classification 
+ 3 History 
+ 4 Geographic distribution 
+ 
+ 4.1 Official status 
+ 
+ 
+ 5 Dialects 
+ 6 Sounds 
+ 
+ 6.1 Consonants 
+ 6.2 Vowels 
+ 6.3 Allophones 
+ 6.4 Morphophonemics 
+ 
+ 
+ 7 Grammar 
+ 8 Speech levels and honorifics 
+ 
+ 8.1 Honorifics 
+ 8.2 Speech levels 
+ 8.3 Gender and Korean language 
+ 
+ 
+ 9 Vocabulary 
+ 10 Writing system 
+ 11 Differences between North Korean and South Korean 
+ 
+ 11.1 Pronunciation 
+ 11.2 Spelling 
+ 11.3 Spelling and pronunciation 
+ 11.4 Grammar 
+ 11.5 Vocabulary 
+ 11.6 Punctuation 
+ 
+ 
+ 12 Study by non-native learners 
+ 
+ 12.1 Korean language tests 
+ 
+ 
+ 13 See also 
+ 14 References 
+ 15 Further reading 
+ 16 External links 
+ 
+ 
+ 
+ Names  
+ The Korean names for the language are based on the names for Korea used in North and South Korea. 
+ In South Korea, the language is most often called Hangungmal ( 한국말 ), or more formally, Hangugeo ( 한국어 ) or Gugeo ( 국어 ); literally "national language"). 
+ In North Korea and Yanbian Korean Autonomous Prefecture in China , the language is most often called Chosŏnmal ( 조선말 ), or more formally, Chosŏnŏ ( 조선어 ). 
+ On the other hand, Korean people in the former USSR , who refer to themselves as Koryo-saram (고려사람; also Goryeoin ) call the language Goryeomal ( 고려말 ). 
+ In mainland China , following the establishment of diplomatic relations with South Korea in 1992, the term Cháoxiǎnyǔ ( 朝鲜语 or the short form: Cháoyǔ ( 朝语 )) has normally been used to refer to the standard language of North Korea and Yanbian , while Hánguóyǔ ( 韩国语 or the short form: Hányǔ ( 韩语 )) is used to refer to the standard language of South Korea. 
+ Some older English sources also use the spelling "Corean" to refer to the language, country, and people. The word "Korean" is derived from Goryeo , which is thought to be the first dynasty known to Western countries. 
+ Classification  
+ While (apart from certain ancient languages of Korea ) the majority of linguists consider Korean to be a language isolate,  there have been attempts to link it with other languages in the region. 
+ Korean is similar to the Altaic languages in lacking certain grammatical elements, including articles , fusional morphology and relative pronouns . Since Ramstedt 's 1928 article, some linguists  
+ The hypothesis that Korean might be related to Japanese has had some supporters due to some apparent overlap in vocabulary and similar grammatical features that have been elaborated upon by such researchers as Samuel E. Martin  :5 . 
+ Some linguists, most notably Alexander Vovin , have argued that the indicated similarities between Japanese and Korean are not due to any genetic relationship, but rather to a sprachbund effect and heavy borrowing, especially from ancient Korean into Western Old Japanese.  (See Classification of Japonic for further details on a possible relationship.) 
+ Among ancient languages, various closer relatives of Korean have been proposed, constituting a possible small Koreanic language family. Some classify the language of Jeju Island as a distinct modern Koreanic language. 
+ History  
+ Main article: History of the Korean language 
+ Korean is descended from Proto-Korean , Old Korean , Middle Korean and Modern Korean . Since the Korean War , contemporary North–South differences have developed in standard Korean, including variance in pronunciation, verb inflection, and vocabulary. 
+ Geographic distribution  
+ See also: Korean diaspora 
+ Korean is spoken by the Korean people in North Korea and South Korea and by the Korean diaspora in many countries including the People's Republic of China , Japan , and the United States . Korean-speaking minorities exist in these states, but because of cultural assimilation into host countries, not all ethnic Koreans may speak it with native fluency. 
+ Official status  
+ Korean is the official language of South Korea and North Korea . It is also one of the two official languages of the Yanbian Korean Autonomous Prefecture in China. 
+ In South Korea, the regulatory body for Korean is the Seoul -based National Institute of the Korean Language ( 국립국어원 ; 國立國語院), which was created by presidential decree on January 23, 1991. In North Korea, the regulatory body is the Language Institute of the Academy of Social Sciences ( 사회과학원 어학연구소 ; 社會科學院語學研究所, Sahoe Kwahagwon Ŏhak Yŏnguso ). 
+ Dialects  
+ Main article: Korean dialects 
+ 
+ 
+ 
+  
+Dialects of Korean 
+ 
+ 
+ Korean has numerous small local dialects (called mal ( 말 )  One of the more salient differences between dialects is the use of tone: speakers of Seoul dialect make use of vowel length, whereas speakers of the Gyeongsang dialect maintain the pitch accent of Middle Korean. Some dialects are conservative, maintaining Middle Korean sounds (such as z, β, ə ) which have been lost from the standard language, whereas others are highly innovative. 
+ There is substantial evidence for a history of extensive dialect levelling , or even convergent evolution or intermixture of two or more originally distinct linguistic stocks, within the Korean language and its dialects. Many Korean dialects have basic vocabulary that is etymologically distinct from vocabulary of identical meaning in Standard Korean or other dialects, such as South Jeolla dialect /kur/ vs. Standard Korean 입 /ip/ "mouth" or Gyeongsang dialect /t͡ɕʌŋ.ɡu.d͡ʑi/ vs. Standard Korean /puːt͡ɕʰu/ " garlic chives ". This suggests that the Korean Peninsula may have at one time been much more linguistically diverse than it is at present. See also the Buyeo languages hypothesis . 
+ There are few clear boundaries between Korean dialects, and they are typically partially grouped according to the regions of Korea . 
+ 
+ 
+ Standard language 
+ Where used 
+ 
+ 
+ Seoul 
+ Seoul (서울); very similar to Incheon (인천/仁川) and most of Gyeonggi (경기/京畿), west of Gangwon-do (Yeongseo region) 
+ 
+ 
+ Munhwaŏ 
+ Northern standard. Based on Seoul dialect.  
+ 
+ 
+ Regional dialects 
+ Where used 
+ 
+ 
+ Hamgyŏng (Northeastern) 
+ Rasŏn , most of Hamgyŏng region, northeast P'yŏngan , Ryanggang (North Korea), Jilin (China) 
+ 
+ 
+ P'yŏngan (northwestern) 
+ P'yŏngan region, P'yŏngyang , Chagang , Hwanghae , northern North Hamgyŏng (North Korea), Liaoning (China) 
+ 
+ 
+ Central 
+ Seoul , Incheon , Gyeonggi , Daejeon , Chungcheong (South Korea), Yeongseo ( Gangwon-do (South Korea) / Kangwŏn (North Korea) west of the Taebaek Mountains ) 
+ 
+ 
+ Yeongdong (East coast) 
+ Yeongdong region ( Gangwon-do (South Korea) / Kangwŏn (North Korea) east of the Taebaek Mountains ) 
+ 
+ 
+ Gyeongsang (Southeastern) 
+ Busan , Daegu , Ulsan , Gyeongsang region (South Korea) 
+ 
+ 
+ Jeolla (Southwestern) 
+ Gwangju , Jeolla region (South Korea) 
+ 
+ 
+ Jeju 
+ Jeju Island/Province (South Korea) 
+ 
+ 
+ Sounds  
+ 
+ 
+  
+ This article contains IPA phonetic symbols. Without proper rendering support , you may see question marks, boxes, or other symbols instead of Unicode characters. 
+ 
+ 
+ Main article: Korean phonology 
+ Consonants  
+ 
+ 
+ 
+  
+The Korean consonants 
+ 
+ 
+ 
+ 
+ 
+ Bilabial 
+ Alveolar 
+ Post- 
+alveolar 
+ Velar 
+ Glottal 
+ 
+ 
+ Nasal 
+ ㅁ /m/ 
+ ㄴ /n/ 
+ 
+ ㅇ /ŋ/  
+ 
+ 
+ 
+ Plosive 
+and 
+ Affricate 
+ plain 
+ ㅂ /p/ 
+ ㄷ /t/ 
+ ㅈ /t͡ɕ/ 
+ ㄱ /k/ 
+ 
+ 
+ 
+ tense 
+ ㅃ /p͈/ 
+ ㄸ /t͈/ 
+ ㅉ /t͡ɕ͈/ 
+ ㄲ /k͈/ 
+ 
+ 
+ 
+ aspirated 
+ ㅍ /pʰ/ 
+ ㅌ /tʰ/ 
+ ㅊ /t͡ɕʰ/ 
+ ㅋ /kʰ/ 
+ 
+ 
+ 
+ Fricative 
+ plain 
+ 
+ ㅅ /sʰ/ 
+ 
+ 
+ ㅎ /h/ 
+ 
+ 
+ tense 
+ 
+ ㅆ /s͈/ 
+ 
+ 
+ 
+ 
+ 
+ Liquid 
+ /w/ 1 
+ ㄹ /l/ 
+ /j/ 1 
+ 
+ 
+ 
+ 
+ 1 The liquids /w/ and /j/ are represented in Korean writing by modifications to vowel symbols (see below). 
+ The IPA symbol 〈 ◌͈ 〉 (a subscript double straight quotation mark, shown here with a placeholder circle) is used to denote the tensed consonants /p͈/, /t͈/, /k͈/, /t͡ɕ͈/, /s͈/ . Its official use in the Extensions to the IPA is for 'strong' articulation, but is used in the literature for faucalized voice . The Korean consonants also have elements of stiff voice , but it is not yet known how typical this is of faucalized consonants. They are produced with a partially constricted glottis and additional subglottal pressure in addition to tense vocal tract walls, laryngeal lowering, or other expansion of the larynx. 
+ Vowels  
+ 
+ 
+  
+  
+ 
+ 
+ 
+ 
+  
+The basic Korean vowels 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Monophthongs 
+ /i/ ㅣ , /e/ ㅔ , /ɛ/ ㅐ , /a/ ㅏ * , /o/ ㅗ , /u/ ㅜ , /ʌ/ ㅓ , /ɯ/ ㅡ , /ø/ ㅚ 
+ 
+ 
+ Vowels preceded by intermediaries, 
+or Diphthongs 
+ /je/ ㅖ , /jɛ/ ㅒ , /ja/ ㅑ , /wi/ ㅟ , /we/ ㅞ , /wɛ/ ㅙ , /wa/ ㅘ , /ɰi/ ㅢ , /jo/ ㅛ , /ju/ ㅠ , /jʌ/ ㅕ , /wʌ/ ㅝ 
+ 
+ 
+ ^* ㅏ is closer to a near-open central vowel (  ), though 〈 a 〉 is still used for tradition. 
+ Allophones  
+ /s/ is aspirated  for most speakers (but see North–South differences in the Korean language ). This occurs with the tense fricative and all the affricates as well. At the end of a syllable, /s/ changes to /t/ (Example: beoseot (버섯) 'mushroom'). 
+ /h/ may become a bilabial  
+ /p, t, t͡ɕ, k/ become voiced  between voiced sounds. 
+ /m, n/ frequently denasalize to  at the beginnings of words. 
+ /l/ becomes alveolar flap  . 
+ Traditionally, /l/ was disallowed at the beginning of a word. It disappeared before  . The traditional prohibition of word-initial /l/ became a morphological rule called "initial law" (두음법칙) in South Korea, which pertains to Sino-Korean vocabulary. Such words retain their word-initial /l/ in North Korea. 
+ All obstruents (plosives, affricates, fricatives) have no audible release ,  , at the end of a word. 
+ Plosive stops /p, t, k/ become nasal stops  before nasal stops. 
+ Hangul spelling does not reflect these assimilatory pronunciation rules, but rather maintains the underlying, partly historical morphology . Given this, it is sometimes hard to tell which actual phonemes are present in a certain word. 
+ One difference between the pronunciation standards of North and South Korea is the treatment of initial  . For example, 
+ 
+ "labor" – north: r odong (로동), south: n odong (노동) 
+ "history" – north: ry ŏksa (력사), south: y eoksa (역사) 
+ "female" – north: ny ŏja (녀자), south: y eoja (여자) 
+ 
+ Morphophonemics  
+ Main article: Morphophonology 
+ Grammatical morphemes may change shape depending on the preceding sounds. Examples include -eun/-neun (-은/-는) and -i/-ga (-이/-가). Sometimes sounds may be inserted instead. Examples include -eul/-reul (-을/-를), -euro/-ro (-으로/-로), -eseo/-seo (-에서/-서), -ideunji/-deunji (-이든지/-든지) and -iya/-ya (-이야/-야). However, -euro/-ro is somewhat irregular, since it will behave differently after a rieul consonant. 
+ 
+ Korean particles 
+ 
+ After a consonant 
+ After a rieul 
+ After a vowel 
+ 
+ 
+ -ui (-의) 
+ 
+ 
+ -eun (-은) 
+ -neun (-는) 
+ 
+ 
+ -i (-이) 
+ -ga (-가) 
+ 
+ 
+ -eul (-을) 
+ -reul (-를) 
+ 
+ 
+ -gwa (-과) 
+ -wa (-와) 
+ 
+ 
+ -euro (-으로) 
+ -ro (-로) 
+ 
+ 
+ Some verbs may also change shape morphophonemically. 
+ Grammar  
+ Main article: Korean grammar 
+ Korean is an agglutinative language . The Korean language is traditionally considered to have nine parts of speech. For details, see Korean parts of speech . Modifiers generally precede the modified words, and in the case of verb modifiers, can be serially appended. The basic form of a Korean sentence is subject–object–verb , but the verb is the only required and immovable element. 
+ 
+ 
+ A : 
+ &#160; 
+ 가게에 
+ &#160; 
+ 갔어요? 
+ 
+ 
+ 
+ 
+ gage-e 
+ 
+ ga-ss-eo-yo 
+ 
+ 
+ 
+ 
+ store +  
+ 
+  
+ 
+ 
+ 
+ "Did  go to the store?" ("you" implied in conversation) 
+ 
+ 
+ 
+ B : 
+ &#160; 
+ 예. (or 네.) 
+ 
+ 
+ 
+ 
+ ye (or ne ) 
+ 
+ 
+ 
+ 
+ yes 
+ 
+ 
+ 
+ "Yes." 
+ 
+ Speech levels and honorifics  
+ Main article: Korean honorifics 
+ The relationship between a speaker or writer and his or her subject and audience is paramount in Korean, and the grammar reflects this. The relationship between speaker/writer and subject referent is reflected in honorifics , while that between speaker/writer and audience is reflected in speech level . 
+ Honorifics  
+ When talking about someone superior in status, a speaker or writer usually uses special nouns or verb endings to indicate the subject's superiority. Generally, someone is superior in status if he/she is an older relative, a stranger of roughly equal or greater age, or an employer, teacher, customer, or the like. Someone is equal or inferior in status if he/she is a younger stranger, student, employee or the like. Nowadays, there are special endings which can be used on declarative, interrogative, and imperative sentences; and both honorific or normal sentences. They are made for easier and faster use of Korean. 
+ Honorifics in traditional Korea were strictly hierarchical. The caste and estate systems possessed patterns and usages much more complex and stratified than those used today. The intricate structure of the Korean honorific system flourished in traditional culture and society. Honorifics in contemporary Korea are now used for people who are psychologically distant. Honorifics are also used for people who are superior in status. For example, older relatives, people who are older, teachers, and employers.  
+ Speech levels  
+ There are seven verb paradigms or speech levels in Korean , and each level has its own unique set of verb endings which are used to indicate the level of formality of a situation.  Unlike honorifics —which are used to show respect towards the referent (the person spoken of) — speech levels are used to show respect towards a speaker's or writer's audience (the person spoken to). The names of the seven levels are derived from the non-honorific imperative form of the verb 하다 ( hada , "do") in each level, plus the suffix 체 ("che", hanja : 體 ), which means "style". 
+ The highest six levels are generally grouped together as jondaenmal (존댓말), while the lowest level ( haeche , 해체) is called banmal (반말) in Korean. 
+ Nowadays, younger-generation speakers no longer feel obligated to lower their usual regard toward the referent. It is common to see younger people talk to their older relatives with banmal (반말). This is not out of disrespect, but instead it shows the intimacy and the closeness of the relationship between the two speakers. Transformations in social structures and attitudes in today's rapidly changing society have brought about change in the way people speak.  
+ Gender and Korean language  
+ Traditionally Korean women are often viewed as subservient to men, and this in turn is observed in their everyday speech patterns. Some examples of this can be seen in: (1) a woman’s use of softer tone in order to minimize conflict or aggression; (2) a married woman introducing herself as someone’s mother or wife, not with her own name; (3) the presence of gender differences in titles and occupational terms (for example, a sajang is a company president and yŏsajang is a female company president.); (4) and females sometimes using more tag questions and rising tones in statements, much like the way that young children talk.  
+ In Western societies, individuals will avoid expressions of power asymmetry, mutually addressing each other by their first names for the sake of solidarity. Between two people of asymmetrical status in a Korean society, people tend to emphasize differences in status for the sake of solidarity. Koreans prefer to use kinship terms rather than any other terms of reference.  
+ Vocabulary  
+ The core of the Korean vocabulary is made up of native Korean words. A significant proportion of the vocabulary, especially words that denote abstract ideas, are Sino-Korean words ,  either 
+ 
+ directly borrowed from written Chinese , or 
+ coined in Korea or Japan using Chinese characters , 
+ 
+ The exact proportion of Sino-Korean vocabulary is a matter of debate. Sohn (2001) stated 50–60%.  
+ Korean has two numeral systems : one native, and one borrowed from Sino-Korean. 
+ To a much lesser extent, some words have also been borrowed from Mongolian and other languages. Conversely, the Korean language itself has also contributed some loanwords to other languages, most notably the Tsushima dialect of Japanese. 
+ The vast majority of loanwords other than Sino-Korean come from modern times, approximately 90% of which are from English .  the Japanese approximated using the kanji 獨逸 doitsu that were then accepted into the Korean language by their Sino-Korean pronunciation: 獨 &#160; dok + 逸 &#160; il = Dogil . In South Korean official use, a number of other Sino-Korean country names have been replaced with phonetically oriented hangulizations of the countries' endonyms or English names. 
+ Because of such a prevalence of English in modern Korean culture and society, lexical borrowing is inevitable. English-derived Korean, or ' Konglish ' (콩글리쉬), is increasingly used. The vocabulary of the Korean language is roughly 5% loanwords (excluding Sino-Korean vocabulary).  
+ As in Japanese, Korean uses words adapted from English in ways that may seem strange to native English speakers. For example, in soccer heading ( 헤딩 ) is used as a noun meaning a 'header', while fighting ( 화이팅 ) is a term of encouragement like 'come on'/'go (on)' in English. Something that is 'service' ( 서비스 ) is free or 'on the house'. A building referred to as an 'apart' ( 아파트 ) is an 'apartment' (but in fact refers to a residence more akin to a condominium) and a type of pencil that is called 'sharp' ( 샤프 ) is a mechanical pencil. 
+ North Korean vocabulary shows a tendency to prefer native Korean over Sino-Korean or foreign borrowings, especially with recent political objectives aimed at eliminating foreign influences on the Korean language in the North. In the early years, the North Korean government tried to eliminate Sino-Korean words. Consequently, South Korean may have several Sino-Korean or foreign borrowings which are not in North Korean. 
+ Writing system  
+ 
+ 
+  
+ 
+ 
+ Korean writing systems 
+ 
+ 
+ Hangul 
+ 
+ 
+ Hanja 
+ 
+ 
+ 
+ 
+ Hyangchal 
+ Gugyeol 
+ Idu 
+ 
+ 
+ 
+ 
+ Mixed script 
+ 
+ 
+ Braille 
+ 
+ 
+ Transcription 
+ 
+ 
+ 
+ 
+ McCune–Reischauer 
+ Revised Romanization (South) 
+ Sahoe Kwahagwŏn (North) 
+ Yale (scholar) 
+ Kontsevich (Cyrillic) 
+ 
+ 
+ 
+ 
+ Transliteration 
+ 
+ 
+ 
+ 
+ ISO/TR 11941 
+ RR (South) 
+ SKATS (coding) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ v 
+ t 
+ e 
+ 
+ 
+ 
+ 
+ 
+ Main articles: Hangul and Korean Braille 
+ See also: Hangul consonant and vowel tables 
+ Formerly, the languages of the Korean peninsula were written using hanja, called hyangchal or idu : the use of Chinese characters either as rebuses to stand for Korean words, or as synonyms for those words. Writing was confined to the ruling elite, who most often wrote only in Classical Chinese. 
+ Sejong the Great promulgated the Korean alphabet in 1446. Korean is now written almost exclusively in hangul. While South Korean schools still teach 1,800 hanja, North Korea abolished hanja decades ago. 
+ Below is a chart of the Korean alphabet's symbols and their canonical IPA values: 
+ 
+ Consonants 
+ 
+ Hangul 
+ ㅂ 
+ ㄷ 
+ ㅈ 
+ ㄱ 
+ ㅃ 
+ ㄸ 
+ ㅉ 
+ ㄲ 
+ ㅍ 
+ ㅌ 
+ ㅊ 
+ ㅋ 
+ ㅅ 
+ ㅎ 
+ ㅆ 
+ ㅁ 
+ ㄴ 
+ ㅇ 
+ ㄹ 
+ 
+ 
+ RR 
+ b 
+ d 
+ j 
+ g 
+ pp 
+ tt 
+ jj 
+ kk 
+ p 
+ t 
+ ch 
+ k 
+ s 
+ h 
+ ss 
+ m 
+ n 
+ ng 
+ r , l 
+ 
+ 
+ IPA 
+ p 
+ t 
+ t͡ɕ 
+ k 
+ p͈ 
+ t͈ 
+ t͡ɕ͈ 
+ k͈ 
+ pʰ 
+ tʰ 
+ t͡ɕʰ 
+ kʰ 
+ s 
+ h 
+ s͈ 
+ m 
+ n 
+ ŋ 
+ ɾ , l 
+ 
+ 
+ 
+ Vowels 
+ 
+ Hangul 
+ ㅣ 
+ ㅔ 
+ ㅚ 
+ ㅐ 
+ ㅏ 
+ ㅗ 
+ ㅜ 
+ ㅓ 
+ ㅡ 
+ ㅢ 
+ ㅖ 
+ ㅒ 
+ ㅑ 
+ ㅛ 
+ ㅠ 
+ ㅕ 
+ ㅟ 
+ ㅞ 
+ ㅙ 
+ ㅘ 
+ ㅝ 
+ 
+ 
+ RR 
+ i 
+ e 
+ oe 
+ ae 
+ a 
+ o 
+ u 
+ eo 
+ eu 
+ ui 
+ ye 
+ yae 
+ ya 
+ yo 
+ yu 
+ yeo 
+ wi 
+ we 
+ wae 
+ wa 
+ wo 
+ 
+ 
+ IPA 
+ i 
+ e 
+ ø 
+ ɛ 
+ a 
+ o 
+ u 
+ ʌ 
+ ɯ 
+ ɰi 
+ je 
+ jɛ 
+ ja 
+ jo 
+ ju 
+ jʌ 
+ ɥi 
+ we 
+ wɛ 
+ wa 
+ wʌ 
+ 
+ 
+ Modern Korean is written with spaces between words , a feature not found in Chinese or Japanese. Korean punctuation marks are almost identical to Western ones. Traditionally, Korean was written in columns, from top to bottom, right to left, but is now usually written in rows, from left to right, top to bottom. 
+ Differences between North Korean and South Korean  
+ Main article: North–South differences in the Korean language 
+ The Korean language used in the North and the South exhibits differences in pronunciation, spelling, grammar and vocabulary.  
+ Pronunciation  
+ In North Korea, palatalization of /si/ is optional, and /t͡ɕ/ can be pronounced  between vowels. 
+ Words that are written the same way may be pronounced differently, such as the examples below. The pronunciations below are given in Revised Romanization , McCune–Reischauer and hangul, the last of which represents what the hangul would be if one were to write the word as pronounced. 
+ 
+ 
+ Word 
+ Meaning 
+ Pronunciation 
+ 
+ 
+ North (RR/MR) 
+ North (Hangul) 
+ South (RR/MR) 
+ South (Hangul) 
+ 
+ 
+ 읽고 
+ to read 
+(continuative form) 
+ il k o (il k o) 
+ 일코 
+ il kk o (il kk o) 
+ 일꼬 
+ 
+ 
+ 압록강 
+ Amnok River 
+ am r okgang (am r okkang) 
+ 암록깡 
+ am n okkang (am n okkang) 
+ 암녹깡 
+ 
+ 
+ 독립 
+ independence 
+ dong r ip (tong r ip) 
+ 동립 
+ dong n ip (tong n ip) 
+ 동닙 
+ 
+ 
+ 관념 
+ idea / sense / conception 
+ gwa ll yeom (kwa ll yŏm) 
+ 괄렴 
+ gwa nn yeom (kwa nn yŏm) 
+ 관념 
+ 
+ 
+ 혁신적* 
+ innovative 
+ hyeoksin jj eok (hyŏksin tch ŏk) 
+ 혁씬쩍 
+ hyeoksin j eok (hyŏksin j ŏk) 
+ 혁씬적 
+ 
+ 
+ * Similar pronunciation is used in the North whenever the hanja "的" is attached to a Sino-Korean word ending in ㄴ, ㅁ or ㅇ. (In the South, this rule only applies when it is attached to any single-character Sino-Korean word.) 
+ Spelling  
+ Some words are spelled differently by the North and the South, but the pronunciations are the same. 
+ 
+ 
+ Word 
+ Meaning 
+ Pronunciation (RR/MR) 
+ Remarks 
+ 
+ 
+ North spelling 
+ South spelling 
+ 
+ 
+ 해빛 
+ 햇빛 
+ sunshine 
+ haeppit (haepit) 
+ The "sai siot" ('ㅅ' used for indicating sound change) is almost never written out in the North. 
+ 
+ 
+ 벗꽃 
+ 벚꽃 
+ cherry blossom 
+ beotkkot (pŏtkkot) 
+ 
+ 
+ 
+ 못읽다 
+ 못 읽다 
+ cannot read 
+ modikda (modikta) 
+ Spacing. 
+ 
+ 
+ 한나산 
+ 한라산 
+ Hallasan 
+ hallasan (hallasan) 
+ When a ㄴ-ㄴ combination is pronounced as ll , the original hangul spelling is kept in the North, while the hangul is changed in the South. 
+ 
+ 
+ 규률 
+ 규율 
+ rules 
+ gyuyul (kyuyul) 
+ In words where the original hanja is spelt "렬" or "률" and follows a vowel, the initial ㄹ is not pronounced in the North, making the pronunciation identical with that in the South where the ㄹ is dropped in the spelling. 
+ 
+ 
+ Spelling and pronunciation  
+ Some words have different spellings and pronunciations in the North and the South, some of which were given in the "Phonology" section above: 
+ 
+ 
+ Word 
+ Meaning 
+ Remarks 
+ 
+ 
+ North spelling 
+ North pronun. 
+ South spelling 
+ South pronun. 
+ 
+ 
+ 력량 
+ ryeongryang (ryŏngryang) 
+ 역량 
+ yeongnyang (yŏngnyang) 
+ strength 
+ Initial r' s are dropped if followed by i or y in the South Korean version of Korean. 
+ 
+ 
+ 로동 
+ rodong (rodong) 
+ 노동 
+ nodong (nodong) 
+ work 
+ Initial r' s are demoted to an n if not followed by i or y in the South Korean version of Korean. 
+ 
+ 
+ 원쑤 
+ wonssu (wŏnssu) 
+ 원수 
+ wonsu (wŏnsu) 
+ mortal enemy 
+ "Mortal enemy" and " field marshal " are homophones in the South. Possibly to avoid referring to Kim Il-sung , Kim Jong-il or Kim Jong-un as the enemy, the second syllable of "enemy" is written and pronounced 쑤 in the North.  
+ 
+ 
+ 라지오 
+ rajio (rajio) 
+ 라디오 
+ radio (radio) 
+ radio 
+ 
+ 
+ 
+ 우 
+ u (u) 
+ 위 
+ wi (wi) 
+ on; above 
+ 
+ 
+ 
+ 안해 
+ anhae (anhae) 
+ 아내 
+ anae (anae) 
+ wife 
+ 
+ 
+ 
+ 꾸바 
+ kkuba (kkuba) 
+ 쿠바 
+ kuba (k'uba) 
+ Cuba 
+ When transcribing foreign words from languages that do not have contrasts between aspirated and unaspirated stops, North Koreans generally use tensed stops for the unaspirated ones while South Koreans use aspirated stops in both cases. 
+ 
+ 
+ 페 
+ pe (p'e) 
+ 폐 
+ pye (p'ye), pe (p'e) 
+ lungs 
+ In the case where ye comes after a consonant, such as in hye and pye , it is pronounced without the palatal approximate. North Korean orthography reflect this pronunciation nuance. 
+ 
+ 
+ In general, when transcribing place names, North Korea tends to use the pronunciation in the original language more than South Korea, which often uses the pronunciation in English. For example: 
+ 
+ 
+ Original name 
+ North Korea transliteration 
+ English name 
+ South Korea transliteration 
+ 
+ 
+ Spelling 
+ Pronunciation 
+ Spelling 
+ Pronunciation 
+ 
+ 
+ Ulaanbaatar 
+ 울란바따르 
+ ullanbattareu (ullanbattarŭ) 
+ Ulan Bator 
+ 울란바토르 
+ ullanbatoreu (ullanbat'orŭ) 
+ 
+ 
+ København 
+ 쾨뻰하븐 
+ koeppenhabeun (k'oeppenhabŭn) 
+ Copenhagen 
+ 코펜하겐 
+ kopenhagen (k'op'enhagen) 
+ 
+ 
+ al-Qāhirah 
+ 까히라 
+ kkahira (kkahira) 
+ Cairo 
+ 카이로 
+ kairo (k'airo) 
+ 
+ 
+ Grammar  
+ Some grammatical constructions are also different: 
+ 
+ 
+ Word 
+ Meaning 
+ Remarks 
+ 
+ 
+ North spelling 
+ North pronun. 
+ South spelling 
+ South pronun. 
+ 
+ 
+ 되였다 
+ doeyeotda (toeyŏtta) 
+ 되었다 
+ doeeotda (toeŏtta) 
+ past tense of 되다 (doeda/toeda), "to become" 
+ All similar grammar forms of verbs or adjectives that end in ㅣ in the stem (i.e. ㅣ, ㅐ, ㅔ, ㅚ, ㅟ and ㅢ) in the North use 여 instead of the South's 어. 
+ 
+ 
+ 고마와요 
+ gomawayo (komawayo) 
+ 고마워요 
+ gomawoyo (komawŏyo) 
+ thanks 
+ ㅂ-irregular verbs in the North use 와 (wa) for all those with a positive ending vowel; this only happens in the South if the verb stem has only one syllable. 
+ 
+ 
+ 할가요 
+ halgayo (halkayo) 
+ 할까요 
+ halkkayo (halkkayo) 
+ Shall we do? 
+ Although the hangul differ, the pronunciations are the same (i.e. with the tensed ㄲ sound). 
+ 
+ 
+ Vocabulary  
+ Some vocabulary is different between the North and the South: 
+ 
+ 
+ Word 
+ Meaning 
+ Remarks 
+ 
+ 
+ North spelling 
+ North pronun. 
+ South spelling 
+ South pronun. 
+ 
+ 
+ 문화주택 
+ munhwajutaek (munhwajut'aek) 
+ 아파트 
+ apateu (ap'at'ŭ) 
+ Apartment 
+ 아빠트 (appateu/appat'ŭ) is also used in the North. 
+ 
+ 
+ 조선말 
+ joseonmal (chosŏnmal) 
+ 한국어 
+ han-gugeo (han'gugŏ) 
+ Korean language 
+ 한국말 is also used in the South 
+ 
+ 
+ 곽밥 
+ gwakbap (kwakpap) 
+ 도시락 
+ dosirak (tosirak) 
+ lunch box 
+ 
+ 
+ 
+ 동무 
+ dongmu (tongmu) 
+ 친구 
+ chingu (ch'ingu) 
+ Friend 
+ 동무 was originally a non-ideological word for "friend" used all over the Korean peninsula, but North Koreans later adopted it as the equivalent of the Communist term of address " comrade ". As a result, to South Koreans today the word has a heavy political tinge, and so they have shifted to using other words for friend like "친구".  
+ 
+ 
+ Punctuation  
+ In the North, guillemets 《 and 》 are the symbols used for quotes; in the South, quotation marks equivalent to the English ones, “ and ”, are standard, although 『 』 and 「 」 are also used. 
+ Study by non-native learners  
+ For native English speakers, Korean is generally considered to be one of the most difficult languages to master despite the relative ease of learning Hangul. For instance, the United States ' Defense Language Institute places Korean in Category IV, which also includes Arabic , Japanese , and Chinese . This means that 63 weeks of instruction (as compared to just 25 weeks for French , Spanish , Portuguese , and Italian ) are required to bring an English-speaking student to a limited working level of proficiency in which he or she has "sufficient capability to meet routine social demands and limited job requirements" and "can deal with concrete topics in past, present, and future tense."  
+ The study of the Korean language in the United States is dominated by Korean American heritage language students ; they are estimated to form over 80% of all students of the language at non-military universities.  
+ Korean is considerably easier for speakers of certain other languages, such as Japanese; in Japan, it is more widely studied by non-heritage learners.  
+ Korean language tests  
+ There are two widely used tests of Korean as a foreign language: the Korean Language Proficiency Test (KLPT) and the Test of Proficiency in Korean (TOPIK). The Korean Language Proficiency Test, an examination aimed at assessing non-native speakers' competence in Korean, was instituted in 1997; 17,000 people applied for the 2005 sitting of the examination.  
+ The TOPIK test has three different difficulty levels: beginner, intermediate, and advanced; the difficulty level of the test taken determines the level achieved—the beginner test is levels 1 and 2; intermediate is levels 3 and 4; and advanced is levels 5 and 6. The TOPIK includes four sections: vocabulary/grammar (어휘및 문법), writing (쓰기), listening (듣기), and reading (읽기). The vocabulary/grammar section, listening section, and reading section each consist of 30 multiple choice questions worth a total of 100 points. The writing section consists of 10 multiple-choice questions worth 4 points each, and 4-6 written responses worth 60 points. The overall total score out of 400 is determined by adding up the 4 scores from each individual 100-point section. However, the level achieved is not simply a matter of achieving a minimum total score; the test-taker must achieve a minimum score in each section in addition to a minimum average total score. In order to achieve the lower of the two levels on each test (levels 1, 3, and 5), the test-taker must get at least 40 points in each of the four sections, and must get an average total score of 50 on the four sections. In order to achieve the higher of the two levels on each test (levels 2, 4, and 6), the test-taker must get at least 50 points in each of the four sections, and must get an average total score of 70 on the four sections. 
+ See also  
+ 
+ Hangul 
+ Korean count word 
+ Korean language and computers 
+ Korean mixed script 
+ Korean numerals 
+ Korean particles 
+ Korean phonology 
+ Korean romanization 
+ 
+ McCune–Reischauer 
+ Revised romanization of Korean 
+ SKATS 
+ Yale romanization of Korean 
+ 
+ 
+ Altaic languages 
+ Hanja (ancient Chinese characters in Korean) 
+ List of English words of Korean origin 
+ List of Korea-related topics 
+ Sino-Korean vocabulary 
+ Vowel harmony 
+ 
+ References  
+ 
+ 
+ ^  "Världens 100 största språk 2010"  . Nationalencyklopedin . 2010 . Retrieved 12 February 2014 . &#160; (Swedish) 
+ ^  a   b  Song, Jae Jung (2005) "The Korean language: structure, use and context" Routledge, p. 15 
+Lyle Campbell &amp; Mauricio Mixco. 2007. A Glossary of Historical Linguistics . University of Utah Press. ("Korean, A language isolate", p. 90; "Korean is often said to belong with the Altaic hypothesis, often also with Japanese, though this is not widely supported", pp. 90–91; "...most specialists...no longer believe that the...Altaic groups...are related", p. 7) 
+David Dalby. 1999/2000. The Linguasphere Register of the World's Languages and Speech Communities . Linguasphere Press. 
+Nam-Kil Kim. 1992. "Korean", International Encyclopedia of Linguistics . Volume 2, pp. 282–86. ("...scholars have tried to establish genetic relationships between Korean and other languages and major language families, but with little success", p. 282) 
+András Róna-Tas. 1998. "The Reconstruction of Proto-Turkic and the Genetic Question", The Turkic Languages . Routledge. pp. 67–80. (" have been heavily criticised in more recent studies, though the idea of a genetic relationship has not been totally abandoned", p. 77.) 
+Claus Schönig. 2003. "Turko-Mongolic Relations", The Mongolic Languages . Routledge. pp. 403–19. ("...the 'Altaic' languages do not seem to share a common basic vocabulary of the type normally present in cases of genetic relationship", p. 403) 
+ ^  Stratification in the peopling of China: how far does the linguistic evidence match genetics and archaeology? In; Sanchez-Mazas, Blench, Ross, Lin &amp; Pejros eds. Human migrations in continental East Asia and Taiwan: genetic, linguistic and archaeological evidence. 2008. Taylor &amp; Francis 
+ ^  e.g. Miller 1971, 1996, Starostin et al. 2003 
+ ^  e.g. Vovin 2008: 1 
+ ^  Trask 1996: 147–51 
+ ^  Rybatzki 2003: 57 
+ ^  Vovin 2008: 5 
+ ^  e.g. Martin 1966, 1990 
+ ^  e.g. Miller 1971, 1996 
+ ^  Starostin, Sergei (1991). Altaiskaya problema i proishozhdeniye yaponskogo yazika  . Moscow: Nauka. &#160; 
+ ^  a   b  Lee &amp; Ramsey, 2000. The Korean language 
+ ^  Vovin 2008 
+ ^  Whitman 1985: 232, also found in Martin 1966: 233 
+ ^  Vovin 2008: 211–12 
+ ^  Source: Unescopress. "New interactive atlas adds two more endangered languages | United Nations Educational, Scientific and Cultural Organization" . Unesco.org . Retrieved 2013-12-11 . &#160; 
+ ^  David Lightfoot, 1999. The development of language: acquisition, change, and evolution 
+ ^  Janhunen, Juha , 1996. Manchuria: an ethnic history 
+ ^  only at the end of a syllable 
+ ^  a   b   c   d  Sohn, Ho-Min (2006). Korean Language in Culture and Society . Boston: Twayne Publishers. ISBN &#160; 978-0-8248-2694-9 . &#160; 
+ ^  Cho, Young A. “ Gender Differences in Korean Speech.” Korean Language in Culture and Society. Ed. Ho-min Sohn. University of Hawaii Press, 2006. pp. 189–98. 
+ ^  Kim, Minju. “Cross Adoption of language between different genders: The case of the Korean kinship terms hyeng and enni.” Proceedings of the Fifth Berkley Woman and Language Conference. Berkeley: Berkeley Women and Language Group. 1999. 
+ ^  Palley, Marian Lief. “Women’s Status in South Korea: Tradition and Change.” Asian Survey, Vol 30 No. 12. December 1990. pp. 1136–53. 
+ ^  a   b   c  Sohn, Ho-Min. The Korean Language (Section 1.5.3 "Korean vocabulary", pp. 12–13), Cambridge University Press, 2001. ISBN 0-521-36943-6 . 
+ ^  Kim, Jin-su (2009-09-11). "우리말 70%가 한자말? 일제가 왜곡한 거라네/Our language is 70% hanja? Japanese Empire distortion" . The Hankyoreh . Retrieved 2009-09-11 &#160; . The dictionary mentioned is 우리말　큰 사전 . Seoul: Hangeul Hakhoe. 1992. OCLC &#160; 27072560 &#160; 
+ ^  Kanno, Hiroomi (ed.) / Society for Korean Linguistics in Japan (1987). Chōsengo o manabō (『朝鮮語を学ぼう』), Sanshūsha, Tokyo. ISBN 4-384-01506-2 
+ ^  Sohn 2006 , p.&#160; 38 
+ ^  Choe, Sang-hun (2006-08-30). "Koreas: Divided by a common language" . Retrieved 2012-08-16 . &#160; 
+ ^  "Beliefs that bind" . Korea JoongAng Daily . 2007-10-23 . Retrieved 2012-08-16 . &#160; 
+ ^  Raugh, Harold E. "The Origins of the Transformation of the Defense Language Program" . Applied Language Learning 16 (2): 1–12 . Retrieved 2008-01-09 . &#160; 
+ ^  "Language Difficulty Ranking" . Effective Language Learning . Retrieved 2013-12-11 . &#160; 
+ ^  Lee, Saekyun H.; HyunJoo Han. "Issues of Validity of SAT Subject Test Korea with Listening" . Applied Language Learning 17 (1): 33–56. Archived from the original on 2008-06-25. &#160; Cite uses deprecated parameters ( help ) 
+ ^  "Global popularity of Korean language surges" . Korea Herald . 2012-07-22 . Retrieved 2012-08-16 . &#160; 
+ ^  Fujita-Round, Sachiyo; John C. Maher (2007). Language Education Policy in Japan . "Language policy and political issues in education". Encyclopedia of Language and Education (United States: Springer). pp.&#160;393–404. ISBN &#160; 978-0-387-32875-1 . &#160; Cite uses deprecated parameters ( help ) 
+ ^  "Korea Marks 558th Hangul Day" . The Chosun Ilbo . 2004-10-10. Archived from the original on 2008-02-19 . Retrieved 2008-01-09 . &#160; 
+ ^  "Korean language test-takers pass 1 mil." . The Korea Times . Retrieved 25 January 2013 . &#160; 
+ 
+ 
+ Further reading  
+ 
+ Chang, Suk-jin (1996). Korean . Philadelphia: John Benjamins Publishing Company. ISBN &#160; 1-55619-728-4 . &#160; (Volume 4 of the London Oriental and African Language Library ). 
+ Hulbert, Homer B. (1905): A Comparative Grammar of the Korean Language and the Dravidian Dialects in India . Seoul. 
+ Lee, Ki-Moon Lee and S. Robert Ramsey. A History of the Korean Language (Cambridge University Press; 2011) 
+ Martin, Samuel E. (1966): Lexical Evidence Relating Japanese to Korean. Language 42/2 : 185–251. 
+ Martin, Samuel E. (1990): Morphological clues to the relationship of Japanese and Korean. In: Philip Baldi (ed.): Linguistic Change and Reconstruction Methodology . Trends in Linguistics: Studies and Monographs 45: 483–509. 
+ Miller, Roy Andrew (1971): Japanese and the Other Altaic Languages . Chicago: University of Chicago Press. ISBN 0-226-52719-0 . 
+ Miller, Roy Andrew (1996): Languages and History: Japanese, Korean and Altaic . Oslo: Institute for Comparative Research in Human Culture. ISBN 974-8299-69-4 . 
+ Ramstedt, G. J. (1928): Remarks on the Korean language. Mémoires de la Société Finno-Oigrienne 58. 
+ Rybatzki, Volker (2003): Middle Mongol. In: Juha Janhunen (ed.) (2003): The Mongolic languages . London: Routledge. ISBN 0-7007-1133-3 : 47–82. 
+ Starostin, Sergei A.; Anna V. Dybo; Oleg A. Mudrak (2003): Etymological Dictionary of the Altaic Languages , 3 volumes. Leiden: Brill Academic Publishers. ISBN 90-04-13153-1 . 
+ Sohn, H.-M. (1999): The Korean Language . Cambridge: Cambridge University Press. 
+ Sohn, Ho-Min (2006). Korean Language in Culture and Society . Boston: Twayne Publishers. ISBN &#160; 978-0-8248-2694-9 . &#160; 
+ Song, J.-J. (2005): The Korean Language: Structure, Use and Context . London: Routledge. 
+ Trask, R. L. (1996): Historical linguistics . Hodder Arnold. 
+ Vovin, Alexander: Koreo-Japonica . University of Hawai'i Press. 
+ Whitman, John B. (1985): The Phonological Basis for the Comparison of Japanese and Korean . Unpublished Harvard University Ph.D. dissertation. 
+ 
+ External links  
+ 
+ 
+ 
+ Korean edition of Wikipedia , the free encyclopedia 
+ 
+ 
+ 
+ 
+ 
+ Look up Category:Korean language in Wiktionary, the free dictionary. 
+ 
+ 
+ 
+ 
+ 
+ Wikibooks has a book on the topic of: Korean 
+ 
+ 
+ 
+ 
+ 
+ Wikiversity has learning materials about Korean 
+ 
+ 
+ 
+ 
+ 
+ Wikimedia Commons has media related to Korean language . 
+ 
+ 
+ 
+ Korean Swadesh vocabulary list (from Wiktionary) 
+ Linguistic and Philosophical Origins of the Korean Alphabet (Hangul) 
+ Free Korean language and culture course online, in English 
+ Korean Course - Free Korean language course online, in English 
+ USA Foreign Service Institute Korean basic course 
+ Linguistic map of Korea 
+ Korean – a Category IV language Languages which are exceptionally difficult for native English speakers 
+ dongsa.net A Korean verb conjugation tool that explains the conjugations for learners of Korean 
+ 무료 온라인 한국어-영어 번역 - Free Online Korean-English translation, in Korean 
+ Korean phrasebook travel guide from Wikivoyage 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ v 
+ t 
+ e 
+ 
+ 
+ Korean language 
+ 
+ 
+ 
+ 
+ 
+ 
+ History 
+ 
+ 
+ 
+ Old Korean 
+ Middle Korean 
+ Modern Korean 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Dialects 
+ 
+ 
+ 
+ Central
+ 
+ Chungcheong 
+ Seoul 
+ 
+ 
+ Gyeongsang 
+ Hamgyŏng 
+ Hwanghae 
+ Jeju 
+ Jeolla 
+ P'yŏng'an 
+ Yeongdong 
+ in China 
+ in Russia (Koryo-mar) 
+ in Japan (Zainichi) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Grammar 
+ 
+ 
+ 
+ Phonology 
+ Count word 
+ Honorifics 
+ Numerals 
+ Postpositions 
+ Pronouns 
+ Speech levels 
+ Verbs 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Literature 
+ 
+ 
+ 
+ Gasa 
+ Hyangga 
+ Sijo 
+ Yongbi Eocheonga 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Writing 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Braille 
+ Hangul 
+ 
+ Consonant and vowel tables 
+ Punctuation 
+ 
+ 
+ Hanja 
+ 
+ Gugyeol 
+ Hyangchal 
+ Idu 
+ 
+ 
+ Mixed script 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Cyrilli- and Romanization 
+ 
+ 
+ 
+ 
+ ISO/TR 11941 
+ Kontsevich 
+ McCune-Reischauer 
+ Revised 
+ SKATS 
+ Yale 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Other topics 
+ 
+ 
+ 
+ International Circle of Korean Linguistics 
+ Konglish 
+ 
+ List of Konglish terms 
+ 
+ 
+ List of English words of Korean origin 
+ The National Institute of the Korean Language 
+ North–South differences in the Korean language 
+ Sino-Korean vocabulary 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ v 
+ t 
+ e 
+ 
+ 
+ List of primary language families 
+ 
+ 
+ 
+ 
+ 
+ 
+ Africa 
+ 
+ 
+ 
+ Afroasiatic 
+ Austronesian 
+ Khoe 
+ Kx'a 
+ Niger–Congo 
+ Nilo-Saharan ? 
+ Tuu 
+ Mande ? 
+ Songhay ? 
+ Ubangian ? 
+ 
+ 
+ 
+ 
+ 
+ Isolates 
+ 
+ 
+ 
+ 
+ Bangime 
+ Hadza 
+ Sandawe 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Europe and Asia 
+ 
+ 
+ 
+ Afroasiatic 
+ Ainu 
+ Austroasiatic 
+ Austronesian 
+ Chukotko-Kamchatkan 
+ Dené–Yeniseian 
+ Dravidian 
+ Eskimo–Aleut 
+ Great Andamanese 
+ Hmong–Mien 
+ Hurro-Urartian 
+ Indo-European 
+ Japonic 
+ Kartvelian 
+ Koreanic 
+ Mongolic 
+ Northeast Caucasian 
+ Northwest Caucasian 
+ Ongan 
+ Sino-Tibetan 
+ Tai–Kadai 
+ Tungusic 
+ Turkic 
+ Tyrsenian 
+ Uralic 
+ Yukaghir 
+ Altaic ? 
+ Austronesian–Ongan ? 
+ Austro-Tai ? 
+ Sino-Austronesian ? 
+ Digaro ? 
+ Kho-Bwa ? 
+ Siangic ? 
+ 
+ 
+ 
+ 
+ 
+ Isolates 
+ 
+ 
+ 
+ 
+ Basque 
+ Burushaski 
+ Elamite 
+ Hattic 
+ Kusunda 
+ Nihali 
+ Nivkh 
+ Sumerian 
+ Hruso ? 
+ Miji ? 
+ Miju ? 
+ Puroik ? 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Sign languages 
+ 
+ 
+ 
+ 
+ British 
+ French 
+ German 
+ Japanese 
+ Swedish 
+ Chinese 
+ Indo-Pakistani 
+ Arab 
+ Other sign languages 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ New Guinea 
+and the Pacific 
+ 
+ 
+ 
+ Amto–Musan 
+ Arafundi 
+ Austronesian 
+ Baining 
+ Border (Tami) 
+ Bulaka River 
+ Central Solomons 
+ East Bird's Head – Sentani 
+ East Geelvink Bay 
+ Eastern Trans-Fly 
+ Fas 
+ Goilalan 
+ Kiwai–Porome 
+ Kwomtari 
+ Lakes Plain 
+ Left May 
+ Lower Mamberamo 
+ Mairasi 
+ Mai Brat ? 
+ Monumbo 
+ Morehead and Upper Maro Rivers 
+ Nimboran 
+ North Bougainville 
+ Pahoturi 
+ Pauwasi 
+ Piawi 
+ Ramu–Lower Sepik 
+ Senagi 
+ Sepik 
+ Skou 
+ South Bougainville 
+ Teberan 
+ Tor–Kwerba 
+ Torricelli 
+ Trans–New Guinea 
+ West Papuan 
+ Yawa 
+ Yuat 
+ Trans-Fly–Bulaka River ? 
+ Yele – West New Britain ? 
+ 
+ 
+ 
+ 
+ 
+ Isolates 
+ 
+ 
+ 
+ 
+ Abinomn 
+ Busa 
+ Kaure 
+ Kol 
+ Kuot 
+ Pyu 
+ Taiap 
+ Yalë 
+ Abun ? 
+ Amberbaken ? 
+ Dem ? 
+ Hattam ? 
+ Isirawa ? 
+ Kapori ? 
+ Kosare ? 
+ Massep ? 
+ Pawaia ? 
+ Sulka ? 
+ Waia ? 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Australia 
+ 
+ 
+ 
+ Arnhem 
+ Bunuban 
+ Daly (four families) 
+ Darwin 
+ Garawan 
+ Iwaidjan 
+ Jarrakan 
+ Mirndi 
+ Nyulnyulan 
+ Pama–Nyungan 
+ Tangkic 
+ Tasmanian (4 families?) 
+ Worrorran 
+ Yangmanic (Wardaman) 
+ 
+ 
+ 
+ 
+ 
+ Isolates 
+ 
+ 
+ 
+ 
+ Giimbiyu 
+ Marrgu 
+ Tiwi 
+ Wagiman 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ North America 
+ 
+ 
+ 
+ Algic 
+ Alsea 
+ Caddoan 
+ Chimakuan 
+ Chinookan 
+ Chumashan 
+ Comecrudan 
+ Coosan 
+ Dené–Yeniseian 
+ Eskimo–Aleut 
+ Iroquoian 
+ Kalapuyan 
+ Keresan 
+ Maiduan 
+ Muskogean 
+ Palaihnihan 
+ Plateau Penutian 
+ Pomoan 
+ Salishan 
+ Shastan 
+ Siouan 
+ Tanoan 
+ Tsimshianic 
+ Utian 
+ Uto-Aztecan 
+ Wakashan 
+ Wintuan 
+ Yokutsan 
+ Yukian 
+ Yuman–Cochimí 
+ Hokan ? 
+ Penutian ? 
+ 
+ 
+ 
+ 
+ 
+ Isolates 
+ 
+ 
+ 
+ 
+ Chimariko 
+ Haida 
+ Karuk 
+ Kutenai 
+ Siuslaw 
+ Takelma 
+ Timucua 
+ Waikuri 
+ Washo 
+ Yana 
+ Yuchi 
+ Zuni 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Mesoamerica 
+ 
+ 
+ 
+ Chibchan 
+ Jicaquean 
+ Lencan ? 
+ Mayan 
+ Misumalpan 
+ Mixe–Zoque 
+ Oto-Manguean 
+ Tequistlatecan 
+ Totonacan 
+ Uto-Aztecan 
+ Xincan 
+ Totozoquean ? 
+ 
+ 
+ 
+ 
+ 
+ Isolates 
+ 
+ 
+ 
+ 
+ Cuitlatec 
+ Huave 
+ Seri 
+ Tarascan/Purépecha 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ South America 
+ 
+ 
+ 
+ Alacalufan 
+ Arawakan 
+ Arauan 
+ Araucanian 
+ Arutani–Sape 
+ Aymaran 
+ Barbacoan 
+ Bororoan 
+ Cahuapanan 
+ Cariban 
+ Catacaoan 
+ Chapacuran 
+ Charruan 
+ Chibchan 
+ Choco 
+ Chonan 
+ Guaicuruan 
+ Guajiboan 
+ Jê/Gê 
+ Harakmbut – Katukinan 
+ Jirajaran 
+ Jivaroan 
+ Kariri 
+ Katembri–Taruma 
+ Mascoian 
+ Matacoan 
+ Maxakalian 
+ Nadahup 
+ Nambikwaran 
+ Otomákoan 
+ Pano–Tacanan 
+ Peba–Yaguan 
+ Purian 
+ Quechuan 
+ Piaroa–Saliban 
+ Ticuna–Yuri 
+ Tiniguan 
+ Tucanoan 
+ Tupian 
+ Uru–Chipaya 
+ Witotoan 
+ Yabutian 
+ Yanomaman 
+ Zamucoan 
+ Zaparoan 
+ Chimuan ? 
+ Esmeralda–Yaruro ? 
+ Hibito–Cholón ? 
+ Lule–Vilela ? 
+ Macro-Jê ? 
+ Tequiraca–Canichana ? 
+ 
+ 
+ 
+ 
+ 
+ Isolates (extant in 2000) 
+ 
+ 
+ 
+ 
+ Aikanã ? 
+ Andoque ? 
+ Camsá 
+ Candoshi 
+ Chimane 
+ Chiquitano 
+ Cofán ? 
+ Fulniô 
+ Guató 
+ Hodï/Joti 
+ Irantxe ? 
+ Itonama 
+ Karajá 
+ Krenak 
+ Leco 
+ Maku of Roraima 
+ Movima 
+ Mura-Pirahã 
+ Nukak ? 
+ Ofayé 
+ Puinave 
+ Rikbaktsa 
+ Huaorani 
+ Trumai 
+ Urarina 
+ Warao 
+ Yamana 
+ Yuracaré 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ See also 
+ 
+ 
+ 
+ Language isolates 
+ Unclassified languages 
+ Creoles 
+ Pidgins 
+ Mixed languages 
+ Artificial languages 
+ List of sign languages 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Families in bold are the largest. Families in italics have no living members. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  Korea portal 
+  Language portal 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+ 								 
+				Retrieved from " http://en.wikipedia.org/w/index.php?title=Korean_language&amp;oldid=598789108 "				 
+												 Categories : Languages with ISO 639-2 code Languages with ISO 639-1 code Korean writing system Korean language Agglutinative languages Buyeo languages Languages of China Languages of Japan Languages of Korea Languages of North Korea Languages of South Korea Languages of Canada Languages of the United States National symbols of Korea Subject–object–verb languages  Hidden categories: Articles with Swedish-language external links Pages containing cite templates with deprecated parameters Articles containing Korean-language text Articles containing explicitly cited English-language text Articles containing Chinese-language text All articles with unsourced statements Articles with unsourced statements from August 2007 Articles with unsourced statements from December 2008 Articles containing non-English-language text Commons category template with no category set Commons category with page title same as on Wikidata  												 
+							 
+		 
+		 
+			 Navigation menu 
+			 
+				 
+	 Personal tools 
+	 
+ Create account Log in 	 
+ 
+				 
+					 
+	 Namespaces 
+	 
+					 Article 
+					 Talk 
+			 
+ 
+ 
+	 
+		 
+	 Variants 
+	 
+		 
+					 
+	 
+ 
+				 
+				 
+					 
+	 Views 
+	 
+					 Read 
+					 Edit 
+					 View history 
+			 
+ 
+ 
+	 Actions 
+	 
+		 
+					 
+	 
+ 
+ 
+	 Search 
+	 
+					 
+					 		 
+	 
+ 
+				 
+			 
+			 
+					 
+				 
+	 Navigation 
+	 
+		 
+			 Main page 
+			 Contents 
+			 Featured content 
+			 Current events 
+			 Random article 
+			 Donate to Wikipedia 
+			 Wikimedia Shop 
+		 
+	 
+ 
+ 
+	 Interaction 
+	 
+		 
+			 Help 
+			 About Wikipedia 
+			 Community portal 
+			 Recent changes 
+			 Contact page 
+		 
+	 
+ 
+ 
+	 Tools 
+	 
+		 
+			 What links here 
+			 Related changes 
+			 Upload file 
+			 Special pages 
+			 Permanent link 
+			 Page information 
+			 Data item 
+ Cite this page 		 
+	 
+ 
+ 
+	 Print/export 
+	 
+		 
+			 Create a book 
+			 Download as PDF 
+			 Printable version 
+		 
+	 
+ 
+ 
+	 Languages 
+	 
+		 
+			 Afrikaans 
+			 አማርኛ 
+			 العربية 
+			 Aragonés 
+			 Asturianu 
+			 Avañe'ẽ 
+			 Azərbaycanca 
+			 বাংলা 
+			 Bân-lâm-gú 
+			 Беларуская 
+			 Беларуская (тарашкевіца)‎ 
+			 Bikol Central 
+			 Български 
+			 Brezhoneg 
+			 Català 
+			 Čeština 
+			 Cymraeg 
+			 Dansk 
+			 Deutsch 
+			 ދިވެހިބަސް 
+			 Diné bizaad 
+			 Eesti 
+			 Ελληνικά 
+			 Español 
+			 Esperanto 
+			 Euskara 
+			 فارسی 
+			 Fiji Hindi 
+			 Føroyskt 
+			 Français 
+			 Frysk 
+			 Gaeilge 
+			 Galego 
+			 贛語 
+			 客家語/Hak-kâ-ngî 
+			 한국어 
+			 Հայերեն 
+			 हिन्दी 
+			 Hornjoserbsce 
+			 Hrvatski 
+			 Ido 
+			 Ilokano 
+			 Bahasa Indonesia 
+			 Interlingua 
+			 ᐃᓄᒃᑎᑐᑦ/inuktitut 
+			 Íslenska 
+			 Italiano 
+			 עברית 
+			 Basa Jawa 
+			 Kalaallisut 
+			 ಕನ್ನಡ 
+			 ქართული 
+			 Kaszëbsczi 
+			 Қазақша 
+			 Kernowek 
+			 Kiswahili 
+			 Коми 
+			 Kreyòl ayisyen 
+			 Kurdî 
+			 Лезги 
+			 ລາວ 
+			 Latina 
+			 Latviešu 
+			 Lietuvių 
+			 Limburgs 
+			 Magyar 
+			 Македонски 
+			 Māori 
+			 मराठी 
+			 მარგალური 
+			 مازِرونی 
+			 Bahasa Melayu 
+			 Mìng-dĕ̤ng-ngṳ̄ 
+			 Монгол 
+			 Nāhuatl 
+			 Nederlands 
+			 日本語 
+			 Napulitano 
+			 Нохчийн 
+			 Norsk bokmål 
+			 Norsk nynorsk 
+			 Occitan 
+			 Олык марий 
+			 Oʻzbekcha 
+			 ਪੰਜਾਬੀ 
+			 پنجابی 
+			 ភាសាខ្មែរ 
+			 Piemontèis 
+			 Plattdüütsch 
+			 Polski 
+			 Português 
+			 Română 
+			 Runa Simi 
+			 Русский 
+			 Саха тыла 
+			 Sámegiella 
+			 संस्कृतम् 
+			 Scots 
+			 Shqip 
+			 සිංහල 
+			 Simple English 
+			 Slovenčina 
+			 Slovenščina 
+			 Ślůnski 
+			 کوردی 
+			 Српски / srpski 
+			 Srpskohrvatski / српскохрватски 
+			 Basa Sunda 
+			 Suomi 
+			 Svenska 
+			 Tagalog 
+			 தமிழ் 
+			 Татарча/tatarça 
+			 ไทย 
+			 ᏣᎳᎩ 
+			 Türkçe 
+			 Türkmençe 
+			 Українська 
+			 ئۇيغۇرچە / Uyghurche 
+			 Tiếng Việt 
+			 Võro 
+			 文言 
+			 Winaray 
+			 吴语 
+			 ייִדיש 
+			 粵語 
+			 中文 
+			 
+			 Edit links 
+		 
+	 
+ 
+			 
+		 
+		 
+							 
+											 This page was last modified on 9 March 2014 at 03:21. 
+											 Text is available under the Creative Commons Attribution-ShareAlike License ;
+additional terms may apply. By using this site, you agree to the Terms of Use and Privacy Policy. 
+Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc. , a non-profit organization. 
+									 
+							 
+											 Privacy policy 
+											 About Wikipedia 
+											 Disclaimers 
+											 Contact Wikipedia 
+											 Developers 
+											 Mobile view
