@@ -1,3 +1,7 @@
+#!/usr/bin/python
+# the funny thing is I'm adding the #! lines in but I dunno how they interact with
+# virtualenvs, so I run the scripts with python script.py anyway... :P
+
 """feed this a text file containing one URL per line
    and a directory for it to place its output in.
    It will download the HTML content at the URL, clean it up (however NLTK cleans HTML up),
