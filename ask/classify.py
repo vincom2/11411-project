@@ -52,3 +52,5 @@ classifier.show_most_informative_features() # I don't understand the output for 
 # f.close()
 with open('../data/classifier.pickle', 'wb') as f:
     pickle.dump(classifier, f)
+    # wtf it's 50MB
+    # use cPickle or import gzip or import bz2 or something
