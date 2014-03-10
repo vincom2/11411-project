@@ -1,3 +1,10 @@
+"""feed this a text file containing one URL per line
+   and a directory for it to place its output in.
+   It will download the HTML content at the URL, clean it up (however NLTK cleans HTML up),
+   and then do some other stuff, and then save it to "outputdir/<url-after-last-slash>.txt".
+   As you can see, it was clearly written for wikipedia articles, hence the <url-after-last-slash>
+   and the part where it strips out text of the form "[ 20 ]". Lol."""
+
 from nltk.util import clean_html
 import urllib2
 import re
