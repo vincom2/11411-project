@@ -2,9 +2,12 @@
 # hopefully that is useful D:
 # current code is mostly adapted from http://streamhacker.com/2010/05/10/text-classification-sentiment-analysis-naive-bayes-classifier/
 
+# very bad code with paths hardcoded everywhere :o
+
 import nltk.classify.util
 from nltk.classify import NaiveBayesClassifier
 from nltk.corpus.reader import CategorizedPlaintextCorpusReader
+import pickle
 
 corpusdir = '../data/own'
 articles = CategorizedPlaintextCorpusReader(corpusdir, '.*', cat_pattern = r'(.*)[/]')
@@ -37,3 +40,11 @@ print 'train on %d instances, test on %d instances' % (len(train), len(test))
 classifier = NaiveBayesClassifier.train(train)
 print 'accuracy:', nltk.classify.util.accuracy(classifier, test)
 classifier.show_most_informative_features() # I don't understand the output for more than 2 categories :(
+
+# load with:
+# import pickle
+# f = open('my_classifier.pickle')
+# classifier = pickle.load(f)
+# f.close()
+with open('../data/classifier.pickle', 'wb') as f:
+    pickle.dump(classifier, f)
