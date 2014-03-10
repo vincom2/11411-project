@@ -6,7 +6,7 @@ import nltk.classify.util
 from nltk.classify import NaiveBayesClassifier
 from nltk.corpus.reader import CategorizedPlaintextCorpusReader
 
-corpusdir = '../data/organized'
+corpusdir = '../data/own'
 articles = CategorizedPlaintextCorpusReader(corpusdir, '.*', cat_pattern = r'(.*)[/]')
 
 def word_feats(words):
@@ -22,16 +22,18 @@ feats = {}
 trainfeats = []
 testfeats = []
 for cat in articles.categories():
+    wow = len([f for f in articles.fileids(cat)]) # such variable name
+    print "for category", cat, ":", wow
     feats[cat] = [(word_feats(articles.words(fileids = [f])), cat) for f in articles.fileids(cat)]
-    cutoff = len(feats[cat]) - hold_back(len(feats[cat]))
+    cutoff = wow - hold_back(wow)
     trainfeats.append(feats[cat][:cutoff])
     testfeats.append(feats[cat][cutoff:])
 
 train = [item for sublist in trainfeats for item in sublist]
 test = [item for sublist in testfeats for item in sublist]
 
-print 'train on %d instances, test on %d instances' % (len(trainfeats), len(testfeats))
+print 'train on %d instances, test on %d instances' % (len(train), len(test))
 
 classifier = NaiveBayesClassifier.train(train)
 print 'accuracy:', nltk.classify.util.accuracy(classifier, test)
-classifier.show_most_informative_features() # I don't understand the output for more than 2 categories :()
+classifier.show_most_informative_features() # I don't understand the output for more than 2 categories :(
