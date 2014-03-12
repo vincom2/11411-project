@@ -7,12 +7,18 @@ soccer_player = [
     "When was {}'s first international appearance?"
 ]
 constellation = [
-    "What is one star that {} contains?"
+    "Name one star that {} contains."
 ]
-natural_language = [
+natconlang = [
     "How many native speakers does {} have?",
     "What type of language is {}?", #this question is not very good, even among these mediocre ones, imo
 ]
 programming_language = [
     "Is {} usually interpreted or compiled?"
 ]
+movie = [
+    "When was {} released?",
+    "Did {} win any accolades?",
+    "Who directed {}?"]
+
+lookup = {'football': soccer_player, 'constellations': constellation, 'natconlang': natconlang, 'proglang': programming_language, 'movies': movie}
