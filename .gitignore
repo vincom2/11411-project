@@ -10,3 +10,4 @@ data/*
 !data/own/*
 !data/classifier.pickle.bz2
 util/*.txt
+references/*
