@@ -15,5 +15,7 @@ Thus far, the repository is organized as follows:
   - `html2text.py` to download Wikipedia articles.
 * ask/: contains files that will hopefully be useful for the "asking" component. e.g.
   - `generic.py` contains "generic questions" that can be asked about _any_ article that falls into the categories.
-  - `classify.py` trains a naive Bayesian classifier and pickles it
-  - `generateqn.py` is a total skeleton for generating questions :(
+  - `train_classifier.py` trains a naive Bayesian classifier and pickles it
+  - `classify.py` loads up a classifier and uses it to classify articles
+  - `generateqn.py` is a total skeleton for generating questions :(<br/>
+     Right now it can throw out the generic questions in `generic.py`, but that's it.
