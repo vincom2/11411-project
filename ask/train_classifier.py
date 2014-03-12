@@ -1,6 +1,4 @@
-#!/usr/bin/python
-# the funny thing is I'm adding the #! lines in but I dunno how they interact with
-# virtualenvs, so I run the scripts with python script.py anyway... :P
+#!/usr/bin/env python
 
 # see http://stackoverflow.com/questions/10098533/implementing-bag-of-words-naive-bayes-classifier-in-nltk
 # hopefully that is useful D:

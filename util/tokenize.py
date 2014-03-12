@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 """incredibly poor "tokenizer". All it does is break everything up and put it into one line.
    Since things like headings will probably be useful, even in plaintext, since they indicate the kinds of questions
    that might be generated from that section, we should probably make it at least treat those more "properly"
