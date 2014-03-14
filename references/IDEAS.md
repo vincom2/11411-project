@@ -1,0 +1,3 @@
+Ideas
+=====
+So what I'm thinking of doing now that the classifier idea has mostly been shattered is to run a summarization tool on the article we're given, maybe something like SumBasic, as a first step. I haven't actually tested SumBasic out yet (been busy with other stuff sorry), but there's python code for it out there on the internet, as well as a java library, so hopefully it will work out. The idea is that a good automatic summary should contain most of the important ideas in the text with the cruft cut out, so it should be a good way to "identify" relevant sentences to generate questions from.
