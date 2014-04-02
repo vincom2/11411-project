@@ -19,3 +19,4 @@ Thus far, the repository is organized as follows:
   - `classify.py` loads up a classifier and uses it to classify articles
   - `generateqn.py` is a total skeleton for generating questions :(<br/>
      Right now it can throw out the generic questions in `generic.py`, but that's it.
+* corenlp/: contains python wrappers for Stanford CoreNLP. You need to install CoreNLP separately. Get version 3.3.1 at http://nlp.stanford.edu/software/stanford-corenlp-full-2014-01-04.zip and make sure your JRE is sufficiently recent. Follow instructions at https://bitbucket.org/torotoki/corenlp-python.
