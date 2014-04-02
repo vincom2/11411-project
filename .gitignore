@@ -12,3 +12,8 @@ data/*
 util/*.txt
 # you know what, let's just put the references in
 #references/*
+# I dunno why I'm letting this crap folder stay here :/
+corenlp-python/*
+# don't add the java packages!
+stanford-corenlp*
+test.java
