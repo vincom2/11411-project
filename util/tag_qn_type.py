@@ -2,6 +2,9 @@
 
 """TAGGING INSTRUCTIONS
    If you don't know what to tag it with, reject with 'n' or just give the generic 'yn' tag!
+   But seriously, 'yn' is a generic tag, since pretty much everything can be a polar question.
+   If you have any other tags, please don't put the 'yn' tag. Just use it if you don't want to
+   reject a sentence but don't have an alternative tag.
    You can use multiple tags for one sentence! just separate them with spaces on the same line.
    If you see a shitty "sentence", just 'n' it. punkt the tokenizer sucks."""
 
