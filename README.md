@@ -13,6 +13,7 @@ Thus far, the repository is organized as follows:
 * util/: contains utility scripts, e.g.
   - `tokenize.py` to tokenize text
   - `html2text.py` to download Wikipedia articles.
+  - `tag_qn_type.py` to tag article sentences with the types of questions that could be generated from them. Read the instructions!
 * ask/: contains files that will hopefully be useful for the "asking" component. e.g.
   - `generic.py` contains "generic questions" that can be asked about _any_ article that falls into the categories.
   - `train_classifier.py` trains a naive Bayesian classifier and pickles it
