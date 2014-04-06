@@ -8,10 +8,10 @@ import classify
 import re
 import sys
 
-def syntactic_inversion(blah):
+def who_question(sentence):
     pass
 
-def pick_sentences(blah):
+def syntactic_inversion(blah):
     pass
 
 # article: article filename
