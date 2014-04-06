@@ -54,6 +54,9 @@ def who_questions(sentence, topic):
 
     questions = set() # I don't know why there are duplicates, but whatever
     for entity, verb, tense in possibilities:
+        # did/does definitely doesn't work for everything. e.g. some verbs go with "is"
+        # the "easiest" way I can think for this is to train some bigram/trigram model
+        # on what kind of auxiliaries verbs occur with, but this requires data that I don't know where to get...
         if tense == 'VBD': # past tense
             aux = "Did"
         else:
