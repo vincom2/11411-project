@@ -21,4 +21,6 @@ Thus far, the repository is organized as follows:
   - `generateqn.py` now sort of generates "who questions" (great emphasis on "sort of", because _the questions are *terrible*_)
   - `SumBasic.py` summarises stuff. It's probably not useful and can be disregarded.
   - `train_qntype.py` trains a classifier that classifies sentences into what kinds of questions they can be turned into (who, what, when, where, how, why). The classifier's currently at `data/qntype.joblib.pkl`.
-* corenlp/: contains python wrappers for Stanford CoreNLP. You need to install CoreNLP separately. Get version 3.3.1 at http://nlp.stanford.edu/software/stanford-corenlp-full-2014-01-04.zip and make sure your JRE is sufficiently recent. Follow instructions at https://bitbucket.org/torotoki/corenlp-python.
+* corenlp/: contains python wrappers for Stanford CoreNLP.
+  - You need to install CoreNLP separately. Get version 3.3.1 at http://nlp.stanford.edu/software/stanford-corenlp-full-2014-01-04.zip and make sure your JRE is sufficiently recent. Follow instructions at https://bitbucket.org/torotoki/corenlp-python.
+  - You also need to install Stanford NER, since the pyner wrapper uses it (I know it seems silly since NER is included in CoreNLP, but pyner provides output that's a lot nicer to use...). Get version 3.3.1 at http://nlp.stanford.edu/software/stanford-ner-2014-01-04.zip and make sure your JRE is sufficiently recent. Follow instructions at https://github.com/dat/pyner (although you should `pip install ner` instead)
