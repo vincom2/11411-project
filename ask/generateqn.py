@@ -78,6 +78,8 @@ def locate_verb(ent, tree):
                             verb = thing.leaves()[0]
                             # extract preposition, if any
                             find_prep = thing.right_sibling()
+                            if find_prep == None:
+                                return None, None, None, None
                             for st in find_prep.subtrees():
                                 if st.node == 'IN' or st.node == 'RP':
                                     prep = ' ' + st.leaves()[0]
@@ -93,63 +95,60 @@ def locate_verb(ent, tree):
 # you want to pass in only the sentence instead of the whole text. but you also want the sentence number and
 # the full coreNLP parse results, which should be done in a big wrapper function that also
 # calls the classifier and shit.
-def make_who_questions(text, topic):
-    questions = []
+def who_questions(result, n, topic):
+    sentence = result['sentences'][n]
+    tree = tparse(sentence['parsetree'])
     topic_lower = topic.lower()
     want = [u'ORGANIZATION', u'PERSON']
-    result = loads(core.parse(text))
+    # this is flawed, because if we managed to replace corefs with their referents first,
+    # we'd probably end up with more entities identified. but oh well. 2hrd.
+    entities = nent.get_entities(sentence['text'])
+    possibilities = []
 
-    def who_questions(sentence, topic, n):
-        tree = tparse(sentence['parsetree'])
-        # this is flawed, because if we managed to replace corefs with their referents first,
-        # we'd probably end up with more entities identified. but oh well. 2hrd.
-        entities = nent.get_entities(sentence['text'])
-        possibilities = []
-        for w in want:
-            if w in entities:
-                for tmp in entities[w]:
-                    e = replace_corefs(tmp, result, n)
-                    if e.lower() in topic_lower:
-                        continue
-                    # ok, we've found a good NE. now locate it in the tree so we can extract the verb.
-                    verb, prep, tense, obj = locate_verb(e.split(' '), tree)
-                    if verb != None:
-                        possibilities.append((e, verb, prep, tense, obj))
-                    
+    for w in want:
+        if w in entities:
+            for tmp in entities[w]:
+                e = replace_corefs(tmp, result, n)
+                if e.lower() in topic_lower:
+                    continue
+                # ok, we've found a good NE. now locate it in the tree so we can extract the verb.
+                verb, prep, tense, obj = locate_verb(e.split(' '), tree)
+                if verb != None:
+                    possibilities.append((e, verb, prep, tense, obj))
+    
+    questions = set() # I don't know why there are duplicates, but whatever
+    # so now if found_verb is False, that means our NE is the subject
+    for entity, verb, prep, tense, obj in possibilities:
+        # did/does definitely doesn't work for everything. e.g. some verbs go with "is"
+        # the "easiest" way I can think for this is to train some bigram/trigram model
+        # on what kind of auxiliaries verbs occur with, but this requires data that I don't know where to get...
+        # see, we should do proper subject-auxiliary inversion here, but I dunno how
+        if tense == 'VBD': # past tense
+            aux = "Did"
+        else:
+            aux = "Does" # we're going to assume singular, whatever
+        if obj:
+            questions.add("Who {} {} {}{}?".format(aux.lower(), topic, qn_tense(verb), prep))
+            questions.add("{} {} {}{} {}?".format(aux, topic, qn_tense(verb), prep, entity))
+        else:
+            questions.add("{} {} {}{} {}?".format(aux, entity, qn_tense(verb), prep, topic))
 
-        questions = set() # I don't know why there are duplicates, but whatever
-        # so now if found_verb is False, that means our NE is the subject
-        for entity, verb, prep, tense, obj in possibilities:
-            # did/does definitely doesn't work for everything. e.g. some verbs go with "is"
-            # the "easiest" way I can think for this is to train some bigram/trigram model
-            # on what kind of auxiliaries verbs occur with, but this requires data that I don't know where to get...
-            # see, we should do proper subject-auxiliary inversion here, but I dunno how
-            if tense == 'VBD': # past tense
-                aux = "Did"
-            else:
-                aux = "Does" # we're going to assume singular, whatever
-            if obj:
-                questions.add("Who {} {} {}{}?".format(aux.lower(), topic, qn_tense(verb), prep))
-                questions.add("{} {} {}{} {}?".format(aux, topic, qn_tense(verb), prep, entity))
-            else:
-                questions.add("{} {} {}{} {}?".format(aux, entity, qn_tense(verb), prep, topic))
-
-        return list(questions)
-
-    for i in xrange(len(result['sentences'])):
-        sentence = result['sentences'][i]
-        questions.extend(who_questions(sentence, topic, i))
-
-    return questions
+    return list(questions)
 
 
-
-"""def where_questions(result, n, topic):
+"""The men become friends as they work together, and after his brother abdicates the throne,
+the new King relies on Logue to help him make his first wartime radio broadcast
+on Britain's declaration of war on Germany in 1939."""
+# this is really bad. cf "make" in the above sentence.
+# really need some way to get the actual subject/object of the verb
+# especially important to at least get the proper subject
+# since the NE coincides with the proper object a lot more often
+# than the topic coincides with the proper subject
+def where_questions(result, n, topic):
     sentence = result['sentences'][n]
     tree = tparse(sentence['parsetree'])
     entities = nent.get_entities(sentence['text'])
     possibilities = []
-    questions = []
     # it is also conceivable to want "ORGANIZATION", but way too much work to
     # distinguish that from "who", for instance
     want = [u'LOCATION']
@@ -162,9 +161,63 @@ def make_who_questions(text, topic):
                 if e.lower() in topic_lower:
                     continue
                 # found good NE
-                ent = e.split(' ')
-                for subtree in tree.subtrees():
-                    words = subtree.leaves()"""
+                verb, prep, tense, obj = locate_verb(e.split(' '), tree)
+                if verb != None:
+                    possibilities.append((e, verb, prep, tense, obj))
+
+    questions = set()
+    for entity, verb, prep, tense, obj in possibilities:
+        if tense == 'VBD': # past tense
+            aux = 'Did'
+        else:
+            aux = 'Does'
+        if obj:
+            questions.add("Where {} {} {}{}?".format(aux.lower(), topic, qn_tense(verb), prep))
+            # maybe we should add "at" somewhere for this one
+            questions.add("{} {} {}{} {}?".format(aux, topic, qn_tense(verb), prep, entity))
+        else:
+            questions.add("{} {} {}{} {}?".format(aux, entity, qn_tense(verb), prep, topic))
+
+    return list(questions)
+
+
+def when_questions(result, n, topic):
+    sentence = result['sentences'][n]
+    tree = tparse(sentence['parsetree'])
+    entities = nent.get_entities(sentence['text'])
+    possibilities = []
+    want = [u'TIME', u'DATE']
+    topic_lower = topic.lower()
+
+    for w in want:
+        if w in entities:
+            for tmp in entities[w]:
+                e = replace_corefs(tmp, result, n)
+                if e.lower() in topic_lower:
+                    continue
+                # found good NE
+                verb, prep, tense, obj = locate_verb(e.split(' '), tree)
+                if verb != None:
+                    possibilities.append((e, verb, prep, tense, obj))
+
+    questions = set()
+    for entity, verb, prep, tense, obj in possibilities:
+        if tense == 'VBD': # past tense
+            aux = 'Did'
+        else:
+            aux = 'Does'
+        if obj:
+            questions.add("When {} {} {}{}?".format(aux.lower(), topic, qn_tense(verb), prep))
+            # maybe we should add "at" somewhere for this one
+            questions.add("{} {} {}{} {}?".format(aux, topic, qn_tense(verb), prep, entity))
+        else:
+            questions.add("{} {} {}{} {}?".format(aux, entity, qn_tense(verb), prep, topic))
+
+    return list(questions)
+
+
+# the other types of questions seem intractable with just
+# simplistic NER techniques
 
 
 # article: article filename
