@@ -16,5 +16,5 @@ util/*.txt
 # I dunno why I'm letting this crap folder stay here :/
 corenlp-python/*
 # don't add the java packages!
-stanford-corenlp*
+stanford*
 test.java
