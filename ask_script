@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+source `which virtualenvwrapper.sh`
+workon nlpp
+screen -S coreNLP -dm ./invoke_corenlp
+screen -S NER -dm ./invoke_ner
+sleep 20
+python ask/generateqn.py --corenlp-port 12345 --ner-port 12346 $1 $2
+screen -S coreNLP -X quit
+screen -S NER -X quit
+deactivate

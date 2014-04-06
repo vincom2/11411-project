@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+source `which virtualenvwrapper.sh`
+workon nlpp
+python corenlp/corenlp.py -p 12345
