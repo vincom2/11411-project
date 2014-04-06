@@ -47,6 +47,8 @@ def who_questions(sentence, topic):
                             parent = parent.parent()
                         # now parent is the VP, I guess
                         # this is actually pretty bad. you should try and find a way to get the prepositions and shit too...
+                        # ok, after seeing the horrible King's Speech results, it is obvious that extraction of the prepositions
+                        # is VERY IMPORTANT.
                         for thing in parent.subtrees():
                             if 'VB' in thing.node:
                                 verb = thing.leaves()[0]
