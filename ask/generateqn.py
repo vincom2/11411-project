@@ -40,6 +40,55 @@ def replace_corefs(phrase, core_parse, n):
     #         temp = c
     #     replace_with = temp[-1]
 
+def locate_verb(ent, tree):
+    # find subtree that contains the NE
+    for subtree in tree.subtrees():
+        words = subtree.leaves()
+        for i in xrange(len(ent)):
+            if i >= len(words) or words[i] != ent[i]:
+                continue
+            # good, we've found the subtree that contains our NE
+            parent = subtree.parent()
+            found_verb = False # if we find the verb now, our NE is the object, probably
+            while parent != None and parent.node != 'VP':
+                parent = parent.parent()
+            # now parent is the VP if it's not None
+            if parent != None:
+                for thing in parent.subtrees():
+                    if 'VB' in thing.node:
+                        verb = thing.leaves()[0]
+                        found_verb = True
+                        # extract the preposition, if any, in a terrible way
+                        find_prep = thing.right_sibling()
+                        for st in find_prep.subtrees():
+                            if st.node == 'IN' or st.node == 'RP':
+                                prep = ' ' + st.leaves()[0]
+                                break
+                            else:
+                                prep = ''
+                        return verb, prep, thing.node, found_verb
+            # didn't manage to find a parent VP; our NE is probably the subject            
+            if not found_verb:
+                curr = subtree.right_sibling()
+                while curr != None and curr.node != 'VP':
+                    curr = curr.right_sibling()
+                if curr != None:
+                    for thing in curr.subtrees():
+                        if 'VB' in thing.node:
+                            verb = thing.leaves()[0]
+                            # extract preposition, if any
+                            find_prep = thing.right_sibling()
+                            for st in find_prep.subtrees():
+                                if st.node == 'IN' or st.node == 'RP':
+                                    prep = ' ' + st.leaves()[0]
+                                    break
+                                else:
+                                    prep = ''
+                            return verb, prep, thing.node, found_verb
+    # somehow could not find anything
+    return None, None, None, None
+
+
 # actually, this isn't how you want to structure it. since each sentence is classified into question types separately,
 # you want to pass in only the sentence instead of the whole text. but you also want the sentence number and
 # the full coreNLP parse results, which should be done in a big wrapper function that also
@@ -63,54 +112,10 @@ def make_who_questions(text, topic):
                     if e.lower() in topic_lower:
                         continue
                     # ok, we've found a good NE. now locate it in the tree so we can extract the verb.
-                    ent = e.split(' ')
-                    for subtree in tree.subtrees():
-                        words = subtree.leaves()
-                        for i in xrange(len(ent)):
-                            if i >= len(words) or words[i] != ent[i]:
-                                continue
-                            # good, we've found the subtree that contains our NE
-                            parent = subtree.parent()
-                            found_verb = False
-                            if parent != None:
-                                while parent != None and parent.node != 'VP':
-                                    parent = parent.parent()
-                                # now parent is the VP, I guess
-                                # this is actually pretty bad. you should try and find a way to get the prepositions and shit too...
-                                # ok, after seeing the horrible King's Speech results, it is obvious that extraction of the prepositions
-                                # is VERY IMPORTANT.
-                                if parent != None:
-                                    for thing in parent.subtrees():
-                                        if 'VB' in thing.node:
-                                            verb = thing.leaves()[0]
-                                            found_verb = True
-                                            # extract the preposition in a terrible way
-                                            find_prep = thing.right_sibling()
-                                            for st in find_prep.subtrees():
-                                                if st.node == 'IN' or st.node == 'RP':
-                                                    prep = ' ' + st.leaves()[0]
-                                                    break
-                                                else:
-                                                    prep = ''
-                                            possibilities.append((e, verb, prep, thing.node, found_verb))
-                            # didn't manage to find a parent VP; probably our NE is the subject of the sentence
-                            if not found_verb:
-                                curr = subtree.right_sibling()
-                                while curr != None and curr.node != 'VP':
-                                    curr = curr.right_sibling()
-                                if curr != None:
-                                    for thing in curr.subtrees():
-                                        if 'VB' in thing.node:
-                                            verb = thing.leaves()[0]
-                                            # extract the preposition in a terrible way
-                                            find_prep = thing.right_sibling()
-                                            for st in find_prep.subtrees():
-                                                if st.node == 'IN' or st.node == 'RP':
-                                                    prep = ' ' + st.leaves()[0]
-                                                    break
-                                                else:
-                                                    prep = ''
-                                            possibilities.append((e, verb, prep, thing.node, found_verb))
+                    verb, prep, tense, obj = locate_verb(e.split(' '), tree)
+                    if verb != None:
+                        possibilities.append((e, verb, prep, tense, obj))
+                    
 
         questions = set() # I don't know why there are duplicates, but whatever
         # so now if found_verb is False, that means our NE is the subject
@@ -139,6 +144,27 @@ def make_who_questions(text, topic):
 
 
 
+"""def where_questions(result, n, topic):
+    sentence = result['sentences'][n]
+    tree = tparse(sentence['parsetree'])
+    entities = nent.get_entities(sentence['text'])
+    possibilities = []
+    questions = []
+    # it is also conceivable to want "ORGANIZATION", but way too much work to
+    # distinguish that from "who", for instance
+    want = [u'LOCATION']
+    topic_lower = topic.lower()
+
+    for w in want:
+        if w in entities:
+            for tmp in entities[w]:
+                e = replace_corefs(tmp, result, n)
+                if e.lower() in topic_lower:
+                    continue
+                # found good NE
+                ent = e.split(' ')
+                for subtree in tree.subtrees():
+                    words = subtree.leaves()"""
 
 
 # article: article filename
