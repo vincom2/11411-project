@@ -24,3 +24,10 @@ Thus far, the repository is organized as follows:
 * corenlp/: contains python wrappers for Stanford CoreNLP.
   - You need to install CoreNLP separately. Get version 3.3.1 at http://nlp.stanford.edu/software/stanford-corenlp-full-2014-01-04.zip and make sure your JRE is sufficiently recent. Follow instructions at https://bitbucket.org/torotoki/corenlp-python.
   - You also need to install Stanford NER, since the pyner wrapper uses it (I know it seems silly since NER is included in CoreNLP, but pyner provides output that's a lot nicer to use...). Get version 3.3.1 at http://nlp.stanford.edu/software/stanford-ner-2014-01-04.zip and make sure your JRE is sufficiently recent. Follow instructions at https://github.com/dat/pyner (although you should `pip install ner` instead)
+
+How to use
+-----------
+Yes, it now generates (really bad) questions! To use:
+* install the stuff the readme says to install above, and also the stuff in `requirements.txt`.
+* You could use `ask_script` if you have the exact same setup as me, including using virtualenvwrapper with a virtualenv named nlpp and stuff. I must confess that I wasn't thinking about deploying to other systems when I started, so we'll have to figure this out >.>
+* Otherwise, if the script doesn't work for you, well, run the commands in it manually. It'll generate questions! Yay! (right now it ignores nquestions)
