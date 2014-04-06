@@ -3,16 +3,67 @@
    I just feel like this would be a good way to organise stuff
    WOOHOO 2 FUNCTIONS"""
 
-import generic
-import classify
-import re
-import sys
+import generic, classify
+import re, sys
+import nltk
+import ner
+import pattern.en as en
+import jsonrpclib
+from simplejson import loads
 
-def who_question(sentence):
-    pass
+core = jsonrpclib.Server('http://localhost:8080')
+nent = ner.SocketNER(host = 'localhost', port = 12345)
+tparse = nltk.tree.ParentedTree.parse
 
-def syntactic_inversion(blah):
-    pass
+ner_host = 'localhost'
+ner_port = 12345
+
+def qn_tense(word):
+    return en.conjugate(word)
+
+def who_questions(sentence, topic):
+    topic_lower = topic.lower()
+    s_rev = sentence.split(' ').reverse()
+    want = [u'ORGANIZATION', u'PERSON']
+    result = loads(core.parse(sentence))
+    tree = tparse(result['sentences'][0]['parsetree'])
+    entities = nent.get_entities(sentence)
+    possibilities = []
+    for w in want:
+        if w in entities:
+            for e in entities[w]:
+                if e.lower() in topic_lower:
+                    continue
+                # ok, we've found a good NE. now locate it in the tree so we can extract the verb.
+                ent = e.split(' ')
+                for subtree in tree.subtrees():
+                    words = subtree.leaves()
+                    for i in xrange(len(ent)):
+                        if i >= len(words) or words[i] != ent[i]:
+                            continue
+                        # good, we've found the subtree that contains our NE
+                        parent = subtree.parent()
+                        while parent.node != 'VP':
+                            parent = parent.parent()
+                        # now parent is the VP, I guess
+                        # this is actually pretty bad. you should try and find a way to get the prepositions and shit too...
+                        for thing in parent.subtrees():
+                            if 'VB' in thing.node:
+                                verb = thing.leaves()[0]
+                                possibilities.append((e, verb, thing.node))
+
+    questions = set() # I don't know why there are duplicates, but whatever
+    for entity, verb, tense in possibilities:
+        if tense == 'VBD': # past tense
+            aux = "Did"
+        else:
+            aux = "Does" # we're going to assume singular, whatever
+        questions.add("Who {} {} {}?".format(aux.lower(), topic, qn_tense(verb)))
+        questions.add("{} {} {} {}?".format(aux, topic, qn_tense(verb), entity))
+
+    return list(questions)
+
+
 
 # article: article filename
 # also this should probably return them, not just print them, so we can pick and choose or something
@@ -39,5 +90,5 @@ def main():
 
     make_generic_qns(sys.argv[1])
 
-if __name__ == '__main__':
-    main()
+# if __name__ == '__main__':
+#     main()
