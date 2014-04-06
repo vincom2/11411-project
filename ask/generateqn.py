@@ -7,20 +7,29 @@
 
 import generic, classify
 import re, sys
-import nltk
-import ner
+import nltk, ner
 import pattern.en as en
 import jsonrpclib
 from simplejson import loads
 from sklearn.externals import joblib
 from collections import defaultdict
+import argparse
 
-core = jsonrpclib.Server('http://localhost:8080')
-nent = ner.SocketNER(host = 'localhost', port = 12345)
+# commandline arguments
+parser = argparse.ArgumentParser()
+parser.add_argument("article", help="article to generate questions based on")
+parser.add_argument("nquestions", help="number of questions to generate")
+parser.add_argument("--corenlp-port", help="port that python-coreNLP server is listening on", default="12345")
+parser.add_argument("--ner-port", help="port that NER server is listening on", type=int, default=12346)
+parser.add_argument("--hostname", help="host that both servers are running on", default="localhost")
+
+args = parser.parse_args()
+
+core = jsonrpclib.Server('http://' + args.hostname + ':' + args.corenlp_port)
+nent = ner.SocketNER(host = args.hostname, port = args.ner_port)
 tparse = nltk.tree.ParentedTree.parse
 
-ner_host = 'localhost'
-ner_port = 12345
+
 
 def other_questions(result, n, topic):
     """replace this if you ever figure out how to generate the remaining types of questions"""
@@ -238,7 +247,7 @@ def make_questions(text, topic):
     # clf = joblib.load("../data/qntype.joblib.pkl")
     result = loads(core.parse(text))
     for i in xrange(len(result['sentences'])):
-        print result['sentences'][i]['text']
+        # print result['sentences'][i]['text']
         # classes = clf.predict([result['sentences'][i]['text']])
         classes = ['when', 'where', 'who']
         # print classes
@@ -265,13 +274,22 @@ def make_generic_qns(article):
 
 # whoops, this was supposed to be in ask.py, not here
 # but since nothing works yet, whatever
+# def main():
+#     if len(sys.argv) != 3:
+#         print "usage: ./generateqn.py <article>.txt nquestions"
+#         # yes, yes, it just disregards nquestions anyway
+#         sys.exit(1)
+
+#     make_generic_qns(sys.argv[1])
+
 def main():
-    if len(sys.argv) != 3:
-        print "usage: ./generateqn.py <article>.txt nquestions"
-        # yes, yes, it just disregards nquestions anyway
-        sys.exit(1)
+    # ignoring nquestions for now
+    with open(args.article) as f:
+        topic = f.readline().rstrip()
+        text = f.read()
+        print '\n'.join(make_questions(text, topic))
 
-    make_generic_qns(sys.argv[1])
+    
 
-# if __name__ == '__main__':
-#     main()
+if __name__ == '__main__':
+    main()
