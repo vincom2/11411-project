@@ -1,7 +1,4 @@
 #!/usr/bin/env python
-"""obviously this doesn't actually do anything yet
-   I just feel like this would be a good way to organise stuff
-   WOOHOO 2 FUNCTIONS"""
 
 import generic, classify
 import re, sys
@@ -21,52 +18,126 @@ ner_port = 12345
 def qn_tense(word):
     return en.conjugate(word)
 
-def who_questions(sentence, topic):
-    topic_lower = topic.lower()
-    s_rev = sentence.split(' ').reverse()
-    want = [u'ORGANIZATION', u'PERSON']
-    result = loads(core.parse(sentence))
-    tree = tparse(result['sentences'][0]['parsetree'])
-    entities = nent.get_entities(sentence)
-    possibilities = []
-    for w in want:
-        if w in entities:
-            for e in entities[w]:
-                if e.lower() in topic_lower:
-                    continue
-                # ok, we've found a good NE. now locate it in the tree so we can extract the verb.
-                ent = e.split(' ')
-                for subtree in tree.subtrees():
-                    words = subtree.leaves()
-                    for i in xrange(len(ent)):
-                        if i >= len(words) or words[i] != ent[i]:
-                            continue
-                        # good, we've found the subtree that contains our NE
-                        parent = subtree.parent()
-                        while parent.node != 'VP':
-                            parent = parent.parent()
-                        # now parent is the VP, I guess
-                        # this is actually pretty bad. you should try and find a way to get the prepositions and shit too...
-                        # ok, after seeing the horrible King's Speech results, it is obvious that extraction of the prepositions
-                        # is VERY IMPORTANT.
-                        for thing in parent.subtrees():
-                            if 'VB' in thing.node:
-                                verb = thing.leaves()[0]
-                                possibilities.append((e, verb, thing.node))
-
-    questions = set() # I don't know why there are duplicates, but whatever
-    for entity, verb, tense in possibilities:
-        # did/does definitely doesn't work for everything. e.g. some verbs go with "is"
-        # the "easiest" way I can think for this is to train some bigram/trigram model
-        # on what kind of auxiliaries verbs occur with, but this requires data that I don't know where to get...
-        if tense == 'VBD': # past tense
-            aux = "Did"
+def replace_corefs(phrase, core_parse, n):
+    """very terrible; assumes a coref only occurs once in a sentence, for instance"""
+    corefs = core_parse[u'coref']
+    for c in corefs:
+        if len(c) > 1:
+            temp = c[:-1]
         else:
-            aux = "Does" # we're going to assume singular, whatever
-        questions.add("Who {} {} {}?".format(aux.lower(), topic, qn_tense(verb)))
-        questions.add("{} {} {} {}?".format(aux, topic, qn_tense(verb), entity))
+            temp = [c]
+        for e in temp: # I have no idea why some of the lists are nested...
+            for d in e:
+                # print phrase
+                # print d[0][0]
+                if phrase == d[0][0] and n == d[0][1]:
+                    return d[-1][0]
+    return phrase
+    # for c in corefs:
+    #     if len(c) > 1:
+    #         temp = c[0]
+    #     else:
+    #         temp = c
+    #     replace_with = temp[-1]
 
-    return list(questions)
+# actually, this isn't how you want to structure it. since each sentence is classified into question types separately,
+# you want to pass in only the sentence instead of the whole text. but you also want the sentence number and
+# the full coreNLP parse results, which should be done in a big wrapper function that also
+# calls the classifier and shit.
+def make_who_questions(text, topic):
+    questions = []
+    topic_lower = topic.lower()
+    want = [u'ORGANIZATION', u'PERSON']
+    result = loads(core.parse(text))
+
+    def who_questions(sentence, topic, n):
+        tree = tparse(sentence['parsetree'])
+        # this is flawed, because if we managed to replace corefs with their referents first,
+        # we'd probably end up with more entities identified. but oh well. 2hrd.
+        entities = nent.get_entities(sentence['text'])
+        possibilities = []
+        for w in want:
+            if w in entities:
+                for tmp in entities[w]:
+                    e = replace_corefs(tmp, result, n)
+                    if e.lower() in topic_lower:
+                        continue
+                    # ok, we've found a good NE. now locate it in the tree so we can extract the verb.
+                    ent = e.split(' ')
+                    for subtree in tree.subtrees():
+                        words = subtree.leaves()
+                        for i in xrange(len(ent)):
+                            if i >= len(words) or words[i] != ent[i]:
+                                continue
+                            # good, we've found the subtree that contains our NE
+                            parent = subtree.parent()
+                            found_verb = False
+                            if parent != None:
+                                while parent != None and parent.node != 'VP':
+                                    parent = parent.parent()
+                                # now parent is the VP, I guess
+                                # this is actually pretty bad. you should try and find a way to get the prepositions and shit too...
+                                # ok, after seeing the horrible King's Speech results, it is obvious that extraction of the prepositions
+                                # is VERY IMPORTANT.
+                                if parent != None:
+                                    for thing in parent.subtrees():
+                                        if 'VB' in thing.node:
+                                            verb = thing.leaves()[0]
+                                            found_verb = True
+                                            # extract the preposition in a terrible way
+                                            find_prep = thing.right_sibling()
+                                            for st in find_prep.subtrees():
+                                                if st.node == 'IN' or st.node == 'RP':
+                                                    prep = ' ' + st.leaves()[0]
+                                                    break
+                                                else:
+                                                    prep = ''
+                                            possibilities.append((e, verb, prep, thing.node, found_verb))
+                            # didn't manage to find a parent VP; probably our NE is the subject of the sentence
+                            if not found_verb:
+                                curr = subtree.right_sibling()
+                                while curr != None and curr.node != 'VP':
+                                    curr = curr.right_sibling()
+                                if curr != None:
+                                    for thing in curr.subtrees():
+                                        if 'VB' in thing.node:
+                                            verb = thing.leaves()[0]
+                                            # extract the preposition in a terrible way
+                                            find_prep = thing.right_sibling()
+                                            for st in find_prep.subtrees():
+                                                if st.node == 'IN' or st.node == 'RP':
+                                                    prep = ' ' + st.leaves()[0]
+                                                    break
+                                                else:
+                                                    prep = ''
+                                            possibilities.append((e, verb, prep, thing.node, found_verb))
+
+        questions = set() # I don't know why there are duplicates, but whatever
+        # so now if found_verb is False, that means our NE is the subject
+        for entity, verb, prep, tense, obj in possibilities:
+            # did/does definitely doesn't work for everything. e.g. some verbs go with "is"
+            # the "easiest" way I can think for this is to train some bigram/trigram model
+            # on what kind of auxiliaries verbs occur with, but this requires data that I don't know where to get...
+            # see, we should do proper subject-auxiliary inversion here, but I dunno how
+            if tense == 'VBD': # past tense
+                aux = "Did"
+            else:
+                aux = "Does" # we're going to assume singular, whatever
+            if obj:
+                questions.add("Who {} {} {}{}?".format(aux.lower(), topic, qn_tense(verb), prep))
+                questions.add("{} {} {}{} {}?".format(aux, topic, qn_tense(verb), prep, entity))
+            else:
+                questions.add("{} {} {}{} {}?".format(aux, entity, qn_tense(verb), prep, topic))
+
+        return list(questions)
+
+    for i in xrange(len(result['sentences'])):
+        sentence = result['sentences'][i]
+        questions.extend(who_questions(sentence, topic, i))
+
+    return questions
+
+
 
 
 
