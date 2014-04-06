@@ -1,5 +1,10 @@
 #!/usr/bin/env python
 
+"""from current test output, it seems very important to be able to extract subjects. while it also
+   seems very stupid to keep throwing external libraries at this because it's too hard to parse the output
+   of external libraries already being used (e.g. corenlp-python), I think a good way to extract subjects might be
+   https://github.com/knowitall/reverb/ """
+
 import generic, classify
 import re, sys
 import nltk
@@ -7,6 +12,8 @@ import ner
 import pattern.en as en
 import jsonrpclib
 from simplejson import loads
+from sklearn.externals import joblib
+from collections import defaultdict
 
 core = jsonrpclib.Server('http://localhost:8080')
 nent = ner.SocketNER(host = 'localhost', port = 12345)
@@ -14,6 +21,10 @@ tparse = nltk.tree.ParentedTree.parse
 
 ner_host = 'localhost'
 ner_port = 12345
+
+def other_questions(result, n, topic):
+    """replace this if you ever figure out how to generate the remaining types of questions"""
+    return []
 
 def qn_tense(word):
     return en.conjugate(word)
@@ -216,9 +227,26 @@ def when_questions(result, n, topic):
     return list(questions)
 
 
-# the other types of questions seem intractable with just
-# simplistic NER techniques
+# the other types of questions seem intractable with just simplistic NER techniques
+generate_temp = {'when': when_questions, 'where': where_questions, 'who': who_questions}
+generate = defaultdict(lambda: other_questions)
+for t in generate_temp:
+    generate[t] = generate_temp[t]
 
+def make_questions(text, topic):
+    questions = []
+    # clf = joblib.load("../data/qntype.joblib.pkl")
+    result = loads(core.parse(text))
+    for i in xrange(len(result['sentences'])):
+        print result['sentences'][i]['text']
+        # classes = clf.predict([result['sentences'][i]['text']])
+        classes = ['when', 'where', 'who']
+        # print classes
+        # print ""
+        for c in classes:
+            # print c
+            questions.extend(generate[c](result, i, topic))
+    return questions
 
 # article: article filename
 # also this should probably return them, not just print them, so we can pick and choose or something
