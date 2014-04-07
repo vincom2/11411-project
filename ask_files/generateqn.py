@@ -18,7 +18,7 @@ import argparse
 # commandline arguments
 parser = argparse.ArgumentParser()
 parser.add_argument("article", help="article to generate questions based on")
-parser.add_argument("nquestions", help="number of questions to generate")
+parser.add_argument("nquestions", help="number of questions to generate", type=int)
 parser.add_argument("--corenlp-port", help="port that python-coreNLP server is listening on", default="12345")
 parser.add_argument("--ner-port", help="port that NER server is listening on", type=int, default=12346)
 parser.add_argument("--hostname", help="host that both servers are running on", default="localhost")
@@ -287,7 +287,7 @@ def main():
     with open(args.article) as f:
         topic = f.readline().rstrip()
         text = f.read()
-        print '\n'.join(make_questions(text, topic))
+        print '\n'.join(make_questions(text, topic)[:args.nquestions]) # TODO: actually rank them properly and stuff
 
     
 
