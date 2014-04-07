@@ -31,6 +31,8 @@ def main():
     args = parser.parse_args()
     sentences = read_article(args.article)
     stopwords = stopwords_.words('english')
+    # maybe don't use stopwords? they should have low scores anyway
+    # maybe do named entity replacement first?
     vect = TfidfVectorizer(min_df=1, stop_words=stopwords)
 
     with open(args.questions) as f:
