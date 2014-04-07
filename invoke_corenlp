@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
-source `which virtualenvwrapper.sh`
+source /afs/andrew.cmu.edu/usr14/vincenth/public/11411/11411-project/setenv
+source /afs/andrew.cmu.edu/usr14/vincenth/public/bootstrapenv/bin/virtualenvwrapper.sh
 workon nlpp
-python corenlp/corenlp.py -p 12345
+python corenlp/corenlp.py -p 40001

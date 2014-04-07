@@ -1,0 +1,5 @@
+export PATH=/afs/andrew.cmu.edu/usr14/vincenth/public/python/bin:$PATH
+
+source /afs/andrew.cmu.edu/usr14/vincenth/public/bootstrapenv/bin/activate
+export WORKON_HOME=/afs/andrew.cmu.edu/usr14/vincenth/public/bootstrapenv/envs
+source /afs/andrew.cmu.edu/usr14/vincenth/public/bootstrapenv/bin/virtualenvwrapper.sh
