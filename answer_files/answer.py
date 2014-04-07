@@ -45,8 +45,9 @@ def main():
             documents = sentences + [qn]
             matrix = vect.fit_transform(documents)
             values = cosine_similarity(matrix[-1:], matrix)
-            print "Q:", qn
-            print "A:", sentences[find_max(values[0])]
+            # print "Q:", qn
+            # print "A:", sentences[find_max(values[0])]
+            print sentences[find_max(values[0])].split('\n')[-1]
 
 if __name__ == '__main__':
     main()
