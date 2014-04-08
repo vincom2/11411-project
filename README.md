@@ -17,3 +17,7 @@ How to use
   - to run the _asker_, `python ask_files/generateqn.py --corenlp-port 40001 --ner-port 40002 <article> <nquestions>`
   - now you can kill the 2 screen sessions since the answerer doesn't use them.
   - to run the _answerer_, `python answer_files/answer.py <article> <questions>`
+
+Warnings
+--------
+* For now, it crashes on articles that contain accented characters. SORRY. Will try and fix. Please evaluate on nice articles like the one about Clint Dempsey. Pretty please.
