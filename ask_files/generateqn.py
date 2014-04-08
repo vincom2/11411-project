@@ -6,7 +6,7 @@
    https://github.com/knowitall/reverb/ """
 
 import generic, classify
-import re, sys
+import re, codecs
 import nltk, ner
 import pattern.en as en
 import jsonrpclib
@@ -148,10 +148,10 @@ def who_questions(result, n, topic):
         else:
             aux = "Does" # we're going to assume singular, whatever
         if obj:
-            questions.add("Who {} {} {}{}?".format(aux.lower(), topic, qn_tense(verb), prep))
-            questions.add("{} {} {}{} {}?".format(aux, topic, qn_tense(verb), prep, entity))
+            questions.add(u"Who {} {} {}{}?".format(aux.lower(), topic, qn_tense(verb), prep))
+            questions.add(u"{} {} {}{} {}?".format(aux, topic, qn_tense(verb), prep, entity))
         else:
-            questions.add("{} {} {}{} {}?".format(aux, entity, qn_tense(verb), prep, topic))
+            questions.add(u"{} {} {}{} {}?".format(aux, entity, qn_tense(verb), prep, topic))
 
     return list(questions)
 
@@ -192,11 +192,11 @@ def where_questions(result, n, topic):
         else:
             aux = 'Does'
         if obj:
-            questions.add("Where {} {} {}{}?".format(aux.lower(), topic, qn_tense(verb), prep))
+            questions.add(u"Where {} {} {}{}?".format(aux.lower(), topic, qn_tense(verb), prep))
             # maybe we should add "at" somewhere for this one
-            questions.add("{} {} {}{} {}?".format(aux, topic, qn_tense(verb), prep, entity))
+            questions.add(u"{} {} {}{} {}?".format(aux, topic, qn_tense(verb), prep, entity))
         else:
-            questions.add("{} {} {}{} {}?".format(aux, entity, qn_tense(verb), prep, topic))
+            questions.add(u"{} {} {}{} {}?".format(aux, entity, qn_tense(verb), prep, topic))
 
     return list(questions)
 
@@ -207,6 +207,7 @@ def when_questions(result, n, topic):
     entities = nent.get_entities(sentence['text'])
     possibilities = []
     want = [u'TIME', u'DATE']
+    # print "topic:", topic
     topic_lower = topic.lower()
 
     for w in want:
@@ -227,11 +228,11 @@ def when_questions(result, n, topic):
         else:
             aux = 'Does'
         if obj:
-            questions.add("When {} {} {}{}?".format(aux.lower(), topic, qn_tense(verb), prep))
+            questions.add(u"When {} {} {}{}?".format(aux.lower(), topic, qn_tense(verb), prep))
             # maybe we should add "at" somewhere for this one
-            questions.add("{} {} {}{} {}?".format(aux, topic, qn_tense(verb), prep, entity))
+            questions.add(u"{} {} {}{} {}?".format(aux, topic, qn_tense(verb), prep, entity))
         else:
-            questions.add("{} {} {}{} {}?".format(aux, entity, qn_tense(verb), prep, topic))
+            questions.add(u"{} {} {}{} {}?".format(aux, entity, qn_tense(verb), prep, topic))
 
     return list(questions)
 
@@ -284,6 +285,7 @@ def make_generic_qns(article):
 
 def main():
     # ignoring nquestions for now
+    # with codecs.open(args.article, 'r', 'utf-8') as f:
     with open(args.article) as f:
         topic = f.readline().rstrip()
         text = f.read()
