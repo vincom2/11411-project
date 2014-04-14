@@ -10,6 +10,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.feature_extraction.text import TfidfVectorizer
 from nltk.corpus import stopwords as stopwords_
 import argparse
+import re
 
 parser = argparse.ArgumentParser()
 parser.add_argument("article", help="the article to get answers from")
@@ -19,6 +20,11 @@ punkt_param = PunktParameters()
 punkt_param.abbrev_types = set(['dr', 'vs', 'mr', 'mrs', 'prof', 'inc', 'v'])
 sentence_splitter = PunktSentenceTokenizer(punkt_param)
 
+yn_words = ['Did', 'Does', 'Do', 'Has', 'Have', 'Had', 'Was', 'Is', 'Are', 'Were'] # are there more? there probably are
+yn_regex = re.compile(r'^({})'.format('|'.join(yn_words)))
+
+neg_regex = re.compile(r"(.*\b(?:{})\b)|(.*n't)".format('|'.join(['not','no'])))
+
 def find_max(values):
     max, maxi = 0, 0
     for i in xrange(len(values)-1):
@@ -26,6 +32,18 @@ def find_max(values):
             max, maxi = values[i], i
 
     return maxi
+
+def yn_question(question):
+    if yn_regex.match(question):
+        return True
+    else:
+        return False
+
+def neg_answer(answer):
+    if neg_regex.match(answer):
+        return True
+    else:
+        return False
 
 def read_article(filename):
     with open(filename) as f:
@@ -48,7 +66,14 @@ def main():
             values = cosine_similarity(matrix[-1:], matrix)
             # print "Q:", qn
             # print "A:", sentences[find_max(values[0])]
-            print sentences[find_max(values[0])].split('\n')[-1]
+            tmp = sentences[find_max(values[0])].split('\n')[-1]
+            if not yn_question(qn):
+                print tmp
+            elif neg_answer(tmp):
+                print "Nope."
+            else:
+                print "Yes."
+
 
 if __name__ == '__main__':
     main()
