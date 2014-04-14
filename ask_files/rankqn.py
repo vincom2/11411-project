@@ -1,6 +1,6 @@
 import re
 
-pronouns = ['he', 'him', 'she', 'her', 'they', 'them',]
+pronouns = ['he', 'him', 'she', 'her', 'they', 'them', 'that', 'this']
 
 def score(question):
     score = 0
