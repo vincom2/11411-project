@@ -39,6 +39,7 @@ def main():
     # maybe don't use stopwords? they should have low scores anyway
     # maybe do named entity replacement first?
     vect = TfidfVectorizer(min_df=1, stop_words=stopwords)
+    #vect = TfidfVectorizer(min_df=1)
 
     with open(args.questions) as f:
         for qn in f:
