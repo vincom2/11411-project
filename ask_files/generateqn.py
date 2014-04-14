@@ -14,6 +14,7 @@ from simplejson import loads
 from sklearn.externals import joblib
 from collections import defaultdict
 import argparse
+from rankqn import score
 
 # commandline arguments
 parser = argparse.ArgumentParser()
@@ -59,6 +60,14 @@ def replace_corefs(phrase, core_parse, n):
     #     else:
     #         temp = c
     #     replace_with = temp[-1]
+
+def locate_subject(sentence, verb):
+    for dep in sentence['dependencies']:
+        if dep[0] == u'nsubj' and dep[1] == verb:
+            return dep[len(dep)-1]
+
+    # could not find verb subject
+    return None
 
 def locate_verb(ent, tree):
     # find subtree that contains the NE
@@ -139,6 +148,11 @@ def who_questions(result, n, topic):
     questions = set() # I don't know why there are duplicates, but whatever
     # so now if found_verb is False, that means our NE is the subject
     for entity, verb, prep, tense, obj in possibilities:
+        temp = locate_subject(sentence, verb)
+        if temp == None:
+            subject = topic
+        else:
+            subject = replace_corefs(temp, result, n)
         # did/does definitely doesn't work for everything. e.g. some verbs go with "is"
         # the "easiest" way I can think for this is to train some bigram/trigram model
         # on what kind of auxiliaries verbs occur with, but this requires data that I don't know where to get...
@@ -148,10 +162,10 @@ def who_questions(result, n, topic):
         else:
             aux = "Does" # we're going to assume singular, whatever
         if obj:
-            questions.add(u"Who {} {} {}{}?".format(aux.lower(), topic, qn_tense(verb), prep))
-            questions.add(u"{} {} {}{} {}?".format(aux, topic, qn_tense(verb), prep, entity))
+            questions.add("Who {} {} {}{}?".format(aux.lower(), subject, qn_tense(verb), prep))
+            questions.add("{} {} {}{} {}?".format(aux, subject, qn_tense(verb), prep, entity))
         else:
-            questions.add(u"{} {} {}{} {}?".format(aux, entity, qn_tense(verb), prep, topic))
+            questions.add("{} {} {}{} {}?".format(aux, entity, qn_tense(verb), prep, subject))
 
     return list(questions)
 
@@ -187,16 +201,22 @@ def where_questions(result, n, topic):
 
     questions = set()
     for entity, verb, prep, tense, obj in possibilities:
+        temp = locate_subject(sentence, verb)
+        if temp == None:
+            subject = topic
+        else:
+            subject = replace_corefs(temp, result, n)
+
         if tense == 'VBD': # past tense
             aux = 'Did'
         else:
             aux = 'Does'
         if obj:
-            questions.add(u"Where {} {} {}{}?".format(aux.lower(), topic, qn_tense(verb), prep))
+            questions.add("Where {} {} {}{}?".format(aux.lower(), subject, qn_tense(verb), prep))
             # maybe we should add "at" somewhere for this one
-            questions.add(u"{} {} {}{} {}?".format(aux, topic, qn_tense(verb), prep, entity))
+            questions.add("{} {} {}{} {}?".format(aux, subject, qn_tense(verb), prep, entity))
         else:
-            questions.add(u"{} {} {}{} {}?".format(aux, entity, qn_tense(verb), prep, topic))
+            questions.add("{} {} {}{} {}?".format(aux, entity, qn_tense(verb), prep, subject))
 
     return list(questions)
 
@@ -223,16 +243,22 @@ def when_questions(result, n, topic):
 
     questions = set()
     for entity, verb, prep, tense, obj in possibilities:
+        temp = locate_subject(sentence, verb)
+        if temp == None:
+            subject = topic
+        else:
+            subject = replace_corefs(temp, result, n)
+
         if tense == 'VBD': # past tense
             aux = 'Did'
         else:
             aux = 'Does'
         if obj:
-            questions.add(u"When {} {} {}{}?".format(aux.lower(), topic, qn_tense(verb), prep))
+            questions.add("When {} {} {}{}?".format(aux.lower(), subject, qn_tense(verb), prep))
             # maybe we should add "at" somewhere for this one
-            questions.add(u"{} {} {}{} {}?".format(aux, topic, qn_tense(verb), prep, entity))
+            questions.add("{} {} {}{} {}?".format(aux, subject, qn_tense(verb), prep, entity))
         else:
-            questions.add(u"{} {} {}{} {}?".format(aux, entity, qn_tense(verb), prep, topic))
+            questions.add("{} {} {}{} {}?".format(aux, entity, qn_tense(verb), prep, subject))
 
     return list(questions)
 
@@ -287,9 +313,27 @@ def main():
     # ignoring nquestions for now
     # with codecs.open(args.article, 'r', 'utf-8') as f:
     with open(args.article) as f:
-        topic = f.readline().rstrip()
+        first_line = f.readline()
+        temp = re.match(r'(.*?)\s*\(', first_line)
+        if temp == None:
+            topic = first_line.rstrip('\n')
+        else:
+            topic = temp.group(1)
         text = f.read()
-        print '\n'.join(make_questions(text, topic)[:args.nquestions]) # TODO: actually rank them properly and stuff
+        qns = make_questions(text, topic)
+        # should use a priority queue but I am lazy
+        questions = []
+        for q in qns:
+            questions.append((q, score(q)))
+        list.sort(questions, key = lambda x: x[1], reverse = True)
+        temp = []
+        for q in questions[:args.nquestions]:
+            temp.append(q[0])
+        print '\n'.join(temp) # TODO: actually rank them properly and stuff
+
+        # print '\n'.join(make_questions(text, topic))
+        """It seems a "good" way to rank would be to take the did/has and the verb
+           but that is difficult"""
 
     
 
