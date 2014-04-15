@@ -1,6 +1,10 @@
+#!/usr/bin/env bash
+
 export PATH=/afs/andrew.cmu.edu/usr14/vincenth/public/python/bin:$PATH
 export NLTK_DATA=/afs/andrew.cmu.edu/usr14/vincenth/public/11411/11411-project/nltk_data/nltk_data
 
 source /afs/andrew.cmu.edu/usr14/vincenth/public/bootstrapenv/bin/activate
 export WORKON_HOME=/afs/andrew.cmu.edu/usr14/vincenth/public/bootstrapenv/envs
 source /afs/andrew.cmu.edu/usr14/vincenth/public/bootstrapenv/bin/virtualenvwrapper.sh
+
+workon nlpp
