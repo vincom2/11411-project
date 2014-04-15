@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# note: follow the instructions in the readme
+# (specifically, run setenv, and start coreNLP and NER) before running this
+
+python ask_files/generateqn.py --corenlp-port 40001 --ner-port 40002 $1 $2

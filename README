@@ -1,0 +1,33 @@
+Initialization
+==============
+The ask program depends on Stanford CoreNLP and NER. Since presumably this program will be run over and over, to save on the
+significant startup time of the two, they have to be run as servers in the background beforehand. Attempts were made to automate
+this process, but due to the unreliability of the unix.andrew machines, it was decided that having this step done manually would be better.
+STEPS:
+1) change your working shell to bash (some of the scripts depend on this, I believe)
+2) $ source /afs/andrew.cmu.edu/usr14/vincenth/public/11411/11411-project/setenv
+3) $ screen -S coreNLP
+   inside the screen session run
+   $ ./invoke_corenlp
+   (make sure this finishes loading and says serving!)
+   then Ctrl+A D to detach.
+4) $ screen -S NER
+   inside the screen session run
+   $ ./invoke_ner
+   then Ctrl+A D to detach.
+
+Ask
+===
+./ask article nquestions
+
+Answer
+======
+./answer article questions
+
+CAVEATS
+=======
+- You may have problems starting coreNLP. If that happens, maybe try a different unix.andrew server. Sorry, it's a memory hog.
+- ask may be slow. Again, the bottleneck is coreNLP.
+- Both ask and answer have some trouble with accented characters. I've tried fixing it with codecs.open utf-8 and stuff, but that just
+  introduces other problems like question generation not working. I have no idea why. So they may crash on some files with accented
+  characters. Sorry about that.
